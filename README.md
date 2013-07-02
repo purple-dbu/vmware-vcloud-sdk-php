@@ -13,7 +13,7 @@ Setup a development environment
 -------------------------------
 
 
-=== 1/a. Install Composer (skip if already installed) ===
+### 1/a. Install Composer (skip if already installed) ###
 
     curl -sS https://getcomposer.org/installer | php
 
@@ -27,7 +27,7 @@ If the installation work correctly, this should display:
     Use it: php composer.phar
 
 
-=== 1/b. Upgrade Composer (skip if freshly installed) ===
+### 1/b. Upgrade Composer (skip if freshly installed) ###
 
     php composer.phar self-update
 
@@ -37,7 +37,7 @@ up-to-date, this will display:
     You are using the latest composer version.
 
 
-=== 2. Install/upgrade dependencies ===
+### 2. Install/upgrade dependencies ###
 
     php composer.phar install
 
