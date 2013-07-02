@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "VMware_": "library/"
+            "VMware_VCloud_": "library/VMware"
         }
     },
     "include-path": [
