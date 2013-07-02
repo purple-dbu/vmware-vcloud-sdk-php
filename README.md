@@ -25,7 +25,7 @@ If the installation work correctly, this should display:
 
 At this step, you should have the following files in your project's folder:
 
-  - composer.phar (~900 kB)
+    - composer.phar (~900 kB)
 
 Then, execute:
 
@@ -40,15 +40,15 @@ If the installation work correctly, this should display:
 
 At this step, you should have the following files in your project's folder:
 
-  - composer.phar (~900 kB)
-  - composer.json (7 B)
-  - vendor
-    - autoload.php (~182 B)
-    - composer
-      - autoload_classmap.php (~150 B)
-      - autoload_namespaces.php (~150 B)
-      - autoload_real.php (~1 kB)
-      - ClassLoader.php (~7 kB)
+    - composer.phar (~900 kB)
+    - composer.json (7 B)
+    - vendor
+      - autoload.php (~182 B)
+      - composer
+        - autoload_classmap.php (~150 B)
+        - autoload_namespaces.php (~150 B)
+        - autoload_real.php (~1 kB)
+        - ClassLoader.php (~7 kB)
 
 
 ### Step 2. Edit your composer.json ###
