@@ -1,5 +1,5 @@
 {
-    "name": "vmware/vcloud-sdk-php",
+    "name": "vmware/vcloud-sdk",
     "description": "VMware vCloud SDK for PHP",
     "type": "library",
     "keywords": [
@@ -7,8 +7,7 @@
         "vcloud",
         "director",
         "api",
-        "sdk",
-        "php"
+        "sdk"
     ],
     "homepage": "http://communities.vmware.com/community/vmtn/developer/forums/vcloudsdkphp",
     "license": "vCloudSDKforPHP-License.docx",
