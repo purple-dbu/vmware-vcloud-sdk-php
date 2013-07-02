@@ -1,0 +1,124 @@
+/**
+ *
+ * README
+ *
+ * README for samples.
+ *
+ * Copyright VMware, Inc. 2010-2012.  All Rights Reserved.
+ *
+ */
+
+
+API\SDK  Matrix
+=================
+
+                   A            P            I
+
+                  1.0          1.5          5.1
+
+    S   1.0       YES          YES          NO
+
+    D   1.5       NO           YES          YES
+
+    K   5.1       NO           YES          YES
+
+
+Summary
+=======
+The README file lists the description of each sample. For how to run the sample,
+please use the online help message for each sample.
+
+Helper file used by samples
+============================
+1.1 config.php
+      -- Can be used for setting the common VMware vCloud Director login
+         parameters for all the samples, or can be ignored if user would like to  
+         set the login credential from the command line.
+
+Samples
+========
+1. Samples to get started
+1.1 login.php
+      -- Log in to VMware vCloud Director. 
+
+2. Samples in a work flow. You can run these samples in the listed order.
+2.1 vimserver.php
+      -- Register or unregister or enable or disable a Vim server.
+
+2.2 host.php
+      -- Prepare or un-prepare or enable or disable a host.
+
+2.3 createprovidervdc.php 
+      -- Create a provider vDC.
+
+2.4 createextnet.php
+      -- Create an external network.
+
+2.5 createnetpool.php
+      -- Create a portgroup type of network pool.
+ 
+2.6 createorg.php
+      -- Create an organization.
+
+2.7 createvdc.php
+      -- Create a vDC.
+
+2.8 uploadvapptemplate.php
+      -- Upload a vApp template.
+
+2.9 createcatalog.php
+      -- Create a catalog in the organization.
+
+2.10 createcatalogitem.php
+      -- Add a catalog item (a vApp template or a media) to a catalog.
+
+2.11 createorgnetwork.php
+      -- Add a network to the organization.
+
+2.12 instantiatevapptemplate.php
+      -- Instantiate the vApp template with the default settings to a vApp.
+
+2.13 updatevm.php (optional in the work flow)
+      -- Update memory or add a disk or modify guest customization settings of
+         the virtual machine.
+
+2.14 deployvapp.php
+      -- Deploy and powerOn the vApp.
+
+2.15 ssologin.php
+      -- SSO Log in to VMware vCloud Director by using SAML Assertion XML.
+
+2.16 externalnetworkcrud.php
+      -- Create, Get, Update and Delete an External Network.
+
+2.17 networkpoolcrud.php
+      -- Create, Get, Update and Delete Network Pool.
+
+2.18 providervdccrud.php
+      -- Create, Get, Update and Delete Provider Vdc.
+
+3. Other samples
+3.1  hellovcloud.php
+      -- A sample in a work flow. It does logging in, browsing an
+         organization, finding a vApp template, getting vDC, instantiating
+         the vApp template, deploying and powering on the vApp, getting
+         information about the vApp, and finally deleting the vApp and
+         logging out to the vCloud.  You can run it from the directory
+         where it is installed.
+
+3.2  importvm.php
+      -- Import a VM as a vApp or vApp template to vDC.
+
+3.3  recomposevapp.php
+      -- Add a virtual machine from a vApp template to an existing vApp.
+
+3.4  query.php
+      -- A sample demonstrates how to use vCloud Director query service.
+
+3.5  enableblockingtasks.php
+      -- A sample demonstrates enabling blocking task operations.
+
+3.6  callout.php
+      -- A sample demonstrates how to use the callout feature. Including
+         configuring AMQP broker in vCloud Director, processing notification
+         from a queue.

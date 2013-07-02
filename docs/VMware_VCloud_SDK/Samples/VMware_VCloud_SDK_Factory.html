@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_SDK_Factory</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_SDK_Factory</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A factory class to get a VMware vCloud resource entity mapped SDK object.</p>
+		<p class="notes">
+			Located in <a class="field" href="_Factory.php.html">/Factory.php</a> (line <span class="field"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Factory.php.html#a27">27</a></span>)
+		</p>
+		
+				
+		<pre><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a>
+   |
+   --VMware_VCloud_SDK_Factory</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+										
+				<div class="method-definition">
+					static 						<span class="method-result">mixed</span>
+										<a href="#create" title="details" class="method-name">create</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service.html">VMware_VCloud_SDK_Service</a></span>&nbsp;<span class="var-name">$svc</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>)
+									</div>
+																							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$svc">VMware_VCloud_SDK_Abstract::$svc</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$url">VMware_VCloud_SDK_Abstract::$url</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodcreate" id="create"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static create</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Factory.php.html#a201">201</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Static method for creating a VMware vCloud SDK object. The object type</p>
+<p class="description"><p>is constructed based on the type of the input vCloud data object or a   URL string, which represents an VMware vCloud resource entity or the   entry point of these resource entities, from where to get references or   links of the resource entities.</p><p>Table below lists how to get a reference type for a VMware vCloud   entity. To be simple, here omits the package name (VMware_VCloud_SDK)   from the class name. Each line is in the following format:</p><p>[SDK Object to creat] &lt;= [SDK Object to invoke the get reference method]                            -&gt;[Method to get ReferenceType object]   <ul><li>Org          &lt;= Service-&gt;getOrgRefs()</li><li>Vdc          &lt;= Org-&gt;getVdcRefs()</li><li>Catalog      &lt;= Org-&gt;getCatalogRefs()</li><li>Task         &lt;= Org-&gt;getTasks()</li><li>CatalogItem  &lt;= Catalog-&gt;getCatalogItemRefs()</li><li>Media        &lt;= Vdc-&gt;getMediaRefs()</li><li>Network      &lt;= Vdc-&gt;getAvailableNetworkRefs()</li><li>VApp         &lt;= Vdc-&gt;getVAppRefs() or VApp-&gt;getContainedVAppRefs()</li><li>VAppTemplate &lt;= Vdc-&gt;getVAppTemplateRefs()</li><li>Vm           &lt;= VApp-&gt;getContainedVmRefs() or VAppTemplate-&gt;getContainedVms()</li><li>Disk         &lt;= Vdc-&gt;getDiskRefs()</li><li>VdcStorageProfile &lt;= Vdc-&gt;getVdcStorageProfileRefs()</li><li>AdminOrg     &lt;= Admin-&gt;getAdminOrgRefs()</li><li>ProviderVdc  &lt;= Admin-&gt;getProviderVdcRefs()</li><li>Role         &lt;= Admin-&gt;getRoleRefs()</li><li>AdminVdc     &lt;= AdminOrg-&gt;getAdminVdcRefs()</li><li>AdminCatalog &lt;= AdminOrg-&gt;getAdminCatalogRefs()</li><li>AdminNetwork &lt;= AdminOrg-&gt;getAdminNetworkRefs()</li><li>Group        &lt;= AdminOrg-&gt;getGroupRefs()</li><li>User         &lt;= AdminOrg-&gt;getUserRefs()</li><li>Right        &lt;= Admin-&gt;getRightRefs()</li><li>AdminVdcStorageProfile &lt;= AdminVdc-&gt;getAdminVdcStorageProfileRefs()</li><li>ProviderVdcStorageProfile &lt;= AdminVdcStorageProfile-&gt;getProviderVdcStorageProfileRefs()</li><li>Extension_Datastore           &lt;= Extension-&gt;getDatastoreRefs()</li><li>Extension_Host                &lt;= Extension-&gt;getHostRefs()</li><li>Extension_VMWExternalNetwork  &lt;= Extension-&gt;getVMWExternalNetworkRefs()</li><li>Extension_VMWNetworkPool      &lt;= Extension-&gt;getVMWNetworkPoolRefs()</li><li>Extension_VMWProviderVdc      &lt;= Extension-&gt;getVMWProviderVdcRefs()</li><li>Extension_VimServer           &lt;= Extension-&gt;getVimServerRefs()</li><li>Extension_BlockingTask        &lt;= Extension-&gt;getBlockingTaskRefs()</li><li>Extension_StrandedItem        &lt;= Extension-&gt;getStrandedItems()</li><li>Extension_VMWProviderVdcStorageProfile &lt;= Extension_VMWProviderVdc-&gt;getProviderVdcStorageProfileRefs()</li><li>Extension_Service             &lt;= Extension-&gt;getServiceRef()</li><li>Extension_ServiceLink         &lt;= Extension-&gt;getServiceLinkRef()</li><li>Extension_APIDefinition       &lt;= Extension-&gt;getAPIDefinitionRef()</li><li>Extension_ResourceClass       &lt;= Extension-&gt;getResourceClassRef()</li><li>Extension_ResourceClassAction &lt;= Extension-&gt;getResourceClassActionRef()</li><li>Extension_AclRule             &lt;= Extension-&gt;getAclRuleRef()</li><li>Extension_serviceResources    &lt;= Extension-&gt;getserviceResourcesRef()</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A VMware vCloud SDK object</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		static <span class="method-result">mixed</span>
+		<span class="method-name">
+			create
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service.html">VMware_VCloud_SDK_Service</a></span>&nbsp;<span class="var-name">$svc</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service.html">VMware_VCloud_SDK_Service</a></span>
+				<span class="var-name">$svc</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$obj</span><span class="var-description">: A data object represents or references a vCloud entity                    or the URL of a vCloud entity.</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#method__construct">VMware_VCloud_SDK_Abstract::__construct()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methoddestroy">VMware_VCloud_SDK_Abstract::destroy()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedLinks">VMware_VCloud_SDK_Abstract::getContainedLinks()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedRefs">VMware_VCloud_SDK_Abstract::getContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainerLink">VMware_VCloud_SDK_Abstract::getContainerLink()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetDataObj">VMware_VCloud_SDK_Abstract::getDataObj()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetEntityId">VMware_VCloud_SDK_Abstract::getEntityId()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetMetadataUrl">VMware_VCloud_SDK_Abstract::getMetadataUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetObjsByContainedRefs">VMware_VCloud_SDK_Abstract::getObjsByContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetRef">VMware_VCloud_SDK_Abstract::getRef()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUrl">VMware_VCloud_SDK_Abstract::getUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUuid">VMware_VCloud_SDK_Abstract::getUuid()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:56:43 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

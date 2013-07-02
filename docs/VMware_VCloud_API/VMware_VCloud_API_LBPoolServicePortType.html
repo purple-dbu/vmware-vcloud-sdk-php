@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_API_LBPoolServicePortType</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_API_LBPoolServicePortType</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Represents a service port in a load balancer pool.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Ecosystem Engineering</li>
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28788">28788</a></span>)
+		</p>
+		
+				
+		<pre><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a>
+   |
+   --VMware_VCloud_API_LBPoolServicePortType</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																				<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
+				</div>
+																																																																																				<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Algorithm" title="details" class="var-name">$Algorithm</a>
+				</div>
+																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$HealthCheck" title="details" class="var-name">$HealthCheck</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$HealthCheckPort" title="details" class="var-name">$HealthCheckPort</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$IsEnabled" title="details" class="var-name">$IsEnabled</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespace" title="details" class="var-name">$namespace</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespacedef" title="details" class="var-name">$namespacedef</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Port" title="details" class="var-name">$Port</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Protocol" title="details" class="var-name">$Protocol</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$tagName" title="details" class="var-name">$tagName</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																						
+				<div class="method-definition">
+											<span class="method-result">VMware_VCloud_API_LBPoolServicePortType</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Protocol</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Algorithm</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Port</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$HealthCheckPort</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$HealthCheck</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addHealthCheck" title="details" class="method-name">addHealthCheck</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#build" title="details" class="method-name">build</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildAttributes" title="details" class="method-name">buildAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildChildren" title="details" class="method-name">buildChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#export" title="details" class="method-name">export</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportAttributes" title="details" class="method-name">exportAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportChildren" title="details" class="method-name">exportChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAlgorithm" title="details" class="method-name">getAlgorithm</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getHealthCheck" title="details" class="method-name">getHealthCheck</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getHealthCheckPort" title="details" class="method-name">getHealthCheckPort</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getIsEnabled" title="details" class="method-name">getIsEnabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getPort" title="details" class="method-name">getPort</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getProtocol" title="details" class="method-name">getProtocol</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_tagName" title="details" class="method-name">get_tagName</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#hasContent" title="details" class="method-name">hasContent</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAlgorithm" title="details" class="method-name">setAlgorithm</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Algorithm</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHealthCheck" title="details" class="method-name">setHealthCheck</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$HealthCheck</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHealthCheckPort" title="details" class="method-name">setHealthCheckPort</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$HealthCheckPort</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setIsEnabled" title="details" class="method-name">setIsEnabled</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$IsEnabled</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setPort" title="details" class="method-name">setPort</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Port</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setProtocol" title="details" class="method-name">setProtocol</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Protocol</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_tagName" title="details" class="method-name">set_tagName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$defaultNS</span>
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28798">28798</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#var$defaultNS">VMware_VCloud_API_VCloudExtensibleType::$defaultNS</a></dt>
+					</dl>
+		
+		
+
+</div>
+
+<a name="var$Algorithm" id="$Algorithm"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Algorithm</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28791">28791</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$HealthCheck" id="$HealthCheck"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$HealthCheck</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28794">28794</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$HealthCheckPort" id="$HealthCheckPort"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$HealthCheckPort</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28793">28793</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$IsEnabled" id="$IsEnabled"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$IsEnabled</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28789">28789</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$namespace" id="$namespace"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespace</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28795">28795</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#var$namespace">VMware_VCloud_API_VCloudExtensibleType::$namespace</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$namespacedef" id="$namespacedef"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespacedef</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28796">28796</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#var$namespacedef">VMware_VCloud_API_VCloudExtensibleType::$namespacedef</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$Port" id="$Port"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Port</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28792">28792</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Protocol" id="$Protocol"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Protocol</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28790">28790</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tagName" id="$tagName"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$tagName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28797">28797</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#var$tagName">VMware_VCloud_API_VCloudExtensibleType::$tagName</a></dt>
+					</dl>
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#var$VCloudExtension">VMware_VCloud_API_VCloudExtensibleType::$VCloudExtension</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28809">28809</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">VMware_VCloud_API_LBPoolServicePortType</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Protocol</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Algorithm</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Port</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$HealthCheckPort</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$HealthCheck</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$VCloudExtension</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_VCloudExtensionType objects</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$IsEnabled</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Protocol</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Algorithm</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Port</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$HealthCheckPort</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$HealthCheck</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_LBPoolHealthCheckType objects</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#method__construct">VMware_VCloud_API_VCloudExtensibleType::__construct()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodaddHealthCheck" id="addHealthCheck"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addHealthCheck</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28858">28858</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addHealthCheck
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28946">28946</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			build
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuild">VMware_VCloud_API_VCloudExtensibleType::build()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28967">28967</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildAttributes">VMware_VCloud_API_VCloudExtensibleType::buildAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildChildren" id="buildChildren"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28975">28975</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$child</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeName</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildChildren">VMware_VCloud_API_VCloudExtensibleType::buildChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexport" id="export"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28861">28861</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			export
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespacedef</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexport">VMware_VCloud_API_VCloudExtensibleType::export()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28891">28891</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportAttributes">VMware_VCloud_API_VCloudExtensibleType::exportAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportChildren" id="exportChildren"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28896">28896</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportChildren">VMware_VCloud_API_VCloudExtensibleType::exportChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodgetAlgorithm" id="getAlgorithm"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAlgorithm</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28834">28834</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAlgorithm
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetHealthCheck" id="getHealthCheck"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHealthCheck</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28852">28852</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getHealthCheck
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetHealthCheckPort" id="getHealthCheckPort"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHealthCheckPort</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28846">28846</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getHealthCheckPort
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetIsEnabled" id="getIsEnabled"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getIsEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28822">28822</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getIsEnabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPort" id="getPort"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPort</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28840">28840</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getPort
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetProtocol" id="getProtocol"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getProtocol</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28828">28828</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getProtocol
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_tagName" id="get_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28859">28859</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_tagName
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodget_tagName">VMware_VCloud_API_VCloudExtensibleType::get_tagName()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodhasContent" id="hasContent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28931">28931</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hasContent
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodhasContent">VMware_VCloud_API_VCloudExtensibleType::hasContent()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodsetAlgorithm" id="setAlgorithm"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAlgorithm</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28837">28837</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAlgorithm
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Algorithm</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Algorithm</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHealthCheck" id="setHealthCheck"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHealthCheck</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28855">28855</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHealthCheck
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$HealthCheck</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$HealthCheck</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHealthCheckPort" id="setHealthCheckPort"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHealthCheckPort</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28849">28849</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHealthCheckPort
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$HealthCheckPort</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$HealthCheckPort</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetIsEnabled" id="setIsEnabled"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setIsEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28825">28825</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setIsEnabled
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$IsEnabled</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$IsEnabled</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPort" id="setPort"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPort</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28843">28843</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setPort
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Port</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetProtocol" id="setProtocol"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setProtocol</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28831">28831</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setProtocol
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Protocol</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Protocol</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a28860">28860</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_tagName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tagName</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodset_tagName">VMware_VCloud_API_VCloudExtensibleType::set_tagName()</a></dt>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#method__construct">VMware_VCloud_API_VCloudExtensibleType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodaddVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::addVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuild">VMware_VCloud_API_VCloudExtensibleType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildAttributes">VMware_VCloud_API_VCloudExtensibleType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildChildren">VMware_VCloud_API_VCloudExtensibleType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexport">VMware_VCloud_API_VCloudExtensibleType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportAttributes">VMware_VCloud_API_VCloudExtensibleType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportChildren">VMware_VCloud_API_VCloudExtensibleType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodgetVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::getVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodget_anyAttributes">VMware_VCloud_API_VCloudExtensibleType::get_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodget_tagName">VMware_VCloud_API_VCloudExtensibleType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodhasContent">VMware_VCloud_API_VCloudExtensibleType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodsetVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::setVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodset_anyAttributes">VMware_VCloud_API_VCloudExtensibleType::set_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodset_tagName">VMware_VCloud_API_VCloudExtensibleType::set_tagName()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:56:03 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

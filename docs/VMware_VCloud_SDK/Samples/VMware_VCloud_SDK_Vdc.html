@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_SDK_Vdc</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_SDK_Vdc</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A class provides convenient methods on a VMware vCloud vDC entity.</p>
+		<p class="notes">
+			Located in <a class="field" href="_VCloud.php.html">/VCloud.php</a> (line <span class="field"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a209">209</a></span>)
+		</p>
+		
+				
+		<pre><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a>
+   |
+   --VMware_VCloud_SDK_Vdc</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addResourceToCatalog" title="details" class="method-name">addResourceToCatalog</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$resourceRef</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CatalogType.html">VMware_VCloud_API_CatalogType</a></span>&nbsp;<span class="var-name">$catalog</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$catalogRef</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>
+										<a href="#captureVApp" title="details" class="method-name">captureVApp</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html">VMware_VCloud_API_CaptureVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#checkCatalogForDuplicates" title="details" class="method-name">checkCatalogForDuplicates</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$catalogRef</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$resourceName</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+										<a href="#cloneMoveMedia" title="details" class="method-name">cloneMoveMedia</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneMediaParamsType.html">VMware_VCloud_API_CloneMediaParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+										<a href="#cloneMoveVApp" title="details" class="method-name">cloneMoveVApp</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneVAppParamsType.html">VMware_VCloud_API_CloneVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>
+										<a href="#cloneMoveVAppTemplate" title="details" class="method-name">cloneMoveVAppTemplate</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneVAppTemplateParamsType.html">VMware_VCloud_API_CloneVAppTemplateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+										<a href="#composeVApp" title="details" class="method-name">composeVApp</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ComposeVAppParamsType.html">VMware_VCloud_API_ComposeVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_DiskType.html">VMware_VCloud_API_DiskType</a></span>
+										<a href="#createDisk" title="details" class="method-name">createDisk</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_DiskCreateParamsType.html">VMware_VCloud_API_DiskCreateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAvailableNetworkRefs" title="details" class="method-name">getAvailableNetworkRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAvailableNetworks" title="details" class="method-name">getAvailableNetworks</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getDiskRefs" title="details" class="method-name">getDiskRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getDisks" title="details" class="method-name">getDisks</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getId" title="details" class="method-name">getId</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getMediaRefs" title="details" class="method-name">getMediaRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getMedias" title="details" class="method-name">getMedias</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a>|<a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataValueType.html">VMware_VCloud_API_MetadataValueType</a>|null</span>
+										<a href="#getMetadata" title="details" class="method-name">getMetadata</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgType.html">VMware_VCloud_API_OrgType</a>|null</span>
+										<a href="#getOrg" title="details" class="method-name">getOrg</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LinkType.html">VMware_VCloud_API_LinkType</a>|null</span>
+										<a href="#getOrgRef" title="details" class="method-name">getOrgRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getUploadFiles" title="details" class="method-name">getUploadFiles</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>&nbsp;<span class="var-name">$vAppTemplate</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getVAppRefs" title="details" class="method-name">getVAppRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getVApps" title="details" class="method-name">getVApps</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getVAppTemplateRefs" title="details" class="method-name">getVAppTemplateRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getVAppTemplates" title="details" class="method-name">getVAppTemplates</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VdcType.html">VMware_VCloud_API_VdcType</a></span>
+										<a href="#getVdc" title="details" class="method-name">getVdc</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+										<a href="#getVdcRef" title="details" class="method-name">getVdcRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#getVdcStorageProfileRefs" title="details" class="method-name">getVdcStorageProfileRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#getVdcStorageProfiles" title="details" class="method-name">getVdcStorageProfiles</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+										<a href="#instantiateVAppTemplate" title="details" class="method-name">instantiateVAppTemplate</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_InstantiateVAppTemplateParamsType.html">VMware_VCloud_API_InstantiateVAppTemplateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+										<a href="#instantiateVAppTemplateDefault" title="details" class="method-name">instantiateVAppTemplateDefault</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$sourceRef</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$deploy</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$powerOn</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>
+										<a href="#sendUploadVAppTemplateRequest" title="details" class="method-name">sendUploadVAppTemplateRequest</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$format</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+										<a href="#uploadFloppyMedia" title="details" class="method-name">uploadFloppyMedia</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$floppyName</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>&nbsp;<span class="var-name">$mediaType</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+										<a href="#uploadIsoMedia" title="details" class="method-name">uploadIsoMedia</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$isoName</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>&nbsp;<span class="var-name">$mediaType</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#uploadOVFAsVAppTemplate" title="details" class="method-name">uploadOVFAsVAppTemplate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ovfDescriptorPath</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">null</span>], <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$vdcStorageProfileRef</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$catalogRef</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#uploadOVFDescriptor" title="details" class="method-name">uploadOVFDescriptor</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$svc">VMware_VCloud_SDK_Abstract::$svc</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$url">VMware_VCloud_SDK_Abstract::$url</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodaddResourceToCatalog" id="addResourceToCatalog"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addResourceToCatalog</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a445">445</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add the resource to catalog.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK 5.1</li>
+				<li><span class="field">since:</span> API 1.5</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addResourceToCatalog
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$resourceRef</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CatalogType.html">VMware_VCloud_API_CatalogType</a></span>&nbsp;<span class="var-name">$catalog</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$catalogRef</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+				<span class="var-name">$catalogRef</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CatalogType.html">VMware_VCloud_API_CatalogType</a></span>
+				<span class="var-name">$catalog</span><span class="var-description">: object  $catalog</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$resourceRef</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcaptureVApp" id="captureVApp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">captureVApp</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a647">647</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Capture a vApp to create a vApp template.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>
+		<span class="method-name">
+			captureVApp
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html">VMware_VCloud_API_CaptureVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html">VMware_VCloud_API_CaptureVAppParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckCatalogForDuplicates" id="checkCatalogForDuplicates"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">checkCatalogForDuplicates</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a424">424</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if the resource name is already existing in the catalog.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK 5.1</li>
+				<li><span class="field">since:</span> API 1.5</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkCatalogForDuplicates
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$catalogRef</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$resourceName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+				<span class="var-name">$catalogRef</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$resourceName</span><span class="var-description">: Name of the vApp template to be created.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcloneMoveMedia" id="cloneMoveMedia"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">cloneMoveMedia</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a661">661</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clone or move a media image.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+		<span class="method-name">
+			cloneMoveMedia
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneMediaParamsType.html">VMware_VCloud_API_CloneMediaParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneMediaParamsType.html">VMware_VCloud_API_CloneMediaParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcloneMoveVApp" id="cloneMoveVApp"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">cloneMoveVApp</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a675">675</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clone or move a vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+		<span class="method-name">
+			cloneMoveVApp
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneVAppParamsType.html">VMware_VCloud_API_CloneVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneVAppParamsType.html">VMware_VCloud_API_CloneVAppParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcloneMoveVAppTemplate" id="cloneMoveVAppTemplate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">cloneMoveVAppTemplate</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a689">689</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clone or move a vApp template.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>
+		<span class="method-name">
+			cloneMoveVAppTemplate
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneVAppTemplateParamsType.html">VMware_VCloud_API_CloneVAppTemplateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CloneVAppTemplateParamsType.html">VMware_VCloud_API_CloneVAppTemplateParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomposeVApp" id="composeVApp"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">composeVApp</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a704">704</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compose a vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+		<span class="method-name">
+			composeVApp
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ComposeVAppParamsType.html">VMware_VCloud_API_ComposeVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ComposeVAppParamsType.html">VMware_VCloud_API_ComposeVAppParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateDisk" id="createDisk"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">createDisk</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a777">777</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a disk.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_DiskType.html">VMware_VCloud_API_DiskType</a></span>
+		<span class="method-name">
+			createDisk
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_DiskCreateParamsType.html">VMware_VCloud_API_DiskCreateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_DiskCreateParamsType.html">VMware_VCloud_API_DiskCreateParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAvailableNetworkRefs" id="getAvailableNetworkRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAvailableNetworkRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a274">274</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to VMware vCloud available organization networks.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAvailableNetworkRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the available networks. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAvailableNetworks" id="getAvailableNetworks"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAvailableNetworks</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a288">288</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get VMware vCloud available organization networks/organization vdc networks.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_OrgNetworkType object array for 1.5</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAvailableNetworks
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the available networks. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDiskRefs" id="getDiskRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDiskRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a791">791</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to all disks or a disk with a given name in the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ResourceReferenceType object array</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getDiskRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the disk. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDisks" id="getDisks"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDisks</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a804">804</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get all disks or disk with a given name in the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_DiskType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getDisks
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the disk. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetId" id="getId"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getId</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a239">239</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructs vCloud ID of this vDC from its UUID.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getId
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMediaRefs" id="getMediaRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMediaRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a532">532</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to all VMware vCloud media or media with the given  name in the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ResourceReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getMediaRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the media. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMedias" id="getMedias"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMedias</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a545">545</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get all VMware vCloud media or media with the given name in the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_MediaType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getMedias
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the media. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMetadata" id="getMetadata"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMetadata</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a765">765</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get metadata associated with the vDC or metadata associated with  the vDC for the specified key in the specified domain.</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a>|<a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataValueType.html">VMware_VCloud_API_MetadataValueType</a>|null</span>
+		<span class="method-name">
+			getMetadata
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$domain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOrg" id="getOrg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrg</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a261">261</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the container entity of the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgType.html">VMware_VCloud_API_OrgType</a>|null</span>
+		<span class="method-name">
+			getOrg
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgRef" id="getOrgRef"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a250">250</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the link to the container of the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LinkType.html">VMware_VCloud_API_LinkType</a>|null</span>
+		<span class="method-name">
+			getOrgRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUploadFiles" id="getUploadFiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUploadFiles</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a475">475</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get file information for uploading vApp template.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_FileType object array</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getUploadFiles
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>&nbsp;<span class="var-name">$vAppTemplate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>
+				<span class="var-name">$vAppTemplate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVAppRefs" id="getVAppRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVAppRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a301">301</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to all vApps or vApps with a given name in the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ResourceReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getVAppRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVApps" id="getVApps"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVApps</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a314">314</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get all vApps or vApps with a given name in the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_VAppType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getVApps
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVAppTemplateRefs" id="getVAppTemplateRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVAppTemplateRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a328">328</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to all VMware vCloud vApp templates or vApp templates with  a given name in the vDC.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getVAppTemplateRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp template. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVAppTemplates" id="getVAppTemplates"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVAppTemplates</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a344">344</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get all VMware vCloud vApp templates in this vDC or vApp templates with  a given name.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_VAppTemplateType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getVAppTemplates
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp template. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVdc" id="getVdc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVdc</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a228">228</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a VMware vCloud vDC entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VdcType.html">VMware_VCloud_API_VdcType</a></span>
+		<span class="method-name">
+			getVdc
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVdcRef" id="getVdcRef"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVdcRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a217">217</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a reference to a VMware vCloud vDC entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+		<span class="method-name">
+			getVdcRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVdcStorageProfileRefs" id="getVdcStorageProfileRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVdcStorageProfileRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a817">817</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get vDC storage profile references.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array or null</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			getVdcStorageProfileRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vDC storage profile. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVdcStorageProfiles" id="getVdcStorageProfiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVdcStorageProfiles</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a831">831</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get vDC storage profiles.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_VdcStorageProfileType object array                     or null</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			getVdcStorageProfiles
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vDC storage profile. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinstantiateVAppTemplate" id="instantiateVAppTemplate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">instantiateVAppTemplate</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a719">719</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instantiate a vApp template by providing a  VMware_VCloud_API_InstantiateVAppTemplateParamsType data object.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+		<span class="method-name">
+			instantiateVAppTemplate
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_InstantiateVAppTemplateParamsType.html">VMware_VCloud_API_InstantiateVAppTemplateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_InstantiateVAppTemplateParamsType.html">VMware_VCloud_API_InstantiateVAppTemplateParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinstantiateVAppTemplateDefault" id="instantiateVAppTemplateDefault"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">instantiateVAppTemplateDefault</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a741">741</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instantiate a vApp template with default settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+		<span class="method-name">
+			instantiateVAppTemplateDefault
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$sourceRef</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$deploy</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$powerOn</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp to be created</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+				<span class="var-name">$sourceRef</span><span class="var-description">: Reference to the                                                      source vApp template</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$deploy</span><span class="var-description">: A flag indicates deploy or not after                               instantiation</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$powerOn</span><span class="var-description">: A flag indicates power on or not after                               instantiation</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$description</span><span class="var-description">: Description of the vApp to be created</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsendUploadVAppTemplateRequest" id="sendUploadVAppTemplateRequest"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">sendUploadVAppTemplateRequest</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a510">510</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Send a upload vApp template request.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateType.html">VMware_VCloud_API_VAppTemplateType</a></span>
+		<span class="method-name">
+			sendUploadVAppTemplateRequest
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$format</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp template</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$format</span><span class="var-description">: Format of the package to be                                     uploaded</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$description</span><span class="var-description">: Description of the vApp template                                     to be created</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$manifestRequired</span><span class="var-description">: A flag indicates the manifest                                     file is required or not</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduploadFloppyMedia" id="uploadFloppyMedia"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">uploadFloppyMedia</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a635">635</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Upload a floppy format media.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+		<span class="method-name">
+			uploadFloppyMedia
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$floppyName</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>&nbsp;<span class="var-name">$mediaType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$floppyName</span><span class="var-description">: Full path of a floppy file</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+				<span class="var-name">$mediaType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduploadIsoMedia" id="uploadIsoMedia"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">uploadIsoMedia</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a622">622</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Upload an ISO format media.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+		<span class="method-name">
+			uploadIsoMedia
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$isoName</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>&nbsp;<span class="var-name">$mediaType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$isoName</span><span class="var-description">: Media full path file name</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MediaType.html">VMware_VCloud_API_MediaType</a></span>
+				<span class="var-name">$mediaType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduploadOVFAsVAppTemplate" id="uploadOVFAsVAppTemplate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">uploadOVFAsVAppTemplate</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a365">365</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Upload vApp template from an OVF pacakage.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A URL of the newly created vApp template.</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			uploadOVFAsVAppTemplate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ovfDescriptorPath</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">null</span>], <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$vdcStorageProfileRef</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$catalogRef</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp template to be created</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ovfDescriptorPath</span><span class="var-description">: Path to the OVF descriptor</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$description</span><span class="var-description">: Description of the vApp template to be                                          created</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$manifestRequired</span><span class="var-description">: A flag indicates the manifest file is                                          required or not</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+				<span class="var-name">$vdcStorageProfileRef</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+				<span class="var-name">$catalogRef</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduploadOVFDescriptor" id="uploadOVFDescriptor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">uploadOVFDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a462">462</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Upload OVF descriptor.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			uploadOVFDescriptor
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: HTTP request URL</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: Path to the OVF descriptor</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#method__construct">VMware_VCloud_SDK_Abstract::__construct()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methoddestroy">VMware_VCloud_SDK_Abstract::destroy()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedLinks">VMware_VCloud_SDK_Abstract::getContainedLinks()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedRefs">VMware_VCloud_SDK_Abstract::getContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainerLink">VMware_VCloud_SDK_Abstract::getContainerLink()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetDataObj">VMware_VCloud_SDK_Abstract::getDataObj()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetEntityId">VMware_VCloud_SDK_Abstract::getEntityId()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetMetadataUrl">VMware_VCloud_SDK_Abstract::getMetadataUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetObjsByContainedRefs">VMware_VCloud_SDK_Abstract::getObjsByContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetRef">VMware_VCloud_SDK_Abstract::getRef()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUrl">VMware_VCloud_SDK_Abstract::getUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUuid">VMware_VCloud_SDK_Abstract::getUuid()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:56:52 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

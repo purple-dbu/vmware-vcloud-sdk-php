@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_SDK_VApp</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_SDK_VApp</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A class provides convenient methods on a VMware vCloud vApp entity.</p>
+		<p class="notes">
+			Located in <a class="field" href="_VCloud.php.html">/VCloud.php</a> (line <span class="field"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1060">1060</a></span>)
+		</p>
+		
+				
+		<pre><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a>
+   |
+   --<a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html">VMware_VCloud_SDK_VApp_Abstract</a>
+      |
+      --VMware_VCloud_SDK_VApp</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																						
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#changeOwner" title="details" class="method-name">changeOwner</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OwnerType.html">VMware_VCloud_API_OwnerType</a></span>&nbsp;<span class="var-name">$owner</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#createSnapshot" title="details" class="method-name">createSnapshot</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CreateSnapshotParamsType.html">VMware_VCloud_API_CreateSnapshotParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#disableNestedHypervisor" title="details" class="method-name">disableNestedHypervisor</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#enableNestedHypervisor" title="details" class="method-name">enableNestedHypervisor</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#enterMaintenanceMode" title="details" class="method-name">enterMaintenanceMode</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#exitMaintenanceMode" title="details" class="method-name">exitMaintenanceMode</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getContainedVAppRefs" title="details" class="method-name">getContainedVAppRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getContainedVApps" title="details" class="method-name">getContainedVApps</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getContainedVmRefs" title="details" class="method-name">getContainedVmRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getContainedVms" title="details" class="method-name">getContainedVms</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ControlAccessParamsType.html">VMware_VCloud_API_ControlAccessParamsType</a></span>
+										<a href="#getControlAccess" title="details" class="method-name">getControlAccess</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getId" title="details" class="method-name">getId</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LeaseSettingsSectionType.html">VMware_VCloud_API_LeaseSettingsSectionType</a></span>
+										<a href="#getLeaseSettings" title="details" class="method-name">getLeaseSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_NetworkConfigSectionType.html">VMware_VCloud_API_NetworkConfigSectionType</a></span>
+										<a href="#getNetworkConfigSettings" title="details" class="method-name">getNetworkConfigSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_NetworkSection_Type.html">VMware_VCloud_API_OVF_NetworkSection_Type</a></span>
+										<a href="#getNetworkSettings" title="details" class="method-name">getNetworkSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">String</span>
+										<a href="#getOVFDescriptor" title="details" class="method-name">getOVFDescriptor</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OwnerType.html">VMware_VCloud_API_OwnerType</a></span>
+										<a href="#getOwner" title="details" class="method-name">getOwner</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SnapshotSectionType.html">VMware_VCloud_API_SnapshotSectionType</a></span>
+										<a href="#getSnapshotSection" title="details" class="method-name">getSnapshotSection</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_StartupSection_Type.html">VMware_VCloud_API_OVF_StartupSection_Type</a></span>
+										<a href="#getStartupSettings" title="details" class="method-name">getStartupSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getStatus" title="details" class="method-name">getStatus</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+										<a href="#getVApp" title="details" class="method-name">getVApp</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+										<a href="#getVAppRef" title="details" class="method-name">getVAppRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VdcType.html">VMware_VCloud_API_VdcType</a>|null</span>
+										<a href="#getVdc" title="details" class="method-name">getVdc</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LinkType.html">VMware_VCloud_API_LinkType</a>|null</span>
+										<a href="#getVdcRef" title="details" class="method-name">getVdcRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#modify" title="details" class="method-name">modify</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ControlAccessParamsType.html">VMware_VCloud_API_ControlAccessParamsType</a></span>
+										<a href="#modifyControlAccess" title="details" class="method-name">modifyControlAccess</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ControlAccessParamsType.html">VMware_VCloud_API_ControlAccessParamsType</a></span>&nbsp;<span class="var-name">$controlAccess</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#modifyLeaseSettings" title="details" class="method-name">modifyLeaseSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LeaseSettingsSectionType.html">VMware_VCloud_API_LeaseSettingsSectionType</a></span>&nbsp;<span class="var-name">$leaseSettings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#modifyNetworkConfigSettings" title="details" class="method-name">modifyNetworkConfigSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_NetworkConfigSectionType.html">VMware_VCloud_API_NetworkConfigSectionType</a></span>&nbsp;<span class="var-name">$netConfig</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#modifyStartupSettings" title="details" class="method-name">modifyStartupSettings</a>
+											(<span class="var-type">VMware_VCloud_API_StartupSection_Type</span>&nbsp;<span class="var-name">$startupSection</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#recompose" title="details" class="method-name">recompose</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_RecomposeVAppParamsType.html">VMware_VCloud_API_RecomposeVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#removeAllSnapshots" title="details" class="method-name">removeAllSnapshots</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a>|null</span>
+										<a href="#resetVAppNetwork" title="details" class="method-name">resetVAppNetwork</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#revertToCurrentSnapshot" title="details" class="method-name">revertToCurrentSnapshot</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$svc">VMware_VCloud_SDK_Abstract::$svc</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$url">VMware_VCloud_SDK_Abstract::$url</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodchangeOwner" id="changeOwner"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">changeOwner</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1424">1424</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Change vApp owner.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			changeOwner
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OwnerType.html">VMware_VCloud_API_OwnerType</a></span>&nbsp;<span class="var-name">$owner</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OwnerType.html">VMware_VCloud_API_OwnerType</a></span>
+				<span class="var-name">$owner</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateSnapshot" id="createSnapshot"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">createSnapshot</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1516">1516</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates new snapshot of a virtual machine or of all the virtual machines in a vApp. Prior to creation of the new</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			createSnapshot
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CreateSnapshotParamsType.html">VMware_VCloud_API_CreateSnapshotParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CreateSnapshotParamsType.html">VMware_VCloud_API_CreateSnapshotParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisableNestedHypervisor" id="disableNestedHypervisor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">disableNestedHypervisor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1530">1530</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Hide hardware-assisted CPU virtualization from guest OS.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			disableNestedHypervisor
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodenableNestedHypervisor" id="enableNestedHypervisor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableNestedHypervisor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1542">1542</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Expose hardware-assisted CPU virtualization to guest OS.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			enableNestedHypervisor
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodenterMaintenanceMode" id="enterMaintenanceMode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">enterMaintenanceMode</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1437">1437</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">VApp enters into maintenance mode.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			enterMaintenanceMode
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodexitMaintenanceMode" id="exitMaintenanceMode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">exitMaintenanceMode</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1449">1449</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">VApp exits maintenance mode.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			exitMaintenanceMode
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetContainedVAppRefs" id="getContainedVAppRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getContainedVAppRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1161">1161</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to contained vApps or contained vApps with given name.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array.</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getContainedVAppRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp. If null, returns all contained                        vApps.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetContainedVApps" id="getContainedVApps"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getContainedVApps</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1211">1211</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get contained vApps.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_VAppType object array.</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getContainedVApps
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vApp. If null, returns all contained                        vApps.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetContainedVmRefs" id="getContainedVmRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getContainedVmRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1185">1185</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to contained VMs or contained VMs with given name.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array.</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getContainedVmRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the VM. If null, returns all contained VMs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetContainedVms" id="getContainedVms"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getContainedVms</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1240">1240</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get contained VMs.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_VmType object array.</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getContainedVms
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the VM. If null, returns all contained VMs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetControlAccess" id="getControlAccess"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getControlAccess</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1358">1358</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the control access of the vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ControlAccessParamsType.html">VMware_VCloud_API_ControlAccessParamsType</a></span>
+		<span class="method-name">
+			getControlAccess
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetId" id="getId"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getId</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1090">1090</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructs vCloud ID of this vApp from its UUID.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getId
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLeaseSettings" id="getLeaseSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1294">1294</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the lease settings of this vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LeaseSettingsSectionType.html">VMware_VCloud_API_LeaseSettingsSectionType</a></span>
+		<span class="method-name">
+			getLeaseSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNetworkConfigSettings" id="getNetworkConfigSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNetworkConfigSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1268">1268</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get network configuration settings of the vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_NetworkConfigSectionType.html">VMware_VCloud_API_NetworkConfigSectionType</a></span>
+		<span class="method-name">
+			getNetworkConfigSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNetworkSettings" id="getNetworkSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNetworkSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1346">1346</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the network settings of this vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_NetworkSection_Type.html">VMware_VCloud_API_OVF_NetworkSection_Type</a></span>
+		<span class="method-name">
+			getNetworkSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOVFDescriptor" id="getOVFDescriptor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOVFDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1489">1489</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve the OVF descriptor of a vApp directly.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">String</span>
+		<span class="method-name">
+			getOVFDescriptor
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOwner" id="getOwner"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOwner</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1411">1411</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get vApp owner.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OwnerType.html">VMware_VCloud_API_OwnerType</a></span>
+		<span class="method-name">
+			getOwner
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSnapshotSection" id="getSnapshotSection"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSnapshotSection</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1501">1501</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve SnapshotSection element for a vApp or VM.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SnapshotSectionType.html">VMware_VCloud_API_SnapshotSectionType</a></span>
+		<span class="method-name">
+			getSnapshotSection
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStartupSettings" id="getStartupSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStartupSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1320">1320</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get startup section of the vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_StartupSection_Type.html">VMware_VCloud_API_OVF_StartupSection_Type</a></span>
+		<span class="method-name">
+			getStartupSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStatus" id="getStatus"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStatus</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1399">1399</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the status of this vApp.</p>
+<p class="description"><p>The following are the possible vApp status:  <ul><li>-1 -- could not be created</li><li>0 -- unresolved</li><li>1 -- resolved</li><li>3 -- suspended</li><li>4 -- powered on</li><li>5 -- waiting for user input</li><li>6 -- in an unknown state</li><li>7 -- in an unrecognized state</li><li>8 -- powered off</li><li>9 -- in an inconsistent state</li><li>10 -- VMs in the vApp are in mixed states</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> vApp status</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getStatus
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodgetStatus">VMware_VCloud_SDK_VApp_Abstract::getStatus()</a></dt>
+						<dd>The abstract getStatus() function.</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetVApp" id="getVApp"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVApp</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1079">1079</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a VMware vCloud vApp entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+		<span class="method-name">
+			getVApp
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVAppRef" id="getVAppRef"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVAppRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1068">1068</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a reference to a VMware vCloud vApp entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+		<span class="method-name">
+			getVAppRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVdc" id="getVdc"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVdc</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1112">1112</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the vDC to which this vApp belongs.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VdcType.html">VMware_VCloud_API_VdcType</a>|null</span>
+		<span class="method-name">
+			getVdc
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVdcRef" id="getVdcRef"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVdcRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1101">1101</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the link to the vDC to which this vApp belongs.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LinkType.html">VMware_VCloud_API_LinkType</a>|null</span>
+		<span class="method-name">
+			getVdcRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmodify" id="modify"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">modify</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1126">1126</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify name and/or description of this vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			modify
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: New name of the vApp</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$description</span><span class="var-description">: New description of the vApp</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodifyControlAccess" id="modifyControlAccess"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">modifyControlAccess</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1371">1371</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify the control access of the vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ControlAccessParamsType.html">VMware_VCloud_API_ControlAccessParamsType</a></span>
+		<span class="method-name">
+			modifyControlAccess
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ControlAccessParamsType.html">VMware_VCloud_API_ControlAccessParamsType</a></span>&nbsp;<span class="var-name">$controlAccess</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ControlAccessParamsType.html">VMware_VCloud_API_ControlAccessParamsType</a></span>
+				<span class="var-name">$controlAccess</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodifyLeaseSettings" id="modifyLeaseSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">modifyLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1307">1307</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify the lease settings of this vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			modifyLeaseSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LeaseSettingsSectionType.html">VMware_VCloud_API_LeaseSettingsSectionType</a></span>&nbsp;<span class="var-name">$leaseSettings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LeaseSettingsSectionType.html">VMware_VCloud_API_LeaseSettingsSectionType</a></span>
+				<span class="var-name">$leaseSettings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodifyNetworkConfigSettings" id="modifyNetworkConfigSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">modifyNetworkConfigSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1281">1281</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify network configuration settings of the vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			modifyNetworkConfigSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_NetworkConfigSectionType.html">VMware_VCloud_API_NetworkConfigSectionType</a></span>&nbsp;<span class="var-name">$netConfig</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_NetworkConfigSectionType.html">VMware_VCloud_API_NetworkConfigSectionType</a></span>
+				<span class="var-name">$netConfig</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodifyStartupSettings" id="modifyStartupSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">modifyStartupSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1333">1333</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify the startup settings of the vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			modifyStartupSettings
+		</span>
+					(<span class="var-type">VMware_VCloud_API_StartupSection_Type</span>&nbsp;<span class="var-name">$startupSection</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">VMware_VCloud_API_StartupSection_Type</span>
+				<span class="var-name">$startupSection</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrecompose" id="recompose"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">recompose</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1146">1146</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Recompose a vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			recompose
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_RecomposeVAppParamsType.html">VMware_VCloud_API_RecomposeVAppParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_RecomposeVAppParamsType.html">VMware_VCloud_API_RecomposeVAppParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremoveAllSnapshots" id="removeAllSnapshots"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">removeAllSnapshots</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1554">1554</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes all user created snapshots for a vApp or virtual machine.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			removeAllSnapshots
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodresetVAppNetwork" id="resetVAppNetwork"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">resetVAppNetwork</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1461">1461</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resets vApp network.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a>|null</span>
+		<span class="method-name">
+			resetVAppNetwork
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodrevertToCurrentSnapshot" id="revertToCurrentSnapshot"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">revertToCurrentSnapshot</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1566">1566</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reverts a vApp or virtual machine to the current snapshot, if any.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			revertToCurrentSnapshot
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html">VMware_VCloud_SDK_VApp_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methoddelete">VMware_VCloud_SDK_VApp_Abstract::delete()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methoddeleteMetadataByKey">VMware_VCloud_SDK_VApp_Abstract::deleteMetadataByKey()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methoddeploy">VMware_VCloud_SDK_VApp_Abstract::deploy()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methoddiscardSuspendedState">VMware_VCloud_SDK_VApp_Abstract::discardSuspendedState()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodgetMetadata">VMware_VCloud_SDK_VApp_Abstract::getMetadata()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodgetStatus">VMware_VCloud_SDK_VApp_Abstract::getStatus()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodmergeMetadata">VMware_VCloud_SDK_VApp_Abstract::mergeMetadata()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodpowerOff">VMware_VCloud_SDK_VApp_Abstract::powerOff()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodpowerOn">VMware_VCloud_SDK_VApp_Abstract::powerOn()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodreboot">VMware_VCloud_SDK_VApp_Abstract::reboot()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodreset">VMware_VCloud_SDK_VApp_Abstract::reset()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodsetMetadataByKey">VMware_VCloud_SDK_VApp_Abstract::setMetadataByKey()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodshutdown">VMware_VCloud_SDK_VApp_Abstract::shutdown()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodsuspend">VMware_VCloud_SDK_VApp_Abstract::suspend()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_VApp_Abstract.html#methodundeploy">VMware_VCloud_SDK_VApp_Abstract::undeploy()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#method__construct">VMware_VCloud_SDK_Abstract::__construct()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methoddestroy">VMware_VCloud_SDK_Abstract::destroy()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedLinks">VMware_VCloud_SDK_Abstract::getContainedLinks()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedRefs">VMware_VCloud_SDK_Abstract::getContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainerLink">VMware_VCloud_SDK_Abstract::getContainerLink()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetDataObj">VMware_VCloud_SDK_Abstract::getDataObj()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetEntityId">VMware_VCloud_SDK_Abstract::getEntityId()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetMetadataUrl">VMware_VCloud_SDK_Abstract::getMetadataUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetObjsByContainedRefs">VMware_VCloud_SDK_Abstract::getObjsByContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetRef">VMware_VCloud_SDK_Abstract::getRef()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUrl">VMware_VCloud_SDK_Abstract::getUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUuid">VMware_VCloud_SDK_Abstract::getUuid()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:56:52 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

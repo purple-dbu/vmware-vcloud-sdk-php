@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_SDK_AdminOrg</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_SDK_AdminOrg</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A class provides convenient administrative methods on a VMware vCloud  organization entity.</p>
+		<p class="notes">
+			Located in <a class="field" href="_Admin.php.html">/Admin.php</a> (line <span class="field"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a286">286</a></span>)
+		</p>
+		
+				
+		<pre><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a>
+   |
+   --VMware_VCloud_SDK_AdminOrg</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgNetworkType.html">VMware_VCloud_API_OrgNetworkType</a></span>
+										<a href="#addOrgNetwork" title="details" class="method-name">addOrgNetwork</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgNetworkType.html">VMware_VCloud_API_OrgNetworkType</a></span>&nbsp;<span class="var-name">$orgNetwork</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminVdcType.html">VMware_VCloud_API_AdminVdcType</a></span>
+										<a href="#createAdminOrgVdc" title="details" class="method-name">createAdminOrgVdc</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CreateVdcParamsType.html">VMware_VCloud_API_CreateVdcParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminVdcType.html">VMware_VCloud_API_AdminVdcType</a></span>
+										<a href="#createAdminVdc" title="details" class="method-name">createAdminVdc</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminVdcType.html">VMware_VCloud_API_AdminVdcType</a></span>&nbsp;<span class="var-name">$adminVdc</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminCatalogType.html">VMware_VCloud_API_AdminCatalogType</a></span>
+										<a href="#createCatalog" title="details" class="method-name">createCatalog</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminCatalogType.html">VMware_VCloud_API_AdminCatalogType</a></span>&nbsp;<span class="var-name">$catalog</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_UserType.html">VMware_VCloud_API_UserType</a></span>
+										<a href="#createUser" title="details" class="method-name">createUser</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_UserType.html">VMware_VCloud_API_UserType</a></span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#delete" title="details" class="method-name">delete</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#deleteMetadataByKey" title="details" class="method-name">deleteMetadataByKey</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#disable" title="details" class="method-name">disable</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#enable" title="details" class="method-name">enable</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$enable</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAdminCatalogRefs" title="details" class="method-name">getAdminCatalogRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAdminCatalogs" title="details" class="method-name">getAdminCatalogs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAdminNetworkRefs" title="details" class="method-name">getAdminNetworkRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAdminNetworks" title="details" class="method-name">getAdminNetworks</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminOrgType.html">VMware_VCloud_API_AdminOrgType</a></span>
+										<a href="#getAdminOrg" title="details" class="method-name">getAdminOrg</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+										<a href="#getAdminOrgRef" title="details" class="method-name">getAdminOrgRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAdminVdcRefs" title="details" class="method-name">getAdminVdcRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAdminVdcs" title="details" class="method-name">getAdminVdcs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getGroupRefs" title="details" class="method-name">getGroupRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getGroups" title="details" class="method-name">getGroups</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></span>
+										<a href="#getGuestPersonalizationSettings" title="details" class="method-name">getGuestPersonalizationSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getId" title="details" class="method-name">getId</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a>|</span>
+										<a href="#getMetadata" title="details" class="method-name">getMetadata</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>
+										<a href="#getOperationLimitsSettings" title="details" class="method-name">getOperationLimitsSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgType.html">VMware_VCloud_API_OrgType</a>|null</span>
+										<a href="#getOrg" title="details" class="method-name">getOrg</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>
+										<a href="#getOrgEmailSettings" title="details" class="method-name">getOrgEmailSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>
+										<a href="#getOrgFederationSettings" title="details" class="method-name">getOrgFederationSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>
+										<a href="#getOrgGeneralSettings" title="details" class="method-name">getOrgGeneralSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>
+										<a href="#getOrgLdapSettings" title="details" class="method-name">getOrgLdapSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>
+										<a href="#getOrgPasswordPolicySettings" title="details" class="method-name">getOrgPasswordPolicySettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LinkType.html">VMware_VCloud_API_LinkType</a>|null</span>
+										<a href="#getOrgRef" title="details" class="method-name">getOrgRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgSettingsType.html">VMware_VCloud_API_OrgSettingsType</a></span>
+										<a href="#getOrgSettings" title="details" class="method-name">getOrgSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>
+										<a href="#getOrgVAppLeaseSettings" title="details" class="method-name">getOrgVAppLeaseSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>
+										<a href="#getOrgVAppTemplateLeaseSettings" title="details" class="method-name">getOrgVAppTemplateLeaseSettings</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Org.html">VMware_VCloud_SDK_Org</a>|null</span>
+										<a href="#getSdkOrg" title="details" class="method-name">getSdkOrg</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getUserRefs" title="details" class="method-name">getUserRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getUsers" title="details" class="method-name">getUsers</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_GroupType.html">VMware_VCloud_API_GroupType</a></span>
+										<a href="#importGroup" title="details" class="method-name">importGroup</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_GroupType.html">VMware_VCloud_API_GroupType</a></span>&nbsp;<span class="var-name">$group</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isEnabled" title="details" class="method-name">isEnabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#mergeMetadata" title="details" class="method-name">mergeMetadata</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>&nbsp;<span class="var-name">$meta</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminOrgType.html">VMware_VCloud_API_AdminOrgType</a></span>
+										<a href="#modify" title="details" class="method-name">modify</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminOrgType.html">VMware_VCloud_API_AdminOrgType</a></span>&nbsp;<span class="var-name">$adminOrg</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></span>
+										<a href="#modifyGuestPersonalizationSettings" title="details" class="method-name">modifyGuestPersonalizationSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>
+										<a href="#modifyOperationLimitsSettings" title="details" class="method-name">modifyOperationLimitsSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#postExtEvent" title="details" class="method-name">postExtEvent</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_EventType.html">VMware_VCloud_API_EventType</a></span>&nbsp;<span class="var-name">$event</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#resetLdapCertificate" title="details" class="method-name">resetLdapCertificate</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#resetLdapKeyStore" title="details" class="method-name">resetLdapKeyStore</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#resetLdapSspiKeytab" title="details" class="method-name">resetLdapSspiKeytab</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#setMetadataByKey" title="details" class="method-name">setMetadataByKey</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataValueType.html">VMware_VCloud_API_MetadataValueType</a></span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CertificateUploadSocketType.html">VMware_VCloud_API_CertificateUploadSocketType</a></span>
+										<a href="#updateLdapCertificate" title="details" class="method-name">updateLdapCertificate</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CertificateUpdateParamsType.html">VMware_VCloud_API_CertificateUpdateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_KeystoreUploadSocketType.html">VMware_VCloud_API_KeystoreUploadSocketType</a></span>
+										<a href="#updateLdapKeyStore" title="details" class="method-name">updateLdapKeyStore</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_KeystoreUpdateParamsType.html">VMware_VCloud_API_KeystoreUpdateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SspiKeytabUploadSocketType.html">VMware_VCloud_API_SspiKeytabUploadSocketType</a></span>
+										<a href="#updateLdapSspiKeytab" title="details" class="method-name">updateLdapSspiKeytab</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SspiKeytabUpdateParamsType.html">VMware_VCloud_API_SspiKeytabUpdateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>
+										<a href="#updateOrgEmailSettings" title="details" class="method-name">updateOrgEmailSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>
+										<a href="#updateOrgFederationSettings" title="details" class="method-name">updateOrgFederationSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>
+										<a href="#updateOrgGeneralSettings" title="details" class="method-name">updateOrgGeneralSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>
+										<a href="#updateOrgLdapSettings" title="details" class="method-name">updateOrgLdapSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>
+										<a href="#updateOrgPasswordPolicySettings" title="details" class="method-name">updateOrgPasswordPolicySettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgSettingsType.html">VMware_VCloud_API_OrgSettingsType</a></span>
+										<a href="#updateOrgSettings" title="details" class="method-name">updateOrgSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgSettingsType.html">VMware_VCloud_API_OrgSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>
+										<a href="#updateOrgVAppLeaseSettings" title="details" class="method-name">updateOrgVAppLeaseSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>
+										<a href="#updateOrgVAppTemplateLeaseSettings" title="details" class="method-name">updateOrgVAppTemplateLeaseSettings</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$svc">VMware_VCloud_SDK_Abstract::$svc</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$url">VMware_VCloud_SDK_Abstract::$url</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodaddOrgNetwork" id="addOrgNetwork"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addOrgNetwork</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a494">494</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add a network in an organization.</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> since version 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgNetworkType.html">VMware_VCloud_API_OrgNetworkType</a></span>
+		<span class="method-name">
+			addOrgNetwork
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgNetworkType.html">VMware_VCloud_API_OrgNetworkType</a></span>&nbsp;<span class="var-name">$orgNetwork</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgNetworkType.html">VMware_VCloud_API_OrgNetworkType</a></span>
+				<span class="var-name">$orgNetwork</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateAdminOrgVdc" id="createAdminOrgVdc"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">createAdminOrgVdc</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a437">437</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create an organization vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminVdcType.html">VMware_VCloud_API_AdminVdcType</a></span>
+		<span class="method-name">
+			createAdminOrgVdc
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CreateVdcParamsType.html">VMware_VCloud_API_CreateVdcParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CreateVdcParamsType.html">VMware_VCloud_API_CreateVdcParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateAdminVdc" id="createAdminVdc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">createAdminVdc</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a423">423</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Allocate a vDC to the organization.</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> since API version 5.1.0, since SDK 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminVdcType.html">VMware_VCloud_API_AdminVdcType</a></span>
+		<span class="method-name">
+			createAdminVdc
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminVdcType.html">VMware_VCloud_API_AdminVdcType</a></span>&nbsp;<span class="var-name">$adminVdc</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminVdcType.html">VMware_VCloud_API_AdminVdcType</a></span>
+				<span class="var-name">$adminVdc</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateCatalog" id="createCatalog"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">createCatalog</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a451">451</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a catalog.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminCatalogType.html">VMware_VCloud_API_AdminCatalogType</a></span>
+		<span class="method-name">
+			createCatalog
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminCatalogType.html">VMware_VCloud_API_AdminCatalogType</a></span>&nbsp;<span class="var-name">$catalog</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminCatalogType.html">VMware_VCloud_API_AdminCatalogType</a></span>
+				<span class="var-name">$catalog</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateUser" id="createUser"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">createUser</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a465">465</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create or import a user.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_UserType.html">VMware_VCloud_API_UserType</a></span>
+		<span class="method-name">
+			createUser
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_UserType.html">VMware_VCloud_API_UserType</a></span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_UserType.html">VMware_VCloud_API_UserType</a></span>
+				<span class="var-name">$user</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddelete" id="delete"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a408">408</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Delete the organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			delete
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddeleteMetadataByKey" id="deleteMetadataByKey"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">deleteMetadataByKey</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a983">983</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Deletes the metadata for the particular key in the specified domain for  the organization.</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			deleteMetadataByKey
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$domain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddisable" id="disable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">disable</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a397">397</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disable the organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			disable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodenable" id="enable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enable</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a377">377</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enable the organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			enable
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$enable</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$enable</span><span class="var-description">: To enable, set to true; to disable, set to false</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAdminCatalogRefs" id="getAdminCatalogRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminCatalogRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a560">560</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references for all catalogs or named catalog in this organization.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAdminCatalogRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the catalog. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAdminCatalogs" id="getAdminCatalogs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminCatalogs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a573">573</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get catalogs.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_AdminCatalogType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAdminCatalogs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the catalog to get. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAdminNetworkRefs" id="getAdminNetworkRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminNetworkRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a615">615</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get reference(s) for all organization networks or organization networks  with the given name in administrative representation.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">deprecated:</span> since API version 5.1.0, since SDK 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAdminNetworkRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the organization network to get. If null,                        returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAdminNetworks" id="getAdminNetworks"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminNetworks</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a632">632</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get organization networks entities or organization networks with the  given name in administrative representation.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_OrgNetworkType object array for API 1.5</li>
+				<li><span class="field">deprecated:</span> since API version 5.1.0, since SDK 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAdminNetworks
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the organization network to get. If null,                        returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAdminOrg" id="getAdminOrg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminOrg</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a306">306</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a VMware vCloud admin organization entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminOrgType.html">VMware_VCloud_API_AdminOrgType</a></span>
+		<span class="method-name">
+			getAdminOrg
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdminOrgRef" id="getAdminOrgRef"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminOrgRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a294">294</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a reference to a VMware vCloud admin organization entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+		<span class="method-name">
+			getAdminOrgRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdminVdcRefs" id="getAdminVdcRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminVdcRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a586">586</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references for all vDCs or named vDC in this organization.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAdminVdcRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vDC. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAdminVdcs" id="getAdminVdcs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminVdcs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a599">599</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get vDCs.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_AdminVdcType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAdminVdcs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the vDC to get. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetGroupRefs" id="getGroupRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getGroupRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a534">534</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get reference(s) for all groups or named group in this organization.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getGroupRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the group. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetGroups" id="getGroups"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getGroups</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a547">547</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get groups.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_GroupType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getGroups
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the group. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetGuestPersonalizationSettings" id="getGuestPersonalizationSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getGuestPersonalizationSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a1021">1021</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve organization defaults for guest personalization settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></span>
+		<span class="method-name">
+			getGuestPersonalizationSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetId" id="getId"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getId</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a317">317</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructs vCloud ID of this organization from its UUID.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getId
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMetadata" id="getMetadata"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMetadata</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a936">936</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get metadata associated with the organization or metadata  associated with the organization for the specified key in the specified  domain.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_MetadataValueType|null</li>
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a>|</span>
+		<span class="method-name">
+			getMetadata
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$domain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOperationLimitsSettings" id="getOperationLimitsSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOperationLimitsSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a1049">1049</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve organization operation limits settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>
+		<span class="method-name">
+			getOperationLimitsSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrg" id="getOrg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrg</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a340">340</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a VMware vCloud organization entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgType.html">VMware_VCloud_API_OrgType</a>|null</span>
+		<span class="method-name">
+			getOrg
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgEmailSettings" id="getOrgEmailSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgEmailSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a670">670</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets email settings of this organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>
+		<span class="method-name">
+			getOrgEmailSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgFederationSettings" id="getOrgFederationSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgFederationSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a697">697</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve other organization settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK 5.1.0</li>
+				<li><span class="field">since:</span> API 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>
+		<span class="method-name">
+			getOrgFederationSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgGeneralSettings" id="getOrgGeneralSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgGeneralSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a804">804</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets organization general settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>
+		<span class="method-name">
+			getOrgGeneralSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgLdapSettings" id="getOrgLdapSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgLdapSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a831">831</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets organization LDAP settings.</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> since version 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>
+		<span class="method-name">
+			getOrgLdapSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgPasswordPolicySettings" id="getOrgPasswordPolicySettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgPasswordPolicySettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a724">724</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieves the password policy settings for the organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>
+		<span class="method-name">
+			getOrgPasswordPolicySettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgRef" id="getOrgRef"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a328">328</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a link to a VMware vCloud organization entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LinkType.html">VMware_VCloud_API_LinkType</a>|null</span>
+		<span class="method-name">
+			getOrgRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgSettings" id="getOrgSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a644">644</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets organizational settings for this organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgSettingsType.html">VMware_VCloud_API_OrgSettingsType</a></span>
+		<span class="method-name">
+			getOrgSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgVAppLeaseSettings" id="getOrgVAppLeaseSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgVAppLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a751">751</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets organization vApp lease settings on the level of vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>
+		<span class="method-name">
+			getOrgVAppLeaseSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgVAppTemplateLeaseSettings" id="getOrgVAppTemplateLeaseSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgVAppTemplateLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a777">777</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets organization vApp template lease settings on the level of vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>
+		<span class="method-name">
+			getOrgVAppTemplateLeaseSettings
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSdkOrg" id="getSdkOrg"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSdkOrg</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a995">995</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return an alternate SDK orgznization object.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Org.html">VMware_VCloud_SDK_Org</a>|null</span>
+		<span class="method-name">
+			getSdkOrg
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUserRefs" id="getUserRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUserRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a508">508</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get reference(s) for all users or named user in this organization.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getUserRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the user to get. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetUsers" id="getUsers"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUsers</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a521">521</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get users.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_UserType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getUsers
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the user to get. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodimportGroup" id="importGroup"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">importGroup</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a479">479</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Import a group.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_GroupType.html">VMware_VCloud_API_GroupType</a></span>
+		<span class="method-name">
+			importGroup
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_GroupType.html">VMware_VCloud_API_GroupType</a></span>&nbsp;<span class="var-name">$group</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_GroupType.html">VMware_VCloud_API_GroupType</a></span>
+				<span class="var-name">$group</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisEnabled" id="isEnabled"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">isEnabled</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a365">365</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check whether the organization is enabled.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isEnabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmergeMetadata" id="mergeMetadata"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">mergeMetadata</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a948">948</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Merges the metadata for the organization with the information provided.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			mergeMetadata
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>&nbsp;<span class="var-name">$meta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></span>
+				<span class="var-name">$meta</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodify" id="modify"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">modify</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a353">353</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify a VMware vCloud admin organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminOrgType.html">VMware_VCloud_API_AdminOrgType</a></span>
+		<span class="method-name">
+			modify
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminOrgType.html">VMware_VCloud_API_AdminOrgType</a></span>&nbsp;<span class="var-name">$adminOrg</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_AdminOrgType.html">VMware_VCloud_API_AdminOrgType</a></span>
+				<span class="var-name">$adminOrg</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodifyGuestPersonalizationSettings" id="modifyGuestPersonalizationSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">modifyGuestPersonalizationSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a1035">1035</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify organization defaults for guest personalization settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></span>
+		<span class="method-name">
+			modifyGuestPersonalizationSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodifyOperationLimitsSettings" id="modifyOperationLimitsSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">modifyOperationLimitsSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a1062">1062</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify organization operation limits settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>
+		<span class="method-name">
+			modifyOperationLimitsSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgOperationLimitsSettingsType.html">VMware_VCloud_API_OrgOperationLimitsSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpostExtEvent" id="postExtEvent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">postExtEvent</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a1008">1008</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Posts external event to the system.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			postExtEvent
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_EventType.html">VMware_VCloud_API_EventType</a></span>&nbsp;<span class="var-name">$event</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_EventType.html">VMware_VCloud_API_EventType</a></span>
+				<span class="var-name">$event</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodresetLdapCertificate" id="resetLdapCertificate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">resetLdapCertificate</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a857">857</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resets organization LDAP SSL certificate.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			resetLdapCertificate
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodresetLdapKeyStore" id="resetLdapKeyStore"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">resetLdapKeyStore</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a868">868</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resets organization LDAP keystore.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			resetLdapKeyStore
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodresetLdapSspiKeytab" id="resetLdapSspiKeytab"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">resetLdapSspiKeytab</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a879">879</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resets organization LDAP keytab.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			resetLdapSspiKeytab
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetMetadataByKey" id="setMetadataByKey"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMetadataByKey</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a967">967</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the metadata for the particular key in the specified domain for the  organization to the value provided. Note: This will replace any existing  metadata information.</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			setMetadataByKey
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataValueType.html">VMware_VCloud_API_MetadataValueType</a></span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_MetadataValueType.html">VMware_VCloud_API_MetadataValueType</a></span>
+				<span class="var-name">$value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$domain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateLdapCertificate" id="updateLdapCertificate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateLdapCertificate</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a891">891</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization LDAP SSL certificate.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CertificateUploadSocketType.html">VMware_VCloud_API_CertificateUploadSocketType</a></span>
+		<span class="method-name">
+			updateLdapCertificate
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CertificateUpdateParamsType.html">VMware_VCloud_API_CertificateUpdateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_CertificateUpdateParamsType.html">VMware_VCloud_API_CertificateUpdateParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateLdapKeyStore" id="updateLdapKeyStore"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateLdapKeyStore</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a904">904</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization LDAP keystore.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_KeystoreUploadSocketType.html">VMware_VCloud_API_KeystoreUploadSocketType</a></span>
+		<span class="method-name">
+			updateLdapKeyStore
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_KeystoreUpdateParamsType.html">VMware_VCloud_API_KeystoreUpdateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_KeystoreUpdateParamsType.html">VMware_VCloud_API_KeystoreUpdateParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateLdapSspiKeytab" id="updateLdapSspiKeytab"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateLdapSspiKeytab</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a917">917</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization LDAP SSPI keytab.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SspiKeytabUploadSocketType.html">VMware_VCloud_API_SspiKeytabUploadSocketType</a></span>
+		<span class="method-name">
+			updateLdapSspiKeytab
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SspiKeytabUpdateParamsType.html">VMware_VCloud_API_SspiKeytabUpdateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SspiKeytabUpdateParamsType.html">VMware_VCloud_API_SspiKeytabUpdateParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgEmailSettings" id="updateOrgEmailSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgEmailSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a683">683</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization email settings for this organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>
+		<span class="method-name">
+			updateOrgEmailSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgEmailSettingsType.html">VMware_VCloud_API_OrgEmailSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgFederationSettings" id="updateOrgFederationSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgFederationSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a711">711</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Update other organization settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK 5.1.0</li>
+				<li><span class="field">since:</span> API 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>
+		<span class="method-name">
+			updateOrgFederationSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgFederationSettingsType.html">VMware_VCloud_API_OrgFederationSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgGeneralSettings" id="updateOrgGeneralSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgGeneralSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a817">817</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization general settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>
+		<span class="method-name">
+			updateOrgGeneralSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgGeneralSettingsType.html">VMware_VCloud_API_OrgGeneralSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgLdapSettings" id="updateOrgLdapSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgLdapSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a845">845</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization LDAP settings.</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> since version 5.1.0</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>
+		<span class="method-name">
+			updateOrgLdapSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLdapSettingsType.html">VMware_VCloud_API_OrgLdapSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgPasswordPolicySettings" id="updateOrgPasswordPolicySettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgPasswordPolicySettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a737">737</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates the organization password policy settings.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>
+		<span class="method-name">
+			updateOrgPasswordPolicySettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html">VMware_VCloud_API_OrgPasswordPolicySettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgSettings" id="updateOrgSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a657">657</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization settings for this organization.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgSettingsType.html">VMware_VCloud_API_OrgSettingsType</a></span>
+		<span class="method-name">
+			updateOrgSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgSettingsType.html">VMware_VCloud_API_OrgSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgSettingsType.html">VMware_VCloud_API_OrgSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgVAppLeaseSettings" id="updateOrgVAppLeaseSettings"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgVAppLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a764">764</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization vApp lease settings on the level of vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>
+		<span class="method-name">
+			updateOrgVAppLeaseSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgLeaseSettingsType.html">VMware_VCloud_API_OrgLeaseSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateOrgVAppTemplateLeaseSettings" id="updateOrgVAppTemplateLeaseSettings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateOrgVAppTemplateLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Admin.php.html#a790">790</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Updates organization vApp template lease settings on the level of vApp.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>
+		<span class="method-name">
+			updateOrgVAppTemplateLeaseSettings
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>&nbsp;<span class="var-name">$settings</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType.html">VMware_VCloud_API_OrgVAppTemplateLeaseSettingsType</a></span>
+				<span class="var-name">$settings</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#method__construct">VMware_VCloud_SDK_Abstract::__construct()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methoddestroy">VMware_VCloud_SDK_Abstract::destroy()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedLinks">VMware_VCloud_SDK_Abstract::getContainedLinks()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedRefs">VMware_VCloud_SDK_Abstract::getContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainerLink">VMware_VCloud_SDK_Abstract::getContainerLink()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetDataObj">VMware_VCloud_SDK_Abstract::getDataObj()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetEntityId">VMware_VCloud_SDK_Abstract::getEntityId()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetMetadataUrl">VMware_VCloud_SDK_Abstract::getMetadataUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetObjsByContainedRefs">VMware_VCloud_SDK_Abstract::getObjsByContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetRef">VMware_VCloud_SDK_Abstract::getRef()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUrl">VMware_VCloud_SDK_Abstract::getUrl()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUuid">VMware_VCloud_SDK_Abstract::getUuid()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:50:03 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

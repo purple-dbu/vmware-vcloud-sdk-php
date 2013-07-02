@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_API_OVF_VSSD_Type</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_API_OVF_VSSD_Type</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Wrapper for  CIM_VirtualSystemSettingData_Type</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Ecosystem Engineering</li>
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18325">18325</a></span>)
+		</p>
+		
+				
+		<pre><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type</a>
+   |
+   --VMware_VCloud_API_OVF_VSSD_Type</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+												<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
+				</div>
+																																																				<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespace" title="details" class="var-name">$namespace</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespacedef" title="details" class="var-name">$namespacedef</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$tagName" title="details" class="var-name">$tagName</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">VMware_VCloud_API_OVF_VSSD_Type</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticRecoveryAction.html">VMware_VCloud_API_OVF_AutomaticRecoveryAction</a></span>&nbsp;<span class="var-name">$AutomaticRecoveryAction</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticShutdownAction.html">VMware_VCloud_API_OVF_AutomaticShutdownAction</a></span>&nbsp;<span class="var-name">$AutomaticShutdownAction</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticStartupAction.html">VMware_VCloud_API_OVF_AutomaticStartupAction</a></span>&nbsp;<span class="var-name">$AutomaticStartupAction</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimDateTime.html">VMware_VCloud_API_OVF_cimDateTime</a></span>&nbsp;<span class="var-name">$AutomaticStartupActionDelay</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimUnsignedShort.html">VMware_VCloud_API_OVF_cimUnsignedShort</a></span>&nbsp;<span class="var-name">$AutomaticStartupActionSequenceNumber</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_Caption.html">VMware_VCloud_API_OVF_Caption</a></span>&nbsp;<span class="var-name">$Caption</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_ChangeableType.html">VMware_VCloud_API_OVF_ChangeableType</a></span>&nbsp;<span class="var-name">$ChangeableType</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationFile</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationID</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationName</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimDateTime.html">VMware_VCloud_API_OVF_cimDateTime</a></span>&nbsp;<span class="var-name">$CreationTime</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ElementName</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimUnsignedLong.html">VMware_VCloud_API_OVF_cimUnsignedLong</a></span>&nbsp;<span class="var-name">$Generation</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$InstanceID</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$LogDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Notes</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$RecoveryFile</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$SnapshotDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$SuspendDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$SwapFileDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$VirtualSystemIdentifier</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$VirtualSystemType</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Any</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#build" title="details" class="method-name">build</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildAttributes" title="details" class="method-name">buildAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildChildren" title="details" class="method-name">buildChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#export" title="details" class="method-name">export</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportAttributes" title="details" class="method-name">exportAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportChildren" title="details" class="method-name">exportChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_anyAttributes" title="details" class="method-name">get_anyAttributes</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_tagName" title="details" class="method-name">get_tagName</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#hasContent" title="details" class="method-name">hasContent</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_anyAttributes" title="details" class="method-name">set_anyAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$anyAttributes</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_tagName" title="details" class="method-name">set_tagName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$defaultNS</span>
+			 = <span class="var-default"> 'http://schemas.dmtf.org/ovf/envelope/1'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18329">18329</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$defaultNS">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$defaultNS</a></dt>
+					</dl>
+		
+		
+
+</div>
+
+<a name="var$namespace" id="$namespace"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespace</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18326">18326</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$namespace">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$namespace</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$namespacedef" id="$namespacedef"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespacedef</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18327">18327</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$namespacedef">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$namespacedef</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$tagName" id="$tagName"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$tagName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18328">18328</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$tagName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$tagName</a></dt>
+					</dl>
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$Any">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$Any</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$AutomaticRecoveryAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$AutomaticRecoveryAction</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$AutomaticShutdownAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$AutomaticShutdownAction</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$AutomaticStartupAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$AutomaticStartupAction</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$AutomaticStartupActionDelay">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$AutomaticStartupActionDelay</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$AutomaticStartupActionSequenceNumber">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$AutomaticStartupActionSequenceNumber</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$Caption">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$Caption</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$ChangeableType">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$ChangeableType</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$ConfigurationDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$ConfigurationDataRoot</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$ConfigurationFile">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$ConfigurationFile</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$ConfigurationID">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$ConfigurationID</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$ConfigurationName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$ConfigurationName</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$CreationTime">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$CreationTime</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$Description">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$Description</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$ElementName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$ElementName</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$Generation">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$Generation</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$InstanceID">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$InstanceID</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$LogDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$LogDataRoot</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$Notes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$Notes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$RecoveryFile">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$RecoveryFile</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$SnapshotDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$SnapshotDataRoot</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$SuspendDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$SuspendDataRoot</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$SwapFileDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$SwapFileDataRoot</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$VirtualSystemIdentifier">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$VirtualSystemIdentifier</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#var$VirtualSystemType">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::$VirtualSystemType</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18358">18358</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">VMware_VCloud_API_OVF_VSSD_Type</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticRecoveryAction.html">VMware_VCloud_API_OVF_AutomaticRecoveryAction</a></span>&nbsp;<span class="var-name">$AutomaticRecoveryAction</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticShutdownAction.html">VMware_VCloud_API_OVF_AutomaticShutdownAction</a></span>&nbsp;<span class="var-name">$AutomaticShutdownAction</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticStartupAction.html">VMware_VCloud_API_OVF_AutomaticStartupAction</a></span>&nbsp;<span class="var-name">$AutomaticStartupAction</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimDateTime.html">VMware_VCloud_API_OVF_cimDateTime</a></span>&nbsp;<span class="var-name">$AutomaticStartupActionDelay</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimUnsignedShort.html">VMware_VCloud_API_OVF_cimUnsignedShort</a></span>&nbsp;<span class="var-name">$AutomaticStartupActionSequenceNumber</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_Caption.html">VMware_VCloud_API_OVF_Caption</a></span>&nbsp;<span class="var-name">$Caption</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_ChangeableType.html">VMware_VCloud_API_OVF_ChangeableType</a></span>&nbsp;<span class="var-name">$ChangeableType</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationFile</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationID</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ConfigurationName</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimDateTime.html">VMware_VCloud_API_OVF_cimDateTime</a></span>&nbsp;<span class="var-name">$CreationTime</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$ElementName</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimUnsignedLong.html">VMware_VCloud_API_OVF_cimUnsignedLong</a></span>&nbsp;<span class="var-name">$Generation</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$InstanceID</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$LogDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Notes</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$RecoveryFile</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$SnapshotDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$SuspendDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$SwapFileDataRoot</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$VirtualSystemIdentifier</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>&nbsp;<span class="var-name">$VirtualSystemType</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Any</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticRecoveryAction.html">VMware_VCloud_API_OVF_AutomaticRecoveryAction</a></span>
+				<span class="var-name">$AutomaticRecoveryAction</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticShutdownAction.html">VMware_VCloud_API_OVF_AutomaticShutdownAction</a></span>
+				<span class="var-name">$AutomaticShutdownAction</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_AutomaticStartupAction.html">VMware_VCloud_API_OVF_AutomaticStartupAction</a></span>
+				<span class="var-name">$AutomaticStartupAction</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimDateTime.html">VMware_VCloud_API_OVF_cimDateTime</a></span>
+				<span class="var-name">$AutomaticStartupActionDelay</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimUnsignedShort.html">VMware_VCloud_API_OVF_cimUnsignedShort</a></span>
+				<span class="var-name">$AutomaticStartupActionSequenceNumber</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_Caption.html">VMware_VCloud_API_OVF_Caption</a></span>
+				<span class="var-name">$Caption</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_ChangeableType.html">VMware_VCloud_API_OVF_ChangeableType</a></span>
+				<span class="var-name">$ChangeableType</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$ConfigurationDataRoot</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$ConfigurationFile</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$ConfigurationID</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$ConfigurationName</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimDateTime.html">VMware_VCloud_API_OVF_cimDateTime</a></span>
+				<span class="var-name">$CreationTime</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$Description</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$ElementName</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimUnsignedLong.html">VMware_VCloud_API_OVF_cimUnsignedLong</a></span>
+				<span class="var-name">$Generation</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$InstanceID</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$LogDataRoot</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$Notes</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_OVF_cimString objects</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$RecoveryFile</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$SnapshotDataRoot</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$SuspendDataRoot</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$SwapFileDataRoot</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$VirtualSystemIdentifier</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_cimString.html">VMware_VCloud_API_OVF_cimString</a></span>
+				<span class="var-name">$VirtualSystemType</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$Any</span><span class="var-description">: - [optional] an array of any type of objects</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#method__construct">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::__construct()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18417">18417</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			build
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodbuild">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::build()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18438">18438</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodbuildAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::buildAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildChildren" id="buildChildren"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18452">18452</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$child</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeName</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodbuildChildren">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::buildChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexport" id="export"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18368">18368</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			export
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespacedef</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodexport">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::export()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18398">18398</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodexportAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::exportAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportChildren" id="exportChildren"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18403">18403</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodexportChildren">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::exportChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodget_anyAttributes" id="get_anyAttributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_anyAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18364">18364</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_anyAttributes
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodget_anyAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::get_anyAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodget_tagName" id="get_tagName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18366">18366</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_tagName
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodget_tagName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::get_tagName()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodhasContent" id="hasContent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18408">18408</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hasContent
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodhasContent">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::hasContent()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodset_anyAttributes" id="set_anyAttributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_anyAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18365">18365</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_anyAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$anyAttributes</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$anyAttributes</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodset_anyAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::set_anyAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a18367">18367</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_tagName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tagName</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodset_tagName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::set_tagName()</a></dt>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#method__construct">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodaddAny">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::addAny()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodaddNotes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::addNotes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodbuild">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodbuildAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodbuildChildren">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodexport">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodexportAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodexportChildren">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetAny">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getAny()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetAutomaticRecoveryAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getAutomaticRecoveryAction()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetAutomaticShutdownAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getAutomaticShutdownAction()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetAutomaticStartupAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getAutomaticStartupAction()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetAutomaticStartupActionDelay">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getAutomaticStartupActionDelay()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetAutomaticStartupActionSequenceNumber">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getAutomaticStartupActionSequenceNumber()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetCaption">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getCaption()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetChangeableType">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getChangeableType()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetConfigurationDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getConfigurationDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetConfigurationFile">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getConfigurationFile()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetConfigurationID">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getConfigurationID()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetConfigurationName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getConfigurationName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetCreationTime">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getCreationTime()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetDescription">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getDescription()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetElementName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getElementName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetGeneration">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getGeneration()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetInstanceID">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getInstanceID()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetLogDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getLogDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetNotes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getNotes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetRecoveryFile">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getRecoveryFile()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetSnapshotDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getSnapshotDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetSuspendDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getSuspendDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetSwapFileDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getSwapFileDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetVirtualSystemIdentifier">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getVirtualSystemIdentifier()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodgetVirtualSystemType">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::getVirtualSystemType()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodget_anyAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::get_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodget_tagName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodhasContent">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetAny">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setAny()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetAutomaticRecoveryAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setAutomaticRecoveryAction()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetAutomaticShutdownAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setAutomaticShutdownAction()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetAutomaticStartupAction">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setAutomaticStartupAction()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetAutomaticStartupActionDelay">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setAutomaticStartupActionDelay()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetAutomaticStartupActionSequenceNumber">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setAutomaticStartupActionSequenceNumber()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetCaption">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setCaption()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetChangeableType">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setChangeableType()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetConfigurationDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setConfigurationDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetConfigurationFile">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setConfigurationFile()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetConfigurationID">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setConfigurationID()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetConfigurationName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setConfigurationName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetCreationTime">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setCreationTime()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetDescription">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setDescription()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetElementName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setElementName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetGeneration">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setGeneration()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetInstanceID">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setInstanceID()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetLogDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setLogDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetNotes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setNotes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetRecoveryFile">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setRecoveryFile()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetSnapshotDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setSnapshotDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetSuspendDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setSuspendDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetSwapFileDataRoot">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setSwapFileDataRoot()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetVirtualSystemIdentifier">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setVirtualSystemIdentifier()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodsetVirtualSystemType">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::setVirtualSystemType()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodset_anyAttributes">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::set_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type.html#methodset_tagName">VMware_VCloud_API_OVF_CIM_VirtualSystemSettingData_Type::set_tagName()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:56:15 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
