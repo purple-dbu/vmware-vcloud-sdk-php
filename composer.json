@@ -1,0 +1,35 @@
+{
+    "name": "vmware/vcloud-sdk-php",
+    "description": "VMware vCloud SDK for PHP",
+    "type": "library",
+    "keywords": [
+        "vmware",
+        "vcloud",
+        "director",
+        "api",
+        "sdk",
+        "php"
+    ],
+    "homepage": "http://communities.vmware.com/community/vmtn/developer/forums/vcloudsdkphp",
+    "license": "vCloudSDKforPHP-License.docx",
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "VMware_": "library/"
+        }
+    },
+    "include-path": [
+        "library/"
+    ],
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear2.php.net"
+        }
+    ],
+    "require": {
+        "pear-pear2/PEAR2_HTTP_Request": "*"
+    }
+}
