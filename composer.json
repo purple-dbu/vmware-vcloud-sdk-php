@@ -19,14 +19,5 @@
     },
     "include-path": [
         "library/"
-    ],
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "http://pear2.php.net"
-        }
-    ],
-    "require": {
-        "pear-pear2/PEAR2_HTTP_Request": "*"
-    }
+    ]
 }
