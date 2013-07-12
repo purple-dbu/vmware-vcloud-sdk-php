@@ -10,7 +10,7 @@
     "sdk"
   ],
   "homepage": "http://communities.vmware.com/community/vmtn/developer/forums/vcloudsdkphp",
-  "license": "vCloudSDKforPHP-License.docx",
+  "license": "proprietary",
   "require": {
     "php": ">=5.3.2"
   },
