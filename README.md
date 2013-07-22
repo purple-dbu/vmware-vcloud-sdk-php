@@ -25,6 +25,7 @@ If the installation work correctly, this should display:
 
 At this step, you should have the following files in your project's folder:
 
+    $ls -Al
     - composer.phar (~900 kB)
 
 Then, execute:
@@ -40,6 +41,7 @@ If the installation work correctly, this should display:
 
 At this step, you should have the following files in your project's folder:
 
+    $ ls -Al
     - composer.phar (~900 kB)
     - composer.json (7 B)
     - vendor
