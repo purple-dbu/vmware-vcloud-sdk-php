@@ -1,0 +1,2273 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_API_Extension_HostType</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_API_Extension_HostType</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read only representation of one host in a vSphere server.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Ecosystem Engineering</li>
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94493">94493</a></span>)
+		</p>
+		
+				
+		<pre><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a>
+   |
+   --<a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html">VMware_VCloud_API_ResourceType</a>
+      |
+      --<a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html">VMware_VCloud_API_IdentifiableResourceType</a>
+         |
+         --<a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html">VMware_VCloud_API_EntityType</a>
+            |
+            --VMware_VCloud_API_Extension_HostType</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																												<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
+				</div>
+																																																																																																																																												<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Available" title="details" class="var-name">$Available</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Busy" title="details" class="var-name">$Busy</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$CpuTotal" title="details" class="var-name">$CpuTotal</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$CpuType" title="details" class="var-name">$CpuType</a>
+				</div>
+																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Enabled" title="details" class="var-name">$Enabled</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$EnableHostForHostSpanning" title="details" class="var-name">$EnableHostForHostSpanning</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$HostOsName" title="details" class="var-name">$HostOsName</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$HostOsVersion" title="details" class="var-name">$HostOsVersion</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$MemTotal" title="details" class="var-name">$MemTotal</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$MemUsed" title="details" class="var-name">$MemUsed</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespace" title="details" class="var-name">$namespace</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespacedef" title="details" class="var-name">$namespacedef</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$NumOfCpusLogical" title="details" class="var-name">$NumOfCpusLogical</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$NumOfCpusPackages" title="details" class="var-name">$NumOfCpusPackages</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Ready" title="details" class="var-name">$Ready</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$SystemMessages" title="details" class="var-name">$SystemMessages</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$tagName" title="details" class="var-name">$tagName</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$VimPropertyPageUrl" title="details" class="var-name">$VimPropertyPageUrl</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$VmMoRef" title="details" class="var-name">$VmMoRef</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">VMware_VCloud_API_Extension_HostType</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$operationKey</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_TasksInProgressType.html">VMware_VCloud_API_TasksInProgressType</a></span>&nbsp;<span class="var-name">$Tasks</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Ready</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Available</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Busy</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$EnableHostForHostSpanning</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$CpuType</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NumOfCpusPackages</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NumOfCpusLogical</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuTotal</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$MemUsed</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$MemTotal</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$HostOsName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$HostOsVersion</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemMessages</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VimPropertyPageUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmMoRef</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#build" title="details" class="method-name">build</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildAttributes" title="details" class="method-name">buildAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildChildren" title="details" class="method-name">buildChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#export" title="details" class="method-name">export</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportAttributes" title="details" class="method-name">exportAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportChildren" title="details" class="method-name">exportChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAvailable" title="details" class="method-name">getAvailable</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getBusy" title="details" class="method-name">getBusy</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCpuTotal" title="details" class="method-name">getCpuTotal</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCpuType" title="details" class="method-name">getCpuType</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getEnabled" title="details" class="method-name">getEnabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getEnableHostForHostSpanning" title="details" class="method-name">getEnableHostForHostSpanning</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getHostOsName" title="details" class="method-name">getHostOsName</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getHostOsVersion" title="details" class="method-name">getHostOsVersion</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getMemTotal" title="details" class="method-name">getMemTotal</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getMemUsed" title="details" class="method-name">getMemUsed</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getNumOfCpusLogical" title="details" class="method-name">getNumOfCpusLogical</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getNumOfCpusPackages" title="details" class="method-name">getNumOfCpusPackages</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getReady" title="details" class="method-name">getReady</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getSystemMessages" title="details" class="method-name">getSystemMessages</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getVimPropertyPageUrl" title="details" class="method-name">getVimPropertyPageUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getVmMoRef" title="details" class="method-name">getVmMoRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_tagName" title="details" class="method-name">get_tagName</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#hasContent" title="details" class="method-name">hasContent</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAvailable" title="details" class="method-name">setAvailable</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Available</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setBusy" title="details" class="method-name">setBusy</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Busy</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCpuTotal" title="details" class="method-name">setCpuTotal</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuTotal</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCpuType" title="details" class="method-name">setCpuType</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuType</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setEnabled" title="details" class="method-name">setEnabled</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Enabled</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setEnableHostForHostSpanning" title="details" class="method-name">setEnableHostForHostSpanning</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$EnableHostForHostSpanning</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHostOsName" title="details" class="method-name">setHostOsName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$HostOsName</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHostOsVersion" title="details" class="method-name">setHostOsVersion</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$HostOsVersion</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMemTotal" title="details" class="method-name">setMemTotal</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$MemTotal</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMemUsed" title="details" class="method-name">setMemUsed</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$MemUsed</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setNumOfCpusLogical" title="details" class="method-name">setNumOfCpusLogical</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$NumOfCpusLogical</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setNumOfCpusPackages" title="details" class="method-name">setNumOfCpusPackages</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$NumOfCpusPackages</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setReady" title="details" class="method-name">setReady</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Ready</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSystemMessages" title="details" class="method-name">setSystemMessages</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$SystemMessages</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setVimPropertyPageUrl" title="details" class="method-name">setVimPropertyPageUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$VimPropertyPageUrl</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setVmMoRef" title="details" class="method-name">setVmMoRef</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$VmMoRef</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_tagName" title="details" class="method-name">set_tagName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$defaultNS</span>
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94513">94513</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$defaultNS">VMware_VCloud_API_EntityType::$defaultNS</a></dt>
+					</dl>
+		
+		
+
+</div>
+
+<a name="var$Available" id="$Available"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Available</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94495">94495</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Busy" id="$Busy"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Busy</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94497">94497</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$CpuTotal" id="$CpuTotal"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$CpuTotal</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94502">94502</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$CpuType" id="$CpuType"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$CpuType</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94499">94499</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Enabled" id="$Enabled"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Enabled</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94496">94496</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$EnableHostForHostSpanning" id="$EnableHostForHostSpanning"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$EnableHostForHostSpanning</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94498">94498</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$HostOsName" id="$HostOsName"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$HostOsName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94505">94505</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$HostOsVersion" id="$HostOsVersion"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$HostOsVersion</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94506">94506</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$MemTotal" id="$MemTotal"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$MemTotal</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94504">94504</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$MemUsed" id="$MemUsed"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$MemUsed</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94503">94503</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$namespace" id="$namespace"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespace</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94510">94510</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$namespace">VMware_VCloud_API_EntityType::$namespace</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$namespacedef" id="$namespacedef"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespacedef</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94511">94511</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$namespacedef">VMware_VCloud_API_EntityType::$namespacedef</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$NumOfCpusLogical" id="$NumOfCpusLogical"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$NumOfCpusLogical</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94501">94501</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$NumOfCpusPackages" id="$NumOfCpusPackages"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$NumOfCpusPackages</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94500">94500</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Ready" id="$Ready"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Ready</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94494">94494</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$SystemMessages" id="$SystemMessages"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$SystemMessages</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94507">94507</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tagName" id="$tagName"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$tagName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94512">94512</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$tagName">VMware_VCloud_API_EntityType::$tagName</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$VimPropertyPageUrl" id="$VimPropertyPageUrl"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$VimPropertyPageUrl</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94508">94508</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$VmMoRef" id="$VmMoRef"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$VmMoRef</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94509">94509</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html">VMware_VCloud_API_EntityType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$Description">VMware_VCloud_API_EntityType::$Description</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$name">VMware_VCloud_API_EntityType::$name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$Tasks">VMware_VCloud_API_EntityType::$Tasks</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html">VMware_VCloud_API_IdentifiableResourceType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#var$id">VMware_VCloud_API_IdentifiableResourceType::$id</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#var$operationKey">VMware_VCloud_API_IdentifiableResourceType::$operationKey</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html">VMware_VCloud_API_ResourceType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#var$href">VMware_VCloud_API_ResourceType::$href</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#var$Link">VMware_VCloud_API_ResourceType::$Link</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#var$type">VMware_VCloud_API_ResourceType::$type</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#var$VCloudExtension">VMware_VCloud_API_VCloudExtensibleType::$VCloudExtension</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94542">94542</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">VMware_VCloud_API_Extension_HostType</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$operationKey</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_TasksInProgressType.html">VMware_VCloud_API_TasksInProgressType</a></span>&nbsp;<span class="var-name">$Tasks</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Ready</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Available</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Busy</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$EnableHostForHostSpanning</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$CpuType</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NumOfCpusPackages</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NumOfCpusLogical</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$CpuTotal</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$MemUsed</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$MemTotal</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$HostOsName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$HostOsVersion</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemMessages</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VimPropertyPageUrl</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmMoRef</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$VCloudExtension</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_VCloudExtensionType objects</span>			</li>
+					<li>
+				<span class="var-type">anyURI</span>
+				<span class="var-name">$href</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$Link</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_LinkType objects</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$operationKey</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - [required] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Description</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_TasksInProgressType.html">VMware_VCloud_API_TasksInProgressType</a></span>
+				<span class="var-name">$Tasks</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$Ready</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$Available</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$Enabled</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$Busy</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$EnableHostForHostSpanning</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$CpuType</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$NumOfCpusPackages</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$NumOfCpusLogical</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$CpuTotal</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">float</span>
+				<span class="var-name">$MemUsed</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">float</span>
+				<span class="var-name">$MemTotal</span><span class="var-description">: - [required]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$HostOsName</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$HostOsVersion</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$SystemMessages</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$VimPropertyPageUrl</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$VmMoRef</span><span class="var-description">: - [required]</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#method__construct">VMware_VCloud_API_EntityType::__construct()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94806">94806</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			build
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuild">VMware_VCloud_API_EntityType::build()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94827">94827</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuildAttributes">VMware_VCloud_API_EntityType::buildAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildChildren" id="buildChildren"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94835">94835</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$child</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeName</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuildChildren">VMware_VCloud_API_EntityType::buildChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexport" id="export"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94661">94661</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			export
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespacedef</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexport">VMware_VCloud_API_EntityType::export()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94691">94691</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexportAttributes">VMware_VCloud_API_EntityType::exportAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportChildren" id="exportChildren"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94696">94696</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexportChildren">VMware_VCloud_API_EntityType::exportChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodgetAvailable" id="getAvailable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAvailable</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94569">94569</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAvailable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetBusy" id="getBusy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBusy</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94581">94581</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getBusy
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCpuTotal" id="getCpuTotal"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCpuTotal</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94611">94611</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCpuTotal
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCpuType" id="getCpuType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCpuType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94593">94593</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCpuType
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetEnabled" id="getEnabled"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94575">94575</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getEnabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetEnableHostForHostSpanning" id="getEnableHostForHostSpanning"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEnableHostForHostSpanning</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94587">94587</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getEnableHostForHostSpanning
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetHostOsName" id="getHostOsName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHostOsName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94629">94629</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getHostOsName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetHostOsVersion" id="getHostOsVersion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHostOsVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94635">94635</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getHostOsVersion
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMemTotal" id="getMemTotal"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMemTotal</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94623">94623</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMemTotal
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMemUsed" id="getMemUsed"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMemUsed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94617">94617</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getMemUsed
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNumOfCpusLogical" id="getNumOfCpusLogical"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNumOfCpusLogical</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94605">94605</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getNumOfCpusLogical
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNumOfCpusPackages" id="getNumOfCpusPackages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNumOfCpusPackages</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94599">94599</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getNumOfCpusPackages
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetReady" id="getReady"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getReady</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94563">94563</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getReady
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSystemMessages" id="getSystemMessages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSystemMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94641">94641</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getSystemMessages
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVimPropertyPageUrl" id="getVimPropertyPageUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVimPropertyPageUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94647">94647</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getVimPropertyPageUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVmMoRef" id="getVmMoRef"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVmMoRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94653">94653</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getVmMoRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_tagName" id="get_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94659">94659</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_tagName
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodget_tagName">VMware_VCloud_API_EntityType::get_tagName()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodhasContent" id="hasContent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94781">94781</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hasContent
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodhasContent">VMware_VCloud_API_EntityType::hasContent()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodsetAvailable" id="setAvailable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAvailable</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94572">94572</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAvailable
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Available</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Available</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBusy" id="setBusy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBusy</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94584">94584</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setBusy
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Busy</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Busy</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCpuTotal" id="setCpuTotal"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCpuTotal</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94614">94614</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCpuTotal
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuTotal</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$CpuTotal</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCpuType" id="setCpuType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCpuType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94596">94596</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCpuType
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$CpuType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$CpuType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetEnabled" id="setEnabled"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94578">94578</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setEnabled
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Enabled</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Enabled</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetEnableHostForHostSpanning" id="setEnableHostForHostSpanning"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setEnableHostForHostSpanning</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94590">94590</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setEnableHostForHostSpanning
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$EnableHostForHostSpanning</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$EnableHostForHostSpanning</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHostOsName" id="setHostOsName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHostOsName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94632">94632</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHostOsName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$HostOsName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$HostOsName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHostOsVersion" id="setHostOsVersion"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHostOsVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94638">94638</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHostOsVersion
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$HostOsVersion</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$HostOsVersion</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMemTotal" id="setMemTotal"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMemTotal</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94626">94626</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMemTotal
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$MemTotal</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$MemTotal</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMemUsed" id="setMemUsed"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMemUsed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94620">94620</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMemUsed
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$MemUsed</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$MemUsed</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetNumOfCpusLogical" id="setNumOfCpusLogical"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setNumOfCpusLogical</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94608">94608</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setNumOfCpusLogical
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$NumOfCpusLogical</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$NumOfCpusLogical</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetNumOfCpusPackages" id="setNumOfCpusPackages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setNumOfCpusPackages</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94602">94602</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setNumOfCpusPackages
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$NumOfCpusPackages</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$NumOfCpusPackages</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetReady" id="setReady"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setReady</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94566">94566</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setReady
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Ready</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Ready</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSystemMessages" id="setSystemMessages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSystemMessages</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94644">94644</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSystemMessages
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$SystemMessages</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$SystemMessages</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetVimPropertyPageUrl" id="setVimPropertyPageUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setVimPropertyPageUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94650">94650</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setVimPropertyPageUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$VimPropertyPageUrl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$VimPropertyPageUrl</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetVmMoRef" id="setVmMoRef"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setVmMoRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94656">94656</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setVmMoRef
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$VmMoRef</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$VmMoRef</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a94660">94660</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_tagName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tagName</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodset_tagName">VMware_VCloud_API_EntityType::set_tagName()</a></dt>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html">VMware_VCloud_API_EntityType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#method__construct">VMware_VCloud_API_EntityType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuild">VMware_VCloud_API_EntityType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuildAttributes">VMware_VCloud_API_EntityType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuildChildren">VMware_VCloud_API_EntityType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexport">VMware_VCloud_API_EntityType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexportAttributes">VMware_VCloud_API_EntityType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexportChildren">VMware_VCloud_API_EntityType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodgetDescription">VMware_VCloud_API_EntityType::getDescription()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodgetTasks">VMware_VCloud_API_EntityType::getTasks()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodget_name">VMware_VCloud_API_EntityType::get_name()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodget_tagName">VMware_VCloud_API_EntityType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodhasContent">VMware_VCloud_API_EntityType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodsetDescription">VMware_VCloud_API_EntityType::setDescription()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodsetTasks">VMware_VCloud_API_EntityType::setTasks()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodset_name">VMware_VCloud_API_EntityType::set_name()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodset_tagName">VMware_VCloud_API_EntityType::set_tagName()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html">VMware_VCloud_API_IdentifiableResourceType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#method__construct">VMware_VCloud_API_IdentifiableResourceType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodbuild">VMware_VCloud_API_IdentifiableResourceType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodbuildAttributes">VMware_VCloud_API_IdentifiableResourceType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodbuildChildren">VMware_VCloud_API_IdentifiableResourceType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodexport">VMware_VCloud_API_IdentifiableResourceType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodexportAttributes">VMware_VCloud_API_IdentifiableResourceType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodexportChildren">VMware_VCloud_API_IdentifiableResourceType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodget_id">VMware_VCloud_API_IdentifiableResourceType::get_id()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodget_operationKey">VMware_VCloud_API_IdentifiableResourceType::get_operationKey()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodget_tagName">VMware_VCloud_API_IdentifiableResourceType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodhasContent">VMware_VCloud_API_IdentifiableResourceType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodset_id">VMware_VCloud_API_IdentifiableResourceType::set_id()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodset_operationKey">VMware_VCloud_API_IdentifiableResourceType::set_operationKey()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodset_tagName">VMware_VCloud_API_IdentifiableResourceType::set_tagName()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html">VMware_VCloud_API_ResourceType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#method__construct">VMware_VCloud_API_ResourceType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodaddLink">VMware_VCloud_API_ResourceType::addLink()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodbuild">VMware_VCloud_API_ResourceType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodbuildAttributes">VMware_VCloud_API_ResourceType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodbuildChildren">VMware_VCloud_API_ResourceType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodexport">VMware_VCloud_API_ResourceType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodexportAttributes">VMware_VCloud_API_ResourceType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodexportChildren">VMware_VCloud_API_ResourceType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodgetLink">VMware_VCloud_API_ResourceType::getLink()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodget_href">VMware_VCloud_API_ResourceType::get_href()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodget_tagName">VMware_VCloud_API_ResourceType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodget_type">VMware_VCloud_API_ResourceType::get_type()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodhasContent">VMware_VCloud_API_ResourceType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodsetLink">VMware_VCloud_API_ResourceType::setLink()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodset_href">VMware_VCloud_API_ResourceType::set_href()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodset_tagName">VMware_VCloud_API_ResourceType::set_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodset_type">VMware_VCloud_API_ResourceType::set_type()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#method__construct">VMware_VCloud_API_VCloudExtensibleType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodaddVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::addVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuild">VMware_VCloud_API_VCloudExtensibleType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildAttributes">VMware_VCloud_API_VCloudExtensibleType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildChildren">VMware_VCloud_API_VCloudExtensibleType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexport">VMware_VCloud_API_VCloudExtensibleType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportAttributes">VMware_VCloud_API_VCloudExtensibleType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportChildren">VMware_VCloud_API_VCloudExtensibleType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodgetVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::getVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodget_anyAttributes">VMware_VCloud_API_VCloudExtensibleType::get_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodget_tagName">VMware_VCloud_API_VCloudExtensibleType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodhasContent">VMware_VCloud_API_VCloudExtensibleType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodsetVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::setVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodset_anyAttributes">VMware_VCloud_API_VCloudExtensibleType::set_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodset_tagName">VMware_VCloud_API_VCloudExtensibleType::set_tagName()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:55:45 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

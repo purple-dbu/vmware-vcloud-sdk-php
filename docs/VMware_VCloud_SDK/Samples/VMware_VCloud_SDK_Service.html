@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_SDK_Service</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_SDK_Service</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Accessing point for VMware vCloud Director.</p>
+		<p class="notes">
+			Located in <a class="field" href="_Service.php.html">/Service.php</a> (line <span class="field"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a37">37</a></span>)
+		</p>
+		
+				
+		<pre><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html">VMware_VCloud_SDK_Service_Abstract</a>
+   |
+   --VMware_VCloud_SDK_Service</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																										
+				<div class="method-definition">
+					static 						<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service.html">VMware_VCloud_SDK_Service</a></span>
+										<a href="#getService" title="details" class="method-name">getService</a>
+											([<span class="var-type"><a href="../../VMware_VCloud_SDK_Http/VMware_VCloud_SDK_Http_Client_Interface.html">VMware_VCloud_SDK_Http_Client_Interface</a></span>&nbsp;<span class="var-name">$client</span> = <span class="var-default">null</span>])
+									</div>
+																																																																																																																										
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Admin.html">VMware_VCloud_SDK_Admin</a></span>
+										<a href="#createSDKAdminObj" title="details" class="method-name">createSDKAdminObj</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_SDK_Extension/VMware_VCloud_SDK_Extension.html">VMware_VCloud_SDK_Extension</a></span>
+										<a href="#createSDKExtensionObj" title="details" class="method-name">createSDKExtensionObj</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#createSDKObj" title="details" class="method-name">createSDKObj</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#deleteSession" title="details" class="method-name">deleteSession</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VCloudType.html">VMware_VCloud_API_VCloudType</a></span>
+										<a href="#getAdmin" title="details" class="method-name">getAdmin</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html">VMware_VCloud_API_Extension_VMWExtensionType</a></span>
+										<a href="#getAdminExtension" title="details" class="method-name">getAdminExtension</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getAdminExtensionUrl" title="details" class="method-name">getAdminExtensionUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getAdminUrl" title="details" class="method-name">getAdminUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBaseUrl" title="details" class="method-name">getBaseUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ContainerType.html">VMware_VCloud_API_ContainerType</a></span>
+										<a href="#getFileDescriptor" title="details" class="method-name">getFileDescriptor</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getOrgRefs" title="details" class="method-name">getOrgRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getOrgs" title="details" class="method-name">getOrgs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Query.html">VMware_VCloud_SDK_Query</a></span>
+										<a href="#getQueryService" title="details" class="method-name">getQueryService</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">xml</span>
+										<a href="#getSchemaFileName" title="details" class="method-name">getSchemaFileName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$schemaFileName</span>)
+									</div>
+																						
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SessionType.html">VMware_VCloud_API_SessionType</a></span>
+										<a href="#getSession" title="details" class="method-name">getSession</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">list</span>
+										<a href="#getUserServiceRefs" title="details" class="method-name">getUserServiceRefs</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgListType.html">VMware_VCloud_API_OrgListType</a></span>
+										<a href="#login" title="details" class="method-name">login</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$auth</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span> = <span class="var-default">'5.1'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#logout" title="details" class="method-name">logout</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#queryRecordsByType" title="details" class="method-name">queryRecordsByType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#queryReferencesByName" title="details" class="method-name">queryReferencesByName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#queryReferencesByType" title="details" class="method-name">queryReferencesByType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#setLoginUrl" title="details" class="method-name">setLoginUrl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#SetVcloudToken" title="details" class="method-name">SetVcloudToken</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$vcloudtoken</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgListType.html">VMware_VCloud_API_OrgListType</a></span>
+										<a href="#SSOLogin" title="details" class="method-name">SSOLogin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SupportedOperatingSystemsInfoType.html">VMware_VCloud_API_SupportedOperatingSystemsInfoType</a></span>
+										<a href="#supportedSystemsInfo" title="details" class="method-name">supportedSystemsInfo</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#wait" title="details" class="method-name">wait</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$cond</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$iteration</span> = <span class="var-default">200</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$interval</span> = <span class="var-default">20</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#waitForTask" title="details" class="method-name">waitForTask</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>&nbsp;<span class="var-name">$task</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$iteration</span> = <span class="var-default">200</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$interval</span> = <span class="var-default">20</span>])
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html">VMware_VCloud_SDK_Service_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#var$httpClient">VMware_VCloud_SDK_Service_Abstract::$httpClient</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodgetService" id="getService"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">static getService</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a70">70</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a VMware_VCloud_SDK_Server object</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		static <span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service.html">VMware_VCloud_SDK_Service</a></span>
+		<span class="method-name">
+			getService
+		</span>
+					([<span class="var-type"><a href="../../VMware_VCloud_SDK_Http/VMware_VCloud_SDK_Http_Client_Interface.html">VMware_VCloud_SDK_Http_Client_Interface</a></span>&nbsp;<span class="var-name">$client</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_SDK_Http/VMware_VCloud_SDK_Http_Client_Interface.html">VMware_VCloud_SDK_Http_Client_Interface</a></span>
+				<span class="var-name">$client</span><span class="var-description">: An object implements                         VMware_VCloud_SDK_Http_Client_Interface. If it is                         null, use the default implementation,                         VMware_VCloud_SDK_Http_Client</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateSDKAdminObj" id="createSDKAdminObj"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">createSDKAdminObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a231">231</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a VMware_VCloud_SDK_Admin object.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Admin.html">VMware_VCloud_SDK_Admin</a></span>
+		<span class="method-name">
+			createSDKAdminObj
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcreateSDKExtensionObj" id="createSDKExtensionObj"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">createSDKExtensionObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a242">242</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a VMware_VCloud_SDK_Extension object.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_SDK_Extension/VMware_VCloud_SDK_Extension.html">VMware_VCloud_SDK_Extension</a></span>
+		<span class="method-name">
+			createSDKExtensionObj
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcreateSDKObj" id="createSDKObj"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">createSDKObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a220">220</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A wrapper class to create a VMware vCloud SDK object.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A VMware vCloud SDK object.</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			createSDKObj
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$obj</span><span class="var-description">: A data object represents or references a vCloud entity                    or the URL of a vCloud entity.          $ref If a string is given, it should be in the URI format.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteSession" id="deleteSession"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">deleteSession</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a379">379</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Delete current session.</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> 5.1.0</li>
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			deleteSession
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdmin" id="getAdmin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdmin</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a342">342</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a VMware vCloud Director administrative object.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VCloudType.html">VMware_VCloud_API_VCloudType</a></span>
+		<span class="method-name">
+			getAdmin
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdminExtension" id="getAdminExtension"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminExtension</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a354">354</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get an Extension object which contains various links to access  extension API.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html">VMware_VCloud_API_Extension_VMWExtensionType</a></span>
+		<span class="method-name">
+			getAdminExtension
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdminExtensionUrl" id="getAdminExtensionUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminExtensionUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a206">206</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get administrative extension URL of the VMware vCloud Director.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Administrative extension URL of the VMware vCloud Director.</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getAdminExtensionUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdminUrl" id="getAdminUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a195">195</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get admin URL of the VMware vCloud Director.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Admin URL of the VMware vCloud Director.</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getAdminUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetBaseUrl" id="getBaseUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBaseUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a184">184</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get base URL of the VMware vCloud Director.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Base URL</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBaseUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetFileDescriptor" id="getFileDescriptor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getFileDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a278">278</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a file descriptor.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_ContainerType.html">VMware_VCloud_API_ContainerType</a></span>
+		<span class="method-name">
+			getFileDescriptor
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOrgRefs" id="getOrgRefs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a306">306</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references of all organization data objects or an organization data  object by its name in VMware vCloud Director. This function retrieves  organization references from server. User can also use the response of  the login() function call to get a list of the organization references.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getOrgRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the organization. If null, returns all.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOrgs" id="getOrgs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOrgs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a321">321</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get all organization data objects or an organization data  object by its name in VMware vCloud Director.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_OrgType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getOrgs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the organization. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetQueryService" id="getQueryService"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getQueryService</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a404">404</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a vCloud Director query service entry point.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Query.html">VMware_VCloud_SDK_Query</a></span>
+		<span class="method-name">
+			getQueryService
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSchemaFileName" id="getSchemaFileName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSchemaFileName</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a290">290</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve the specified schema definition file from the server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> schema represented as String.</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">xml</span>
+		<span class="method-name">
+			getSchemaFileName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$schemaFileName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$schemaFileName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetSession" id="getSession"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSession</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a365">365</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get current session.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SessionType.html">VMware_VCloud_API_SessionType</a></span>
+		<span class="method-name">
+			getSession
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUserServiceRefs" id="getUserServiceRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUserServiceRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a254">254</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a list of user services.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of all the user services.</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">list</span>
+		<span class="method-name">
+			getUserServiceRefs
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlogin" id="login"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">login</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a102">102</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Login to VMware vCloud Director.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.1</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgListType.html">VMware_VCloud_API_OrgListType</a></span>
+		<span class="method-name">
+			login
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$auth</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span> = <span class="var-default">'5.1'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: Server IP or host name and port</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$auth</span><span class="var-description">: In array('username'=&gt;&lt;username&gt;,                                  'password'=&gt;&lt;password&gt;) format</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span><span class="var-description">: An HTTP configuration array</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apiVersion</span><span class="var-description">: An API Version</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlogout" id="logout"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">logout</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a393">393</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Log out to VMware vCloud Director.</p>
+	<ul class="tags">
+				<li><span class="field">version:</span> 1.5.0</li>
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			logout
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodqueryRecordsByType" id="queryRecordsByType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">queryRecordsByType</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a474">474</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a record of the specified entity type by its type attribute.</p>
+<p class="description"><p>It uses query service of vCloud Director, filters the query results in  record format by the type attribute.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_QueryResultRecordsType object array or null</li>
+				<li><span class="field">see:</span> <a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Query_Types.html">VMware_VCloud_SDK_Query_Types</a></li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			queryRecordsByType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Supported query record type.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodqueryReferencesByName" id="queryReferencesByName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">queryReferencesByName</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a427">427</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a reference of the specified entity type by its name attribute.</p>
+<p class="description"><p>It uses query service of vCloud Director, filters the query results in  reference format by the name attribute.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array or null</li>
+				<li><span class="field">see:</span> <a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Query_Types.html">VMware_VCloud_SDK_Query_Types</a></li>
+				<li><span class="field">see:</span> VMware_VCloud_SDK_Query_Params setFilter()</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			queryReferencesByName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Supported query reference type, the entity in this                      type should have the 'name' attribute.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$filter</span><span class="var-description">: Additional filters in FIQL format. The attribute(s)                  used for filtering can be attribute(s) of a query record                  which may not be the attribute(s) of a query reference                  result. Use this additional filter to make a unique                  entity reference when needed.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodqueryReferencesByType" id="queryReferencesByType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">queryReferencesByType</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a453">453</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a reference of the specified entity type by its type attribute.</p>
+<p class="description"><p>It uses query service of vCloud Director, filters the query results in  reference format by the type attribute.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array or null</li>
+				<li><span class="field">see:</span> <a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Query_Types.html">VMware_VCloud_SDK_Query_Types</a></li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			queryReferencesByType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Supported query reference type.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLoginUrl" id="setLoginUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setLoginUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a86">86</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set login URL.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			setLoginUrl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: Login URL</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodSetVcloudToken" id="SetVcloudToken"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">SetVcloudToken</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a163">163</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set vcloud token for login.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK 5.1.0</li>
+				<li><span class="field">since:</span> API 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			SetVcloudToken
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$vcloudtoken</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: Server IP or host name and port</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$vcloudtoken</span><span class="var-description">: Vcloud Token</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span><span class="var-description">: An HTTP configuration array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodSSOLogin" id="SSOLogin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">SSOLogin</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a129">129</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Login to VMware vCloud Director using the SAML Assertion XML from vSphere SSO/SAML IDP's.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgListType.html">VMware_VCloud_API_OrgListType</a></span>
+		<span class="method-name">
+			SSOLogin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: Server IP or host name and port</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$samlAssertionXML</span><span class="var-description">: SSO Token.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$org</span><span class="var-description">: Organization name.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span><span class="var-description">: An HTTP configuration array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsupportedSystemsInfo" id="supportedSystemsInfo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">supportedSystemsInfo</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a266">266</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get Supported OperatingSystems Info.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SupportedOperatingSystemsInfoType.html">VMware_VCloud_API_SupportedOperatingSystemsInfoType</a></span>
+		<span class="method-name">
+			supportedSystemsInfo
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodwait" id="wait"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">wait</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a501">501</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A helper function to wait for a vCloud resource entity (represented by a  vCloud data object) to meet a specified condition in a waiting period.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Refetched object represented by $obj</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			wait
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$cond</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$iteration</span> = <span class="var-default">200</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$interval</span> = <span class="var-default">20</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$obj</span><span class="var-description">: A VMware vCloud data object, which should have an                          href property</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$method</span><span class="var-description">: Method name on the VMware vCloud data object                          that will be invoked to get a value, and be                          compared with the specified condition</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$cond</span><span class="var-description">: Values will be used as boolean equal condition</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$iteration</span><span class="var-description">: Maximum loops to check the condition</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$interval</span><span class="var-description">: Wait interval in seconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwaitForTask" id="waitForTask"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">waitForTask</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a525">525</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Wait for a task to finish.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			waitForTask
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>&nbsp;<span class="var-name">$task</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$iteration</span> = <span class="var-default">200</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$interval</span> = <span class="var-default">20</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+				<span class="var-name">$task</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$iteration</span><span class="var-description">: Wait loops</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$interval</span><span class="var-description">: Wait interval in seconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html">VMware_VCloud_SDK_Service_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methoddelete">VMware_VCloud_SDK_Service_Abstract::delete()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methoddownload">VMware_VCloud_SDK_Service_Abstract::download()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodget">VMware_VCloud_SDK_Service_Abstract::get()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodgetHttpClient">VMware_VCloud_SDK_Service_Abstract::getHttpClient()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodgetToken">VMware_VCloud_SDK_Service_Abstract::getToken()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodpost">VMware_VCloud_SDK_Service_Abstract::post()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodput">VMware_VCloud_SDK_Service_Abstract::put()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodrefetch">VMware_VCloud_SDK_Service_Abstract::refetch()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodsetAPIVersion">VMware_VCloud_SDK_Service_Abstract::setAPIVersion()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodsetAuth">VMware_VCloud_SDK_Service_Abstract::setAuth()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodsetConfig">VMware_VCloud_SDK_Service_Abstract::setConfig()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodsetHttpClient">VMware_VCloud_SDK_Service_Abstract::setHttpClient()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodsetToken">VMware_VCloud_SDK_Service_Abstract::setToken()</a></span><br>
+													<span class="method-name"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Service_Abstract.html#methodupload">VMware_VCloud_SDK_Service_Abstract::upload()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:56:46 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

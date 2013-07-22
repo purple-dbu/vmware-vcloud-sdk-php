@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_SDK_Extension_VMWProviderVdc</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_SDK_Extension_VMWProviderVdc</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A class provides convenient methods on a VMware vCloud extension provider  vDC entity.</p>
+		<p class="notes">
+			Located in <a class="field" href="_AdminExtension.php.html">/AdminExtension.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1118">1118</a></span>)
+		</p>
+		
+				
+		<pre><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a>
+   |
+   --VMware_VCloud_SDK_Extension_VMWProviderVdc</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#delete" title="details" class="method-name">delete</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#disable" title="details" class="method-name">disable</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#enable" title="details" class="method-name">enable</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$enable</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWStorageProfilesType.html">VMware_VCloud_API_Extension_VMWStorageProfilesType</a></span>
+										<a href="#getAvailableStorageProfiles" title="details" class="method-name">getAvailableStorageProfiles</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getExternalNetworkRefs" title="details" class="method-name">getExternalNetworkRefs</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getId" title="details" class="method-name">getId</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getNetworkPoolRefs" title="details" class="method-name">getNetworkPoolRefs</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getNetworkPools" title="details" class="method-name">getNetworkPools</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getResourcePoolRefs" title="details" class="method-name">getResourcePoolRefs</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#getResourcePools" title="details" class="method-name">getResourcePools</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#getStorageProfileRefs" title="details" class="method-name">getStorageProfileRefs</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array|null</span>
+										<a href="#getStorageProfiles" title="details" class="method-name">getStorageProfiles</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWProviderVdcType.html">VMware_VCloud_API_Extension_VMWProviderVdcType</a></span>
+										<a href="#getVMWProviderVdc" title="details" class="method-name">getVMWProviderVdc</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+										<a href="#getVMWProviderVdcRef" title="details" class="method-name">getVMWProviderVdcRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isEnabled" title="details" class="method-name">isEnabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#merge" title="details" class="method-name">merge</a>
+											(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ProviderVdcMergeParamsType.html">VMware_VCloud_API_Extension_ProviderVdcMergeParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#migrateVms" title="details" class="method-name">migrateVms</a>
+											(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_MigrateParamsType.html">VMware_VCloud_API_Extension_MigrateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWProviderVdcType.html">VMware_VCloud_API_Extension_VMWProviderVdcType</a></span>
+										<a href="#modify" title="details" class="method-name">modify</a>
+											(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWProviderVdcType.html">VMware_VCloud_API_Extension_VMWProviderVdcType</a></span>&nbsp;<span class="var-name">$providerVdc</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#updateResourcePools" title="details" class="method-name">updateResourcePools</a>
+											(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UpdateResourcePoolSetParamsType.html">VMware_VCloud_API_Extension_UpdateResourcePoolSetParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#updateStorageProfiles" title="details" class="method-name">updateStorageProfiles</a>
+											(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UpdateProviderVdcStorageProfilesParamsType.html">VMware_VCloud_API_Extension_UpdateProviderVdcStorageProfilesParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$svc">VMware_VCloud_SDK_Abstract::$svc</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#var$url">VMware_VCloud_SDK_Abstract::$url</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methoddelete" id="delete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1320">1320</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Delete a VMware provider vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			delete
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddisable" id="disable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">disable</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1298">1298</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disable this VMware provider vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			disable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodenable" id="enable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enable</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1278">1278</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enable this provider vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			enable
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$enable</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$enable</span><span class="var-description">: To enable, set to true; to disable, set to false</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAvailableStorageProfiles" id="getAvailableStorageProfiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAvailableStorageProfiles</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1363">1363</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a list of storage profiles that can be added to the  specified provider vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWStorageProfilesType.html">VMware_VCloud_API_Extension_VMWStorageProfilesType</a></span>
+		<span class="method-name">
+			getAvailableStorageProfiles
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetExternalNetworkRefs" id="getExternalNetworkRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getExternalNetworkRefs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1174">1174</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references to VMware external network.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getExternalNetworkRefs
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetId" id="getId"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1150">1150</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructs vCloud ID of the provider vDC from its UUID.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getId
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNetworkPoolRefs" id="getNetworkPoolRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNetworkPoolRefs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1162">1162</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references of network pool settings.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getNetworkPoolRefs
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the network pool to get. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetNetworkPools" id="getNetworkPools"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNetworkPools</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1188">1188</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get network pool settings objects.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_Extension_FencePoolType |                 VMware_VCloud_API_Extension_PortGroupPoolType |                 VMware_VCloud_API_Extension_VlanPoolType object array</li>
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getNetworkPools
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of the network pool to get. If null, returns all</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetResourcePoolRefs" id="getResourcePoolRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getResourcePoolRefs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1226">1226</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a list of provider vDC resource pool references.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_ReferenceType object array</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getResourcePoolRefs
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetResourcePools" id="getResourcePools"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getResourcePools</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1214">1214</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve a list of provider vDC resource pools.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_Extension_VMWProviderVdcResourcePoolType               object array or null</li>
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			getResourcePools
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStorageProfileRefs" id="getStorageProfileRefs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStorageProfileRefs</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1393">1393</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get references of provider vDC storage profiles.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_Extension_ReferenceType object array                     or null</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			getStorageProfileRefs
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetStorageProfiles" id="getStorageProfiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStorageProfiles</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1407">1407</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get provider vDC storage profiles.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_Extension_VMWProviderVdcStorageProfileType          object array or null</li>
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array|null</span>
+		<span class="method-name">
+			getStorageProfiles
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVMWProviderVdc" id="getVMWProviderVdc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVMWProviderVdc</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1139">1139</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the provider vDC data object.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWProviderVdcType.html">VMware_VCloud_API_Extension_VMWProviderVdcType</a></span>
+		<span class="method-name">
+			getVMWProviderVdc
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetVMWProviderVdcRef" id="getVMWProviderVdcRef"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVMWProviderVdcRef</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1127">1127</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a reference to the provider vDC entity.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
+		<span class="method-name">
+			getVMWProviderVdcRef
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisEnabled" id="isEnabled"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1309">1309</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check the provide vDC is enabled or not.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isEnabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmerge" id="merge"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">merge</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1334">1334</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Merge provider vDCs.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			merge
+		</span>
+					(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ProviderVdcMergeParamsType.html">VMware_VCloud_API_Extension_ProviderVdcMergeParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ProviderVdcMergeParamsType.html">VMware_VCloud_API_Extension_ProviderVdcMergeParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmigrateVms" id="migrateVms"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">migrateVms</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1349">1349</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Migrate a VM to a different resource pool.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			migrateVms
+		</span>
+					(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_MigrateParamsType.html">VMware_VCloud_API_Extension_MigrateParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_MigrateParamsType.html">VMware_VCloud_API_Extension_MigrateParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmodify" id="modify"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">modify</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1264">1264</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify a provider vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.0.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWProviderVdcType.html">VMware_VCloud_API_Extension_VMWProviderVdcType</a></span>
+		<span class="method-name">
+			modify
+		</span>
+					(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWProviderVdcType.html">VMware_VCloud_API_Extension_VMWProviderVdcType</a></span>&nbsp;<span class="var-name">$providerVdc</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWProviderVdcType.html">VMware_VCloud_API_Extension_VMWProviderVdcType</a></span>
+				<span class="var-name">$providerVdc</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateResourcePools" id="updateResourcePools"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateResourcePools</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1249">1249</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Update backing resource pools for provider vDC.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 1.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			updateResourcePools
+		</span>
+					(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UpdateResourcePoolSetParamsType.html">VMware_VCloud_API_Extension_UpdateResourcePoolSetParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UpdateResourcePoolSetParamsType.html">VMware_VCloud_API_Extension_UpdateResourcePoolSetParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdateStorageProfiles" id="updateStorageProfiles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">updateStorageProfiles</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_SDK_Extension__AdminExtension.php.html#a1378">1378</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Update storage profiles belonging to a provider vDC. The request  parameters specify storage profiles to add or remove.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			updateStorageProfiles
+		</span>
+					(<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UpdateProviderVdcStorageProfilesParamsType.html">VMware_VCloud_API_Extension_UpdateProviderVdcStorageProfilesParamsType</a></span>&nbsp;<span class="var-name">$params</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UpdateProviderVdcStorageProfilesParamsType.html">VMware_VCloud_API_Extension_UpdateProviderVdcStorageProfilesParamsType</a></span>
+				<span class="var-name">$params</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html">VMware_VCloud_SDK_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#method__construct">VMware_VCloud_SDK_Abstract::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methoddestroy">VMware_VCloud_SDK_Abstract::destroy()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedLinks">VMware_VCloud_SDK_Abstract::getContainedLinks()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainedRefs">VMware_VCloud_SDK_Abstract::getContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetContainerLink">VMware_VCloud_SDK_Abstract::getContainerLink()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetDataObj">VMware_VCloud_SDK_Abstract::getDataObj()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetEntityId">VMware_VCloud_SDK_Abstract::getEntityId()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetMetadataUrl">VMware_VCloud_SDK_Abstract::getMetadataUrl()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetObjsByContainedRefs">VMware_VCloud_SDK_Abstract::getObjsByContainedRefs()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetRef">VMware_VCloud_SDK_Abstract::getRef()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUrl">VMware_VCloud_SDK_Abstract::getUrl()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Abstract.html#methodgetUuid">VMware_VCloud_SDK_Abstract::getUuid()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 28 Mar 2013 10:50:09 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
