@@ -26,8 +26,8 @@
 <p class="short-description">A base abstract type for all complex types that support extensions.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.1.0</li>
-				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
 			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a340">340</a></span>)
@@ -124,7 +124,7 @@
 								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_PublishCatalogParamsType.html">VMware_VCloud_API_PublishCatalogParamsType</a></td>
 					<td>
-											Parameters required by a publish request.
+											Parameters required when sharing a catalog with other  organizations.
 										</td>
 				</tr>
 								<tr>
@@ -154,7 +154,7 @@
 								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_NetworkServiceType.html">VMware_VCloud_API_NetworkServiceType</a></td>
 					<td>
-											This is the root type of all NetworkServices
+											This is the root of the substitution group for network services.  Replace it with any of NatService, LoadBalancerService  IpsecVpnService/GatewayIpsecVpnService,  DhcpService/GatewayDhcpService, FirewallService, or  StaticRoutingService.
 										</td>
 				</tr>
 								<tr>
@@ -452,6 +452,24 @@
 										</td>
 				</tr>
 								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html">VMware_VCloud_API_InstantiateVmParamsType</a></td>
+					<td>
+											Instantiation parameters for a VM in a vApp.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType</a></td>
+					<td>
+											Hardware parameter customization applied to a virtual machine in a vApp when instantiated.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html">VMware_VCloud_API_Disk</a></td>
+					<td>
+											Parameters of a single disk in the virtual machine.
+										</td>
+				</tr>
+								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html">VMware_VCloud_API_DeployVAppParamsType</a></td>
 					<td>
 											Parameters to a deploy vApp request.
@@ -478,13 +496,19 @@
 								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_DiskCreateParamsType.html">VMware_VCloud_API_DiskCreateParamsType</a></td>
 					<td>
-											Represents parameters for creating or updating a named disk.
+											Parameters for creating or updating an independent disk.
 										</td>
 				</tr>
 								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html">VMware_VCloud_API_DiskAttachOrDetachParamsType</a></td>
 					<td>
-											Represents parameters for attaching or detaching a disk.
+											Parameters for attaching or detaching an independent disk.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html">VMware_VCloud_API_MksTicketType</a></td>
+					<td>
+											A ticket and connection information for accessing the console of a VM.
 										</td>
 				</tr>
 								<tr>
@@ -508,7 +532,7 @@
 								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_VersionsType.html">VMware_VCloud_API_VersionsType</a></td>
 					<td>
-											Representation of list of API definition versions.
+											Represents a list of API versions supported by an ApiVendor.
 										</td>
 				</tr>
 								<tr>
@@ -626,6 +650,24 @@
 										</td>
 				</tr>
 								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html">VMware_VCloud_API_CatalogStorageProfilesType</a></td>
+					<td>
+											Container for VdcStorageProfile elements that reference  storage profiles used by a catalog.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType</a></td>
+					<td>
+											Configuration parameters for a catalog that has an external  subscription.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html">VMware_VCloud_API_PublishExternalCatalogParamsType</a></td>
+					<td>
+											Configuration parameters for a catalog that is published  externally.
+										</td>
+				</tr>
+								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html">VMware_VCloud_API_EventType</a></td>
 					<td>
 											Parameters for creating an event.
@@ -641,6 +683,78 @@
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html">VMware_VCloud_API_Extension_RealmType</a></td>
 					<td>
 											Kerberos realm information.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html">VMware_VCloud_API_Extension_SerialPortConfigType</a></td>
+					<td>
+											Internal use only.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType</a></td>
+					<td>
+											A value to be applied to a system configuration setting.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html">VMware_VCloud_API_Extension_CbmDataType</a></td>
+					<td>
+											Internal use only.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType</a></td>
+					<td>
+											Meta info of a service offering parameter.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType</a></td>
+					<td>
+											Parameter meta info list of a service offering.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType</a></td>
+					<td>
+											Parameters to associate a service offering to a vCloud entity.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType</a></td>
+					<td>
+											Parameters to disassociate a service offering to a vCloud entity.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType</a></td>
+					<td>
+											Parameter info of a service offering instance.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType</a></td>
+					<td>
+											Parameter list for a service offering instance.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType</a></td>
+					<td>
+											Parameters for creating an extension service offering instance.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType</a></td>
+					<td>
+											Parameters to associate a service offering instance to a vCloud entity.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType</a></td>
+					<td>
+											Parameters to disassociate a service offering instance to a vCloud entity.
 										</td>
 				</tr>
 								<tr>
@@ -903,7 +1017,7 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -996,6 +1110,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$defaultNS">VMware_VCloud_API_GatewayType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$defaultNS">VMware_VCloud_API_Extension_ResourcePoolType::$defaultNS</a>
 							</li>
 					<li>
@@ -1018,6 +1141,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$defaultNS">VMware_VCloud_API_Extension_AdminServiceType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$defaultNS">VMware_VCloud_API_Extension_AdminServiceExtensionType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$defaultNS">VMware_VCloud_API_Extension_AdminApiDefinitionType::$defaultNS</a>
@@ -1111,6 +1237,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$defaultNS">VMware_VCloud_API_CatalogItemType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$defaultNS">VMware_VCloud_API_Extension_ExtensionObjectRefType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$defaultNS">VMware_VCloud_API_Extension_ApiFilterType::$defaultNS</a>
@@ -1215,6 +1344,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$defaultNS">VMware_VCloud_API_OrgPasswordPolicySettingsType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$defaultNS">VMware_VCloud_API_OrgsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$defaultNS">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$defaultNS</a>
 							</li>
 					<li>
@@ -1281,10 +1413,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_LookupServiceParamsType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_CatalogSettingsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_UberAdminSettingsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$defaultNS">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$defaultNS">VMware_VCloud_API_Extension_VMWExtensionType::$defaultNS</a>
@@ -1338,6 +1485,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#var$defaultNS">VMware_VCloud_API_ParamsType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#var$defaultNS">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#var$defaultNS">VMware_VCloud_API_VAppCreationParamsType::$defaultNS</a>
 							</li>
 					<li>
@@ -1360,6 +1510,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#var$defaultNS">VMware_VCloud_API_RegisterVAppParamsType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#var$defaultNS">VMware_VCloud_API_CaptureVAppParamsType::$defaultNS</a>
@@ -1668,6 +1821,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#var$defaultNS">VMware_VCloud_API_SourcedVmInstantiationParamsType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#var$defaultNS">VMware_VCloud_API_InstantiateVmParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#var$defaultNS">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#var$defaultNS">VMware_VCloud_API_Disk::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#var$defaultNS">VMware_VCloud_API_DeployVAppParamsType::$defaultNS</a>
 							</li>
 					<li>
@@ -1684,6 +1846,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#var$defaultNS">VMware_VCloud_API_DiskAttachOrDetachParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#var$defaultNS">VMware_VCloud_API_MksTicketType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#var$defaultNS">VMware_VCloud_API_VAppTemplateChildrenType::$defaultNS</a>
@@ -1758,6 +1923,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#var$defaultNS">VMware_VCloud_API_SmtpServerSettingsType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#var$defaultNS">VMware_VCloud_API_CatalogStorageProfilesType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#var$defaultNS">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#var$defaultNS">VMware_VCloud_API_PublishExternalCatalogParamsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#var$defaultNS">VMware_VCloud_API_EventType::$defaultNS</a>
 							</li>
 					<li>
@@ -1765,6 +1939,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#var$defaultNS">VMware_VCloud_API_Extension_RealmType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#var$defaultNS">VMware_VCloud_API_Extension_SerialPortConfigType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#var$defaultNS">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#var$defaultNS">VMware_VCloud_API_Extension_CbmDataType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::$defaultNS</a>
@@ -1820,7 +2030,7 @@
 </div>
 
 <a name="var$namespace" id="$namespace"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -1913,6 +2123,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$namespace">VMware_VCloud_API_GatewayType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$namespace">VMware_VCloud_API_Extension_ResourcePoolType::$namespace</a>
 							</li>
 					<li>
@@ -1935,6 +2154,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$namespace">VMware_VCloud_API_Extension_AdminServiceType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$namespace">VMware_VCloud_API_Extension_AdminServiceExtensionType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$namespace">VMware_VCloud_API_Extension_AdminApiDefinitionType::$namespace</a>
@@ -2028,6 +2250,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$namespace">VMware_VCloud_API_CatalogItemType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$namespace">VMware_VCloud_API_Extension_ExtensionObjectRefType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$namespace">VMware_VCloud_API_Extension_ApiFilterType::$namespace</a>
@@ -2132,6 +2357,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$namespace">VMware_VCloud_API_OrgPasswordPolicySettingsType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$namespace">VMware_VCloud_API_OrgsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$namespace">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$namespace</a>
 							</li>
 					<li>
@@ -2198,10 +2426,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$namespace">VMware_VCloud_API_Extension_LookupServiceParamsType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$namespace">VMware_VCloud_API_Extension_CatalogSettingsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$namespace">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$namespace">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$namespace">VMware_VCloud_API_Extension_UberAdminSettingsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$namespace">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$namespace">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$namespace">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$namespace">VMware_VCloud_API_Extension_VMWExtensionType::$namespace</a>
@@ -2255,6 +2498,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#var$namespace">VMware_VCloud_API_ParamsType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#var$namespace">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#var$namespace">VMware_VCloud_API_VAppCreationParamsType::$namespace</a>
 							</li>
 					<li>
@@ -2277,6 +2523,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#var$namespace">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#var$namespace">VMware_VCloud_API_RegisterVAppParamsType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#var$namespace">VMware_VCloud_API_CaptureVAppParamsType::$namespace</a>
@@ -2585,6 +2834,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#var$namespace">VMware_VCloud_API_SourcedVmInstantiationParamsType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#var$namespace">VMware_VCloud_API_InstantiateVmParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#var$namespace">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#var$namespace">VMware_VCloud_API_Disk::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#var$namespace">VMware_VCloud_API_DeployVAppParamsType::$namespace</a>
 							</li>
 					<li>
@@ -2601,6 +2859,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#var$namespace">VMware_VCloud_API_DiskAttachOrDetachParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#var$namespace">VMware_VCloud_API_MksTicketType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#var$namespace">VMware_VCloud_API_VAppTemplateChildrenType::$namespace</a>
@@ -2675,6 +2936,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#var$namespace">VMware_VCloud_API_SmtpServerSettingsType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#var$namespace">VMware_VCloud_API_CatalogStorageProfilesType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#var$namespace">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#var$namespace">VMware_VCloud_API_PublishExternalCatalogParamsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#var$namespace">VMware_VCloud_API_EventType::$namespace</a>
 							</li>
 					<li>
@@ -2682,6 +2952,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#var$namespace">VMware_VCloud_API_Extension_RealmType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#var$namespace">VMware_VCloud_API_Extension_SerialPortConfigType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#var$namespace">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#var$namespace">VMware_VCloud_API_Extension_CbmDataType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#var$namespace">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::$namespace</a>
@@ -2736,7 +3042,7 @@
 
 </div>
 <a name="var$namespacedef" id="$namespacedef"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -2829,6 +3135,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$namespacedef">VMware_VCloud_API_GatewayType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$namespacedef">VMware_VCloud_API_Extension_ResourcePoolType::$namespacedef</a>
 							</li>
 					<li>
@@ -2851,6 +3166,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$namespacedef">VMware_VCloud_API_Extension_AdminServiceType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$namespacedef">VMware_VCloud_API_Extension_AdminServiceExtensionType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$namespacedef">VMware_VCloud_API_Extension_AdminApiDefinitionType::$namespacedef</a>
@@ -2944,6 +3262,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$namespacedef">VMware_VCloud_API_CatalogItemType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$namespacedef">VMware_VCloud_API_Extension_ExtensionObjectRefType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$namespacedef">VMware_VCloud_API_Extension_ApiFilterType::$namespacedef</a>
@@ -3048,6 +3369,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$namespacedef">VMware_VCloud_API_OrgPasswordPolicySettingsType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$namespacedef">VMware_VCloud_API_OrgsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$namespacedef">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$namespacedef</a>
 							</li>
 					<li>
@@ -3114,10 +3438,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_LookupServiceParamsType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_CatalogSettingsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_UberAdminSettingsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$namespacedef">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$namespacedef">VMware_VCloud_API_Extension_VMWExtensionType::$namespacedef</a>
@@ -3171,6 +3510,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#var$namespacedef">VMware_VCloud_API_ParamsType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#var$namespacedef">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#var$namespacedef">VMware_VCloud_API_VAppCreationParamsType::$namespacedef</a>
 							</li>
 					<li>
@@ -3193,6 +3535,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#var$namespacedef">VMware_VCloud_API_RegisterVAppParamsType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#var$namespacedef">VMware_VCloud_API_CaptureVAppParamsType::$namespacedef</a>
@@ -3501,6 +3846,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#var$namespacedef">VMware_VCloud_API_SourcedVmInstantiationParamsType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#var$namespacedef">VMware_VCloud_API_InstantiateVmParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#var$namespacedef">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#var$namespacedef">VMware_VCloud_API_Disk::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#var$namespacedef">VMware_VCloud_API_DeployVAppParamsType::$namespacedef</a>
 							</li>
 					<li>
@@ -3517,6 +3871,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#var$namespacedef">VMware_VCloud_API_DiskAttachOrDetachParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#var$namespacedef">VMware_VCloud_API_MksTicketType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#var$namespacedef">VMware_VCloud_API_VAppTemplateChildrenType::$namespacedef</a>
@@ -3591,6 +3948,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#var$namespacedef">VMware_VCloud_API_SmtpServerSettingsType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#var$namespacedef">VMware_VCloud_API_CatalogStorageProfilesType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#var$namespacedef">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#var$namespacedef">VMware_VCloud_API_PublishExternalCatalogParamsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#var$namespacedef">VMware_VCloud_API_EventType::$namespacedef</a>
 							</li>
 					<li>
@@ -3598,6 +3964,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#var$namespacedef">VMware_VCloud_API_Extension_RealmType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#var$namespacedef">VMware_VCloud_API_Extension_SerialPortConfigType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#var$namespacedef">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#var$namespacedef">VMware_VCloud_API_Extension_CbmDataType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::$namespacedef</a>
@@ -3652,7 +4054,7 @@
 
 </div>
 <a name="var$tagName" id="$tagName"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -3745,6 +4147,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$tagName">VMware_VCloud_API_GatewayType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$tagName">VMware_VCloud_API_Extension_ResourcePoolType::$tagName</a>
 							</li>
 					<li>
@@ -3767,6 +4178,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$tagName">VMware_VCloud_API_Extension_AdminServiceType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$tagName">VMware_VCloud_API_Extension_AdminServiceExtensionType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$tagName">VMware_VCloud_API_Extension_AdminApiDefinitionType::$tagName</a>
@@ -3860,6 +4274,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$tagName">VMware_VCloud_API_CatalogItemType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$tagName">VMware_VCloud_API_Extension_ExtensionObjectRefType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$tagName">VMware_VCloud_API_Extension_ApiFilterType::$tagName</a>
@@ -3964,6 +4381,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$tagName">VMware_VCloud_API_OrgPasswordPolicySettingsType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$tagName">VMware_VCloud_API_OrgsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$tagName">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$tagName</a>
 							</li>
 					<li>
@@ -4030,10 +4450,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$tagName">VMware_VCloud_API_Extension_LookupServiceParamsType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$tagName">VMware_VCloud_API_Extension_CatalogSettingsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$tagName">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$tagName">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$tagName">VMware_VCloud_API_Extension_UberAdminSettingsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$tagName">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$tagName">VMware_VCloud_API_Extension_VMWExtensionType::$tagName</a>
@@ -4087,6 +4522,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#var$tagName">VMware_VCloud_API_ParamsType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#var$tagName">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#var$tagName">VMware_VCloud_API_VAppCreationParamsType::$tagName</a>
 							</li>
 					<li>
@@ -4109,6 +4547,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#var$tagName">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#var$tagName">VMware_VCloud_API_RegisterVAppParamsType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#var$tagName">VMware_VCloud_API_CaptureVAppParamsType::$tagName</a>
@@ -4417,6 +4858,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#var$tagName">VMware_VCloud_API_SourcedVmInstantiationParamsType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#var$tagName">VMware_VCloud_API_InstantiateVmParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#var$tagName">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#var$tagName">VMware_VCloud_API_Disk::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#var$tagName">VMware_VCloud_API_DeployVAppParamsType::$tagName</a>
 							</li>
 					<li>
@@ -4433,6 +4883,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#var$tagName">VMware_VCloud_API_DiskAttachOrDetachParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#var$tagName">VMware_VCloud_API_MksTicketType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#var$tagName">VMware_VCloud_API_VAppTemplateChildrenType::$tagName</a>
@@ -4507,6 +4960,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#var$tagName">VMware_VCloud_API_SmtpServerSettingsType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#var$tagName">VMware_VCloud_API_CatalogStorageProfilesType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#var$tagName">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#var$tagName">VMware_VCloud_API_PublishExternalCatalogParamsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#var$tagName">VMware_VCloud_API_EventType::$tagName</a>
 							</li>
 					<li>
@@ -4514,6 +4976,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#var$tagName">VMware_VCloud_API_Extension_RealmType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#var$tagName">VMware_VCloud_API_Extension_SerialPortConfigType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#var$tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#var$tagName">VMware_VCloud_API_Extension_CbmDataType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#var$tagName">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::$tagName</a>
@@ -4568,7 +5066,7 @@
 
 </div>
 <a name="var$VCloudExtension" id="$VCloudExtension"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
@@ -4605,7 +5103,7 @@
 		<div class="info-box-body">
 			<A NAME='method_detail'></A>
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a350">350</a></span>)
@@ -4707,6 +5205,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#method__construct">VMware_VCloud_API_GatewayType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#method__construct">VMware_VCloud_API_Extension_ResourcePoolType::__construct()</a>
 							</li>
 					<li>
@@ -4729,6 +5236,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#method__construct">VMware_VCloud_API_Extension_AdminServiceType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#method__construct">VMware_VCloud_API_Extension_AdminServiceExtensionType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#method__construct">VMware_VCloud_API_Extension_AdminApiDefinitionType::__construct()</a>
@@ -4822,6 +5332,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#method__construct">VMware_VCloud_API_CatalogItemType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#method__construct">VMware_VCloud_API_Extension_ExtensionObjectRefType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#method__construct">VMware_VCloud_API_Extension_ApiFilterType::__construct()</a>
@@ -4926,6 +5439,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#method__construct">VMware_VCloud_API_OrgPasswordPolicySettingsType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#method__construct">VMware_VCloud_API_OrgsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#method__construct">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::__construct()</a>
 							</li>
 					<li>
@@ -4992,10 +5508,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#method__construct">VMware_VCloud_API_Extension_LookupServiceParamsType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#method__construct">VMware_VCloud_API_Extension_CatalogSettingsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#method__construct">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#method__construct">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#method__construct">VMware_VCloud_API_Extension_UberAdminSettingsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#method__construct">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#method__construct">VMware_VCloud_API_Extension_SystemConfigurationSettingType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#method__construct">VMware_VCloud_API_Extension_ComponentManagerSettingsType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#method__construct">VMware_VCloud_API_Extension_VMWExtensionType::__construct()</a>
@@ -5049,6 +5580,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#method__construct">VMware_VCloud_API_ParamsType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#method__construct">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#method__construct">VMware_VCloud_API_VAppCreationParamsType::__construct()</a>
 							</li>
 					<li>
@@ -5071,6 +5605,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#method__construct">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#method__construct">VMware_VCloud_API_RegisterVAppParamsType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#method__construct">VMware_VCloud_API_CaptureVAppParamsType::__construct()</a>
@@ -5379,6 +5916,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#method__construct">VMware_VCloud_API_SourcedVmInstantiationParamsType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#method__construct">VMware_VCloud_API_InstantiateVmParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#method__construct">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#method__construct">VMware_VCloud_API_Disk::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#method__construct">VMware_VCloud_API_DeployVAppParamsType::__construct()</a>
 							</li>
 					<li>
@@ -5395,6 +5941,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#method__construct">VMware_VCloud_API_DiskAttachOrDetachParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#method__construct">VMware_VCloud_API_MksTicketType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#method__construct">VMware_VCloud_API_VAppTemplateChildrenType::__construct()</a>
@@ -5469,6 +6018,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#method__construct">VMware_VCloud_API_SmtpServerSettingsType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#method__construct">VMware_VCloud_API_CatalogStorageProfilesType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#method__construct">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#method__construct">VMware_VCloud_API_PublishExternalCatalogParamsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#method__construct">VMware_VCloud_API_EventType::__construct()</a>
 							</li>
 					<li>
@@ -5476,6 +6034,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#method__construct">VMware_VCloud_API_Extension_RealmType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#method__construct">VMware_VCloud_API_Extension_SerialPortConfigType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#method__construct">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#method__construct">VMware_VCloud_API_Extension_CbmDataType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#method__construct">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::__construct()</a>
@@ -5528,7 +6122,7 @@
 				</ul>
 	</div>
 <a name="methodaddVCloudExtension" id="addVCloudExtension"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">addVCloudExtension</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a364">364</a></span>)
@@ -5556,7 +6150,7 @@
 			
 	</div>
 <a name="methodbuild" id="build"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a434">434</a></span>)
@@ -5661,6 +6255,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodbuild">VMware_VCloud_API_GatewayType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodbuild">VMware_VCloud_API_Extension_ResourcePoolType::build()</a>
 							</li>
 					<li>
@@ -5683,6 +6286,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuild">VMware_VCloud_API_Extension_AdminServiceType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodbuild">VMware_VCloud_API_Extension_AdminServiceExtensionType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodbuild">VMware_VCloud_API_Extension_AdminApiDefinitionType::build()</a>
@@ -5776,6 +6382,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodbuild">VMware_VCloud_API_CatalogItemType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodbuild">VMware_VCloud_API_Extension_ExtensionObjectRefType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodbuild">VMware_VCloud_API_Extension_ApiFilterType::build()</a>
@@ -5880,6 +6489,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodbuild">VMware_VCloud_API_OrgPasswordPolicySettingsType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodbuild">VMware_VCloud_API_OrgsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodbuild">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::build()</a>
 							</li>
 					<li>
@@ -5946,10 +6558,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodbuild">VMware_VCloud_API_Extension_LookupServiceParamsType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodbuild">VMware_VCloud_API_Extension_CatalogSettingsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodbuild">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodbuild">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodbuild">VMware_VCloud_API_Extension_UberAdminSettingsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodbuild">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodbuild">VMware_VCloud_API_Extension_SystemConfigurationSettingType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodbuild">VMware_VCloud_API_Extension_ComponentManagerSettingsType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodbuild">VMware_VCloud_API_Extension_VMWExtensionType::build()</a>
@@ -6003,6 +6630,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodbuild">VMware_VCloud_API_ParamsType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodbuild">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodbuild">VMware_VCloud_API_VAppCreationParamsType::build()</a>
 							</li>
 					<li>
@@ -6025,6 +6655,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodbuild">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodbuild">VMware_VCloud_API_RegisterVAppParamsType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodbuild">VMware_VCloud_API_CaptureVAppParamsType::build()</a>
@@ -6333,6 +6966,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodbuild">VMware_VCloud_API_SourcedVmInstantiationParamsType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodbuild">VMware_VCloud_API_InstantiateVmParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodbuild">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodbuild">VMware_VCloud_API_Disk::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodbuild">VMware_VCloud_API_DeployVAppParamsType::build()</a>
 							</li>
 					<li>
@@ -6349,6 +6991,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodbuild">VMware_VCloud_API_DiskAttachOrDetachParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodbuild">VMware_VCloud_API_MksTicketType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodbuild">VMware_VCloud_API_VAppTemplateChildrenType::build()</a>
@@ -6423,6 +7068,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodbuild">VMware_VCloud_API_SmtpServerSettingsType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodbuild">VMware_VCloud_API_CatalogStorageProfilesType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodbuild">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodbuild">VMware_VCloud_API_PublishExternalCatalogParamsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodbuild">VMware_VCloud_API_EventType::build()</a>
 							</li>
 					<li>
@@ -6430,6 +7084,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodbuild">VMware_VCloud_API_Extension_RealmType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodbuild">VMware_VCloud_API_Extension_SerialPortConfigType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodbuild">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodbuild">VMware_VCloud_API_Extension_CbmDataType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodbuild">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::build()</a>
@@ -6482,7 +7172,7 @@
 				</ul>
 	</div>
 <a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a455">455</a></span>)
@@ -6587,6 +7277,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodbuildAttributes">VMware_VCloud_API_GatewayType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ResourcePoolType::buildAttributes()</a>
 							</li>
 					<li>
@@ -6609,6 +7308,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminServiceType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminServiceExtensionType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminApiDefinitionType::buildAttributes()</a>
@@ -6702,6 +7404,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodbuildAttributes">VMware_VCloud_API_CatalogItemType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ExtensionObjectRefType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ApiFilterType::buildAttributes()</a>
@@ -6806,6 +7511,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodbuildAttributes">VMware_VCloud_API_OrgPasswordPolicySettingsType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodbuildAttributes">VMware_VCloud_API_OrgsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodbuildAttributes">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::buildAttributes()</a>
 							</li>
 					<li>
@@ -6872,10 +7580,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_LookupServiceParamsType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_CatalogSettingsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_UberAdminSettingsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodbuildAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ComponentManagerSettingsType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodbuildAttributes">VMware_VCloud_API_Extension_VMWExtensionType::buildAttributes()</a>
@@ -6929,6 +7652,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodbuildAttributes">VMware_VCloud_API_ParamsType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodbuildAttributes">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodbuildAttributes">VMware_VCloud_API_VAppCreationParamsType::buildAttributes()</a>
 							</li>
 					<li>
@@ -6951,6 +7677,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodbuildAttributes">VMware_VCloud_API_RegisterVAppParamsType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodbuildAttributes">VMware_VCloud_API_CaptureVAppParamsType::buildAttributes()</a>
@@ -7259,6 +7988,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodbuildAttributes">VMware_VCloud_API_SourcedVmInstantiationParamsType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodbuildAttributes">VMware_VCloud_API_InstantiateVmParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodbuildAttributes">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodbuildAttributes">VMware_VCloud_API_Disk::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodbuildAttributes">VMware_VCloud_API_DeployVAppParamsType::buildAttributes()</a>
 							</li>
 					<li>
@@ -7275,6 +8013,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodbuildAttributes">VMware_VCloud_API_DiskAttachOrDetachParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodbuildAttributes">VMware_VCloud_API_MksTicketType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodbuildAttributes">VMware_VCloud_API_VAppTemplateChildrenType::buildAttributes()</a>
@@ -7349,6 +8090,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodbuildAttributes">VMware_VCloud_API_SmtpServerSettingsType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodbuildAttributes">VMware_VCloud_API_CatalogStorageProfilesType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodbuildAttributes">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodbuildAttributes">VMware_VCloud_API_PublishExternalCatalogParamsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodbuildAttributes">VMware_VCloud_API_EventType::buildAttributes()</a>
 							</li>
 					<li>
@@ -7356,6 +8106,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodbuildAttributes">VMware_VCloud_API_Extension_RealmType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodbuildAttributes">VMware_VCloud_API_Extension_SerialPortConfigType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodbuildAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodbuildAttributes">VMware_VCloud_API_Extension_CbmDataType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::buildAttributes()</a>
@@ -7408,7 +8194,7 @@
 				</ul>
 	</div>
 <a name="methodbuildChildren" id="buildChildren"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a469">469</a></span>)
@@ -7516,6 +8302,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodbuildChildren">VMware_VCloud_API_GatewayType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodbuildChildren">VMware_VCloud_API_Extension_ResourcePoolType::buildChildren()</a>
 							</li>
 					<li>
@@ -7538,6 +8333,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminServiceType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminServiceExtensionType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminApiDefinitionType::buildChildren()</a>
@@ -7631,6 +8429,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodbuildChildren">VMware_VCloud_API_CatalogItemType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodbuildChildren">VMware_VCloud_API_Extension_ExtensionObjectRefType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodbuildChildren">VMware_VCloud_API_Extension_ApiFilterType::buildChildren()</a>
@@ -7735,6 +8536,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodbuildChildren">VMware_VCloud_API_OrgPasswordPolicySettingsType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodbuildChildren">VMware_VCloud_API_OrgsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodbuildChildren">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::buildChildren()</a>
 							</li>
 					<li>
@@ -7801,10 +8605,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_LookupServiceParamsType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_CatalogSettingsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_UberAdminSettingsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodbuildChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ComponentManagerSettingsType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodbuildChildren">VMware_VCloud_API_Extension_VMWExtensionType::buildChildren()</a>
@@ -7858,6 +8677,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodbuildChildren">VMware_VCloud_API_ParamsType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodbuildChildren">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodbuildChildren">VMware_VCloud_API_VAppCreationParamsType::buildChildren()</a>
 							</li>
 					<li>
@@ -7880,6 +8702,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodbuildChildren">VMware_VCloud_API_RegisterVAppParamsType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodbuildChildren">VMware_VCloud_API_CaptureVAppParamsType::buildChildren()</a>
@@ -8188,6 +9013,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodbuildChildren">VMware_VCloud_API_SourcedVmInstantiationParamsType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodbuildChildren">VMware_VCloud_API_InstantiateVmParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodbuildChildren">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodbuildChildren">VMware_VCloud_API_Disk::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodbuildChildren">VMware_VCloud_API_DeployVAppParamsType::buildChildren()</a>
 							</li>
 					<li>
@@ -8204,6 +9038,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodbuildChildren">VMware_VCloud_API_DiskAttachOrDetachParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodbuildChildren">VMware_VCloud_API_MksTicketType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodbuildChildren">VMware_VCloud_API_VAppTemplateChildrenType::buildChildren()</a>
@@ -8278,6 +9115,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodbuildChildren">VMware_VCloud_API_SmtpServerSettingsType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodbuildChildren">VMware_VCloud_API_CatalogStorageProfilesType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodbuildChildren">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodbuildChildren">VMware_VCloud_API_PublishExternalCatalogParamsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodbuildChildren">VMware_VCloud_API_EventType::buildChildren()</a>
 							</li>
 					<li>
@@ -8285,6 +9131,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodbuildChildren">VMware_VCloud_API_Extension_RealmType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodbuildChildren">VMware_VCloud_API_Extension_SerialPortConfigType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodbuildChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodbuildChildren">VMware_VCloud_API_Extension_CbmDataType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::buildChildren()</a>
@@ -8337,7 +9219,7 @@
 				</ul>
 	</div>
 <a name="methodexport" id="export"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a369">369</a></span>)
@@ -8454,6 +9336,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodexport">VMware_VCloud_API_GatewayType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodexport">VMware_VCloud_API_Extension_ResourcePoolType::export()</a>
 							</li>
 					<li>
@@ -8476,6 +9367,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexport">VMware_VCloud_API_Extension_AdminServiceType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodexport">VMware_VCloud_API_Extension_AdminServiceExtensionType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodexport">VMware_VCloud_API_Extension_AdminApiDefinitionType::export()</a>
@@ -8569,6 +9463,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodexport">VMware_VCloud_API_CatalogItemType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodexport">VMware_VCloud_API_Extension_ExtensionObjectRefType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodexport">VMware_VCloud_API_Extension_ApiFilterType::export()</a>
@@ -8673,6 +9570,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodexport">VMware_VCloud_API_OrgPasswordPolicySettingsType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodexport">VMware_VCloud_API_OrgsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodexport">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::export()</a>
 							</li>
 					<li>
@@ -8739,10 +9639,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodexport">VMware_VCloud_API_Extension_LookupServiceParamsType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodexport">VMware_VCloud_API_Extension_CatalogSettingsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodexport">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodexport">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodexport">VMware_VCloud_API_Extension_UberAdminSettingsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodexport">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodexport">VMware_VCloud_API_Extension_SystemConfigurationSettingType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodexport">VMware_VCloud_API_Extension_ComponentManagerSettingsType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodexport">VMware_VCloud_API_Extension_VMWExtensionType::export()</a>
@@ -8796,6 +9711,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodexport">VMware_VCloud_API_ParamsType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodexport">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodexport">VMware_VCloud_API_VAppCreationParamsType::export()</a>
 							</li>
 					<li>
@@ -8818,6 +9736,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodexport">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodexport">VMware_VCloud_API_RegisterVAppParamsType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodexport">VMware_VCloud_API_CaptureVAppParamsType::export()</a>
@@ -9126,6 +10047,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodexport">VMware_VCloud_API_SourcedVmInstantiationParamsType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodexport">VMware_VCloud_API_InstantiateVmParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodexport">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodexport">VMware_VCloud_API_Disk::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodexport">VMware_VCloud_API_DeployVAppParamsType::export()</a>
 							</li>
 					<li>
@@ -9142,6 +10072,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodexport">VMware_VCloud_API_DiskAttachOrDetachParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodexport">VMware_VCloud_API_MksTicketType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodexport">VMware_VCloud_API_VAppTemplateChildrenType::export()</a>
@@ -9216,6 +10149,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodexport">VMware_VCloud_API_SmtpServerSettingsType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodexport">VMware_VCloud_API_CatalogStorageProfilesType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodexport">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodexport">VMware_VCloud_API_PublishExternalCatalogParamsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodexport">VMware_VCloud_API_EventType::export()</a>
 							</li>
 					<li>
@@ -9223,6 +10165,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodexport">VMware_VCloud_API_Extension_RealmType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodexport">VMware_VCloud_API_Extension_SerialPortConfigType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodexport">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodexport">VMware_VCloud_API_Extension_CbmDataType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodexport">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::export()</a>
@@ -9275,7 +10253,7 @@
 				</ul>
 	</div>
 <a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a399">399</a></span>)
@@ -9389,6 +10367,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodexportAttributes">VMware_VCloud_API_GatewayType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodexportAttributes">VMware_VCloud_API_Extension_ResourcePoolType::exportAttributes()</a>
 							</li>
 					<li>
@@ -9411,6 +10398,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminServiceType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminServiceExtensionType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminApiDefinitionType::exportAttributes()</a>
@@ -9504,6 +10494,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodexportAttributes">VMware_VCloud_API_CatalogItemType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodexportAttributes">VMware_VCloud_API_Extension_ExtensionObjectRefType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodexportAttributes">VMware_VCloud_API_Extension_ApiFilterType::exportAttributes()</a>
@@ -9608,6 +10601,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodexportAttributes">VMware_VCloud_API_OrgPasswordPolicySettingsType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodexportAttributes">VMware_VCloud_API_OrgsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodexportAttributes">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::exportAttributes()</a>
 							</li>
 					<li>
@@ -9674,10 +10670,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_LookupServiceParamsType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_CatalogSettingsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_UberAdminSettingsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodexportAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ComponentManagerSettingsType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodexportAttributes">VMware_VCloud_API_Extension_VMWExtensionType::exportAttributes()</a>
@@ -9731,6 +10742,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodexportAttributes">VMware_VCloud_API_ParamsType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodexportAttributes">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodexportAttributes">VMware_VCloud_API_VAppCreationParamsType::exportAttributes()</a>
 							</li>
 					<li>
@@ -9753,6 +10767,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodexportAttributes">VMware_VCloud_API_RegisterVAppParamsType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodexportAttributes">VMware_VCloud_API_CaptureVAppParamsType::exportAttributes()</a>
@@ -10061,6 +11078,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodexportAttributes">VMware_VCloud_API_SourcedVmInstantiationParamsType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodexportAttributes">VMware_VCloud_API_InstantiateVmParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodexportAttributes">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodexportAttributes">VMware_VCloud_API_Disk::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodexportAttributes">VMware_VCloud_API_DeployVAppParamsType::exportAttributes()</a>
 							</li>
 					<li>
@@ -10077,6 +11103,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodexportAttributes">VMware_VCloud_API_DiskAttachOrDetachParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodexportAttributes">VMware_VCloud_API_MksTicketType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodexportAttributes">VMware_VCloud_API_VAppTemplateChildrenType::exportAttributes()</a>
@@ -10151,6 +11180,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodexportAttributes">VMware_VCloud_API_SmtpServerSettingsType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodexportAttributes">VMware_VCloud_API_CatalogStorageProfilesType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodexportAttributes">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodexportAttributes">VMware_VCloud_API_PublishExternalCatalogParamsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodexportAttributes">VMware_VCloud_API_EventType::exportAttributes()</a>
 							</li>
 					<li>
@@ -10158,6 +11196,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodexportAttributes">VMware_VCloud_API_Extension_RealmType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodexportAttributes">VMware_VCloud_API_Extension_SerialPortConfigType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodexportAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodexportAttributes">VMware_VCloud_API_Extension_CbmDataType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::exportAttributes()</a>
@@ -10210,7 +11284,7 @@
 				</ul>
 	</div>
 <a name="methodexportChildren" id="exportChildren"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a416">416</a></span>)
@@ -10324,6 +11398,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodexportChildren">VMware_VCloud_API_GatewayType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodexportChildren">VMware_VCloud_API_Extension_ResourcePoolType::exportChildren()</a>
 							</li>
 					<li>
@@ -10346,6 +11429,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminServiceType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminServiceExtensionType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminApiDefinitionType::exportChildren()</a>
@@ -10439,6 +11525,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodexportChildren">VMware_VCloud_API_CatalogItemType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodexportChildren">VMware_VCloud_API_Extension_ExtensionObjectRefType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodexportChildren">VMware_VCloud_API_Extension_ApiFilterType::exportChildren()</a>
@@ -10543,6 +11632,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodexportChildren">VMware_VCloud_API_OrgPasswordPolicySettingsType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodexportChildren">VMware_VCloud_API_OrgsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodexportChildren">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::exportChildren()</a>
 							</li>
 					<li>
@@ -10609,10 +11701,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_LookupServiceParamsType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_CatalogSettingsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_UberAdminSettingsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodexportChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_ComponentManagerSettingsType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodexportChildren">VMware_VCloud_API_Extension_VMWExtensionType::exportChildren()</a>
@@ -10666,6 +11773,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodexportChildren">VMware_VCloud_API_ParamsType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodexportChildren">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodexportChildren">VMware_VCloud_API_VAppCreationParamsType::exportChildren()</a>
 							</li>
 					<li>
@@ -10688,6 +11798,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodexportChildren">VMware_VCloud_API_RegisterVAppParamsType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodexportChildren">VMware_VCloud_API_CaptureVAppParamsType::exportChildren()</a>
@@ -10996,6 +12109,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodexportChildren">VMware_VCloud_API_SourcedVmInstantiationParamsType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodexportChildren">VMware_VCloud_API_InstantiateVmParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodexportChildren">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodexportChildren">VMware_VCloud_API_Disk::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodexportChildren">VMware_VCloud_API_DeployVAppParamsType::exportChildren()</a>
 							</li>
 					<li>
@@ -11012,6 +12134,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodexportChildren">VMware_VCloud_API_DiskAttachOrDetachParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodexportChildren">VMware_VCloud_API_MksTicketType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodexportChildren">VMware_VCloud_API_VAppTemplateChildrenType::exportChildren()</a>
@@ -11086,6 +12211,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodexportChildren">VMware_VCloud_API_SmtpServerSettingsType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodexportChildren">VMware_VCloud_API_CatalogStorageProfilesType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodexportChildren">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodexportChildren">VMware_VCloud_API_PublishExternalCatalogParamsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodexportChildren">VMware_VCloud_API_EventType::exportChildren()</a>
 							</li>
 					<li>
@@ -11093,6 +12227,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodexportChildren">VMware_VCloud_API_Extension_RealmType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodexportChildren">VMware_VCloud_API_Extension_SerialPortConfigType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodexportChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodexportChildren">VMware_VCloud_API_Extension_CbmDataType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::exportChildren()</a>
@@ -11145,7 +12315,7 @@
 				</ul>
 	</div>
 <a name="methodgetVCloudExtension" id="getVCloudExtension"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">getVCloudExtension</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a358">358</a></span>)
@@ -11168,7 +12338,7 @@
 			
 	</div>
 <a name="methodget_anyAttributes" id="get_anyAttributes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">get_anyAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a365">365</a></span>)
@@ -11191,7 +12361,7 @@
 			
 	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a367">367</a></span>)
@@ -11288,6 +12458,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodget_tagName">VMware_VCloud_API_GatewayType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodget_tagName">VMware_VCloud_API_Extension_ResourcePoolType::get_tagName()</a>
 							</li>
 					<li>
@@ -11310,6 +12489,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminServiceType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminServiceExtensionType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminApiDefinitionType::get_tagName()</a>
@@ -11403,6 +12585,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodget_tagName">VMware_VCloud_API_CatalogItemType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodget_tagName">VMware_VCloud_API_Extension_ExtensionObjectRefType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodget_tagName">VMware_VCloud_API_Extension_ApiFilterType::get_tagName()</a>
@@ -11507,6 +12692,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodget_tagName">VMware_VCloud_API_OrgPasswordPolicySettingsType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodget_tagName">VMware_VCloud_API_OrgsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodget_tagName">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::get_tagName()</a>
 							</li>
 					<li>
@@ -11573,10 +12761,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_LookupServiceParamsType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_CatalogSettingsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_UberAdminSettingsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodget_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_ComponentManagerSettingsType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodget_tagName">VMware_VCloud_API_Extension_VMWExtensionType::get_tagName()</a>
@@ -11630,6 +12833,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodget_tagName">VMware_VCloud_API_ParamsType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodget_tagName">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodget_tagName">VMware_VCloud_API_VAppCreationParamsType::get_tagName()</a>
 							</li>
 					<li>
@@ -11652,6 +12858,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodget_tagName">VMware_VCloud_API_RegisterVAppParamsType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodget_tagName">VMware_VCloud_API_CaptureVAppParamsType::get_tagName()</a>
@@ -11960,6 +13169,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodget_tagName">VMware_VCloud_API_SourcedVmInstantiationParamsType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodget_tagName">VMware_VCloud_API_InstantiateVmParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodget_tagName">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodget_tagName">VMware_VCloud_API_Disk::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodget_tagName">VMware_VCloud_API_DeployVAppParamsType::get_tagName()</a>
 							</li>
 					<li>
@@ -11976,6 +13194,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodget_tagName">VMware_VCloud_API_DiskAttachOrDetachParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodget_tagName">VMware_VCloud_API_MksTicketType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodget_tagName">VMware_VCloud_API_VAppTemplateChildrenType::get_tagName()</a>
@@ -12050,6 +13271,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodget_tagName">VMware_VCloud_API_SmtpServerSettingsType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodget_tagName">VMware_VCloud_API_CatalogStorageProfilesType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodget_tagName">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodget_tagName">VMware_VCloud_API_PublishExternalCatalogParamsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodget_tagName">VMware_VCloud_API_EventType::get_tagName()</a>
 							</li>
 					<li>
@@ -12057,6 +13287,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodget_tagName">VMware_VCloud_API_Extension_RealmType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodget_tagName">VMware_VCloud_API_Extension_SerialPortConfigType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodget_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodget_tagName">VMware_VCloud_API_Extension_CbmDataType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::get_tagName()</a>
@@ -12109,7 +13375,7 @@
 				</ul>
 	</div>
 <a name="methodhasContent" id="hasContent"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a425">425</a></span>)
@@ -12206,6 +13472,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodhasContent">VMware_VCloud_API_GatewayType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodhasContent">VMware_VCloud_API_Extension_ResourcePoolType::hasContent()</a>
 							</li>
 					<li>
@@ -12228,6 +13503,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodhasContent">VMware_VCloud_API_Extension_AdminServiceType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodhasContent">VMware_VCloud_API_Extension_AdminServiceExtensionType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodhasContent">VMware_VCloud_API_Extension_AdminApiDefinitionType::hasContent()</a>
@@ -12321,6 +13599,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodhasContent">VMware_VCloud_API_CatalogItemType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodhasContent">VMware_VCloud_API_Extension_ExtensionObjectRefType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodhasContent">VMware_VCloud_API_Extension_ApiFilterType::hasContent()</a>
@@ -12425,6 +13706,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodhasContent">VMware_VCloud_API_OrgPasswordPolicySettingsType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodhasContent">VMware_VCloud_API_OrgsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodhasContent">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::hasContent()</a>
 							</li>
 					<li>
@@ -12491,10 +13775,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodhasContent">VMware_VCloud_API_Extension_LookupServiceParamsType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_CatalogSettingsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodhasContent">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodhasContent">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_UberAdminSettingsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodhasContent">VMware_VCloud_API_Extension_SystemConfigurationSettingType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_ComponentManagerSettingsType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodhasContent">VMware_VCloud_API_Extension_VMWExtensionType::hasContent()</a>
@@ -12548,6 +13847,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodhasContent">VMware_VCloud_API_ParamsType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodhasContent">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodhasContent">VMware_VCloud_API_VAppCreationParamsType::hasContent()</a>
 							</li>
 					<li>
@@ -12570,6 +13872,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodhasContent">VMware_VCloud_API_RegisterVAppParamsType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodhasContent">VMware_VCloud_API_CaptureVAppParamsType::hasContent()</a>
@@ -12878,6 +14183,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodhasContent">VMware_VCloud_API_SourcedVmInstantiationParamsType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodhasContent">VMware_VCloud_API_InstantiateVmParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodhasContent">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodhasContent">VMware_VCloud_API_Disk::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodhasContent">VMware_VCloud_API_DeployVAppParamsType::hasContent()</a>
 							</li>
 					<li>
@@ -12894,6 +14208,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodhasContent">VMware_VCloud_API_DiskAttachOrDetachParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodhasContent">VMware_VCloud_API_MksTicketType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodhasContent">VMware_VCloud_API_VAppTemplateChildrenType::hasContent()</a>
@@ -12968,6 +14285,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodhasContent">VMware_VCloud_API_SmtpServerSettingsType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodhasContent">VMware_VCloud_API_CatalogStorageProfilesType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodhasContent">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodhasContent">VMware_VCloud_API_PublishExternalCatalogParamsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodhasContent">VMware_VCloud_API_EventType::hasContent()</a>
 							</li>
 					<li>
@@ -12975,6 +14301,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodhasContent">VMware_VCloud_API_Extension_RealmType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodhasContent">VMware_VCloud_API_Extension_SerialPortConfigType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodhasContent">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodhasContent">VMware_VCloud_API_Extension_CbmDataType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::hasContent()</a>
@@ -13027,7 +14389,7 @@
 				</ul>
 	</div>
 <a name="methodsetVCloudExtension" id="setVCloudExtension"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">setVCloudExtension</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a361">361</a></span>)
@@ -13055,7 +14417,7 @@
 			
 	</div>
 <a name="methodset_anyAttributes" id="set_anyAttributes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
 		<span class="method-title">set_anyAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a366">366</a></span>)
@@ -13083,7 +14445,7 @@
 			
 	</div>
 <a name="methodset_tagName" id="set_tagName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a368">368</a></span>)
@@ -13185,6 +14547,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodset_tagName">VMware_VCloud_API_GatewayType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodset_tagName">VMware_VCloud_API_Extension_ResourcePoolType::set_tagName()</a>
 							</li>
 					<li>
@@ -13207,6 +14578,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminServiceType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminServiceExtensionType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminApiDefinitionType::set_tagName()</a>
@@ -13300,6 +14674,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodset_tagName">VMware_VCloud_API_CatalogItemType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodset_tagName">VMware_VCloud_API_Extension_ExtensionObjectRefType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodset_tagName">VMware_VCloud_API_Extension_ApiFilterType::set_tagName()</a>
@@ -13404,6 +14781,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodset_tagName">VMware_VCloud_API_OrgPasswordPolicySettingsType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodset_tagName">VMware_VCloud_API_OrgsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodset_tagName">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::set_tagName()</a>
 							</li>
 					<li>
@@ -13470,10 +14850,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_LookupServiceParamsType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_CatalogSettingsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_UberAdminSettingsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodset_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_ComponentManagerSettingsType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodset_tagName">VMware_VCloud_API_Extension_VMWExtensionType::set_tagName()</a>
@@ -13527,6 +14922,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_ParamsType.html#methodset_tagName">VMware_VCloud_API_ParamsType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CopyOrMoveCatalogItemParamsType.html#methodset_tagName">VMware_VCloud_API_CopyOrMoveCatalogItemParamsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppCreationParamsType.html#methodset_tagName">VMware_VCloud_API_VAppCreationParamsType::set_tagName()</a>
 							</li>
 					<li>
@@ -13549,6 +14947,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmAsVAppParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ImportVmAsVAppParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_RegisterVAppParamsType.html#methodset_tagName">VMware_VCloud_API_RegisterVAppParamsType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CaptureVAppParamsType.html#methodset_tagName">VMware_VCloud_API_CaptureVAppParamsType::set_tagName()</a>
@@ -13857,6 +15258,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SourcedVmInstantiationParamsType.html#methodset_tagName">VMware_VCloud_API_SourcedVmInstantiationParamsType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmParamsType.html#methodset_tagName">VMware_VCloud_API_InstantiateVmParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType.html#methodset_tagName">VMware_VCloud_API_InstantiateVmHardwareCustomizationParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_Disk.html#methodset_tagName">VMware_VCloud_API_Disk::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DeployVAppParamsType.html#methodset_tagName">VMware_VCloud_API_DeployVAppParamsType::set_tagName()</a>
 							</li>
 					<li>
@@ -13873,6 +15283,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_DiskAttachOrDetachParamsType.html#methodset_tagName">VMware_VCloud_API_DiskAttachOrDetachParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_MksTicketType.html#methodset_tagName">VMware_VCloud_API_MksTicketType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_VAppTemplateChildrenType.html#methodset_tagName">VMware_VCloud_API_VAppTemplateChildrenType::set_tagName()</a>
@@ -13947,6 +15360,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_SmtpServerSettingsType.html#methodset_tagName">VMware_VCloud_API_SmtpServerSettingsType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogStorageProfilesType.html#methodset_tagName">VMware_VCloud_API_CatalogStorageProfilesType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_ExternalCatalogSubscriptionParamsType.html#methodset_tagName">VMware_VCloud_API_ExternalCatalogSubscriptionParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_PublishExternalCatalogParamsType.html#methodset_tagName">VMware_VCloud_API_PublishExternalCatalogParamsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_EventType.html#methodset_tagName">VMware_VCloud_API_EventType::set_tagName()</a>
 							</li>
 					<li>
@@ -13954,6 +15376,42 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_RealmType.html#methodset_tagName">VMware_VCloud_API_Extension_RealmType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SerialPortConfigType.html#methodset_tagName">VMware_VCloud_API_Extension_SerialPortConfigType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingValueType.html#methodset_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingValueType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CbmDataType.html#methodset_tagName">VMware_VCloud_API_Extension_CbmDataType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingParamMetaInfoType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingParamsMetaInfoType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingAssociateParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingDisassociateParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceCreateParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceAssociateParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceDisassociateParamsType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ImportVmIntoExistingVAppParamsType::set_tagName()</a>
@@ -14011,7 +15469,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:56:36 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:59:30 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

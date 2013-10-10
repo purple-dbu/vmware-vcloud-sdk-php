@@ -25,11 +25,11 @@
 <p class="short-description">General system settings.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.1.0</li>
-				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86140">86140</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90450">90450</a></span>)
 		</p>
 		
 				
@@ -60,7 +60,7 @@
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																																																																																																																																																																												<div class="var-title">
+																																																																																																																																																																																																																																				<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$AbsoluteSessionTimeoutMinutes" title="details" class="var-name">$AbsoluteSessionTimeoutMinutes</a>
 				</div>
@@ -89,6 +89,10 @@
 					<a href="#$ConsoleProxyExternalAddress" title="details" class="var-name">$ConsoleProxyExternalAddress</a>
 				</div>
 																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$ElasticAllocationPool" title="details" class="var-name">$ElasticAllocationPool</a>
+				</div>
+																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$HostCheckDelayInSeconds" title="details" class="var-name">$HostCheckDelayInSeconds</a>
 				</div>
@@ -204,11 +208,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_Extension_GeneralSettingsType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>])
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ElasticAllocationPool</span> = <span class="var-default">null</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -286,6 +290,12 @@
 				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#getConsoleProxyExternalAddress" title="details" class="method-name">getConsoleProxyExternalAddress</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getElasticAllocationPool" title="details" class="method-name">getElasticAllocationPool</a>
 										()
 									</div>
 														
@@ -477,6 +487,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#setElasticAllocationPool" title="details" class="method-name">setElasticAllocationPool</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ElasticAllocationPool</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#setHostCheckDelayInSeconds" title="details" class="method-name">setHostCheckDelayInSeconds</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span>)
 									</div>
@@ -630,13 +646,13 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86173">86173</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90484">90484</a></span>)
 		</span>
 	</div>
 
@@ -657,13 +673,13 @@
 </div>
 
 <a name="var$AbsoluteSessionTimeoutMinutes" id="$AbsoluteSessionTimeoutMinutes"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AbsoluteSessionTimeoutMinutes</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86141">86141</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90451">90451</a></span>)
 		</span>
 	</div>
 
@@ -678,13 +694,13 @@
 
 </div>
 <a name="var$ActivityLogDisplayDays" id="$ActivityLogDisplayDays"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ActivityLogDisplayDays</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86142">86142</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90452">90452</a></span>)
 		</span>
 	</div>
 
@@ -699,13 +715,13 @@
 
 </div>
 <a name="var$ActivityLogKeepDays" id="$ActivityLogKeepDays"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ActivityLogKeepDays</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86143">86143</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90453">90453</a></span>)
 		</span>
 	</div>
 
@@ -720,13 +736,13 @@
 
 </div>
 <a name="var$AllowOverlappingExtNets" id="$AllowOverlappingExtNets"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AllowOverlappingExtNets</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86144">86144</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90454">90454</a></span>)
 		</span>
 	</div>
 
@@ -741,13 +757,13 @@
 
 </div>
 <a name="var$ChargebackEventsKeepDays" id="$ChargebackEventsKeepDays"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ChargebackEventsKeepDays</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86145">86145</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90455">90455</a></span>)
 		</span>
 	</div>
 
@@ -762,13 +778,13 @@
 
 </div>
 <a name="var$ChargebackTablesCleanupJobTimeInSeconds" id="$ChargebackTablesCleanupJobTimeInSeconds"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86146">86146</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90456">90456</a></span>)
 		</span>
 	</div>
 
@@ -783,13 +799,34 @@
 
 </div>
 <a name="var$ConsoleProxyExternalAddress" id="$ConsoleProxyExternalAddress"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ConsoleProxyExternalAddress</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86147">86147</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90457">90457</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$ElasticAllocationPool" id="$ElasticAllocationPool"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$ElasticAllocationPool</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90480">90480</a></span>)
 		</span>
 	</div>
 
@@ -810,7 +847,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$HostCheckDelayInSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86148">86148</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90458">90458</a></span>)
 		</span>
 	</div>
 
@@ -831,7 +868,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$HostCheckTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86149">86149</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90459">90459</a></span>)
 		</span>
 	</div>
 
@@ -852,7 +889,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$InstallationId</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86150">86150</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90460">90460</a></span>)
 		</span>
 	</div>
 
@@ -873,7 +910,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$IpReservationTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86151">86151</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90461">90461</a></span>)
 		</span>
 	</div>
 
@@ -894,7 +931,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$LoginNameOnly</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86153">86153</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90463">90463</a></span>)
 		</span>
 	</div>
 
@@ -915,7 +952,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86170">86170</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90481">90481</a></span>)
 		</span>
 	</div>
 
@@ -941,7 +978,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86171">86171</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90482">90482</a></span>)
 		</span>
 	</div>
 
@@ -967,7 +1004,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$PrePopDefaultName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86154">86154</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90464">90464</a></span>)
 		</span>
 	</div>
 
@@ -988,7 +1025,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$QuarantineEnabled</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86155">86155</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90465">90465</a></span>)
 		</span>
 	</div>
 
@@ -1009,7 +1046,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$QuarantineResponseTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86156">86156</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90466">90466</a></span>)
 		</span>
 	</div>
 
@@ -1030,7 +1067,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$RestApiBaseUri</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86157">86157</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90467">90467</a></span>)
 		</span>
 	</div>
 
@@ -1051,7 +1088,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SessionTimeoutMinutes</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86158">86158</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90468">90468</a></span>)
 		</span>
 	</div>
 
@@ -1072,7 +1109,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ShowStackTraces</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86159">86159</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90469">90469</a></span>)
 		</span>
 	</div>
 
@@ -1093,7 +1130,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SyncIntervalInHours</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86161">86161</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90471">90471</a></span>)
 		</span>
 	</div>
 
@@ -1114,7 +1151,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SyncStartDate</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86160">86160</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90470">90470</a></span>)
 		</span>
 	</div>
 
@@ -1135,7 +1172,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SyslogServerSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86152">86152</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90462">90462</a></span>)
 		</span>
 	</div>
 
@@ -1156,7 +1193,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$SystemExternalAddress</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86162">86162</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90472">90472</a></span>)
 		</span>
 	</div>
 
@@ -1177,7 +1214,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86172">86172</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90483">90483</a></span>)
 		</span>
 	</div>
 
@@ -1203,7 +1240,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$TransferSessionTimeoutSeconds</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86163">86163</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90473">90473</a></span>)
 		</span>
 	</div>
 
@@ -1224,7 +1261,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VcTruststoreContents</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86166">86166</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90476">90476</a></span>)
 		</span>
 	</div>
 
@@ -1245,7 +1282,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VcTruststorePassword</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86165">86165</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90475">90475</a></span>)
 		</span>
 	</div>
 
@@ -1266,7 +1303,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VcTruststoreType</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86167">86167</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90477">90477</a></span>)
 		</span>
 	</div>
 
@@ -1287,7 +1324,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VerifyVcCertificates</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86164">86164</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90474">90474</a></span>)
 		</span>
 	</div>
 
@@ -1308,7 +1345,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VerifyVsmCertificates</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86169">86169</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90479">90479</a></span>)
 		</span>
 	</div>
 
@@ -1329,7 +1366,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VmrcVersion</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86168">86168</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90478">90478</a></span>)
 		</span>
 	</div>
 
@@ -1382,7 +1419,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86210">86210</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90522">90522</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1395,7 +1432,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>])
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AbsoluteSessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogDisplayDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ActivityLogKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllowOverlappingExtNets</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackEventsKeepDays</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$ChargebackTablesCleanupJobTimeInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ConsoleProxyExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckDelayInSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$HostCheckTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$InstallationId</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$IpReservationTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_SyslogServerSettingsType.html">VMware_VCloud_API_SyslogServerSettingsType</a></span>&nbsp;<span class="var-name">$SyslogServerSettings</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$LoginNameOnly</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$PrePopDefaultName</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$QuarantineEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$QuarantineResponseTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RestApiBaseUri</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SessionTimeoutMinutes</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ShowStackTraces</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SyncStartDate</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$SyncIntervalInHours</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$SystemExternalAddress</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$TransferSessionTimeoutSeconds</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVcCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststorePassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreContents</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VcTruststoreType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VmrcVersion</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$VerifyVsmCertificates</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ElasticAllocationPool</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -1498,6 +1535,9 @@
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$VerifyVsmCertificates</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$ElasticAllocationPool</span><span class="var-description">: - [optional]</span>			</li>
 				</ul>
 		
 			<hr class="separator" />
@@ -1511,7 +1551,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86641">86641</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90966">90966</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1547,7 +1587,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86662">86662</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90987">90987</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1583,7 +1623,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86670">86670</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90995">90995</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1622,7 +1662,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86420">86420</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90739">90739</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1670,7 +1710,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86450">86450</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90769">90769</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1715,7 +1755,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86455">86455</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90774">90774</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1760,7 +1800,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86244">86244</a></span>)
+		<span class="method-title">getAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90557">90557</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1783,7 +1823,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86250">86250</a></span>)
+		<span class="method-title">getActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90563">90563</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1806,7 +1846,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86256">86256</a></span>)
+		<span class="method-title">getActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90569">90569</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1829,7 +1869,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86262">86262</a></span>)
+		<span class="method-title">getAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90575">90575</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1852,7 +1892,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86268">86268</a></span>)
+		<span class="method-title">getChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90581">90581</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1875,7 +1915,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86274">86274</a></span>)
+		<span class="method-title">getChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90587">90587</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1898,7 +1938,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86280">86280</a></span>)
+		<span class="method-title">getConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90593">90593</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1917,11 +1957,34 @@
 		
 			
 	</div>
-<a name="methodgetHostCheckDelayInSeconds" id="getHostCheckDelayInSeconds"><!-- --></a>
+<a name="methodgetElasticAllocationPool" id="getElasticAllocationPool"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86286">86286</a></span>)
+		<span class="method-title">getElasticAllocationPool</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90731">90731</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getElasticAllocationPool
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetHostCheckDelayInSeconds" id="getHostCheckDelayInSeconds"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90599">90599</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1941,10 +2004,10 @@
 			
 	</div>
 <a name="methodgetHostCheckTimeoutSeconds" id="getHostCheckTimeoutSeconds"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86292">86292</a></span>)
+		<span class="method-title">getHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90605">90605</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1964,10 +2027,10 @@
 			
 	</div>
 <a name="methodgetInstallationId" id="getInstallationId"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86298">86298</a></span>)
+		<span class="method-title">getInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90611">90611</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1987,10 +2050,10 @@
 			
 	</div>
 <a name="methodgetIpReservationTimeoutSeconds" id="getIpReservationTimeoutSeconds"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86304">86304</a></span>)
+		<span class="method-title">getIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90617">90617</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2010,10 +2073,10 @@
 			
 	</div>
 <a name="methodgetLoginNameOnly" id="getLoginNameOnly"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86316">86316</a></span>)
+		<span class="method-title">getLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90629">90629</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2033,10 +2096,10 @@
 			
 	</div>
 <a name="methodgetPrePopDefaultName" id="getPrePopDefaultName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86322">86322</a></span>)
+		<span class="method-title">getPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90635">90635</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2056,10 +2119,10 @@
 			
 	</div>
 <a name="methodgetQuarantineEnabled" id="getQuarantineEnabled"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86328">86328</a></span>)
+		<span class="method-title">getQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90641">90641</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2079,10 +2142,10 @@
 			
 	</div>
 <a name="methodgetQuarantineResponseTimeoutSeconds" id="getQuarantineResponseTimeoutSeconds"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86334">86334</a></span>)
+		<span class="method-title">getQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90647">90647</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2102,10 +2165,10 @@
 			
 	</div>
 <a name="methodgetRestApiBaseUri" id="getRestApiBaseUri"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86340">86340</a></span>)
+		<span class="method-title">getRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90653">90653</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2125,10 +2188,10 @@
 			
 	</div>
 <a name="methodgetSessionTimeoutMinutes" id="getSessionTimeoutMinutes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86346">86346</a></span>)
+		<span class="method-title">getSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90659">90659</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2148,10 +2211,10 @@
 			
 	</div>
 <a name="methodgetShowStackTraces" id="getShowStackTraces"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86352">86352</a></span>)
+		<span class="method-title">getShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90665">90665</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2171,10 +2234,10 @@
 			
 	</div>
 <a name="methodgetSyncIntervalInHours" id="getSyncIntervalInHours"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86364">86364</a></span>)
+		<span class="method-title">getSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90677">90677</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2194,10 +2257,10 @@
 			
 	</div>
 <a name="methodgetSyncStartDate" id="getSyncStartDate"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86358">86358</a></span>)
+		<span class="method-title">getSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90671">90671</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2217,10 +2280,10 @@
 			
 	</div>
 <a name="methodgetSyslogServerSettings" id="getSyslogServerSettings"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86310">86310</a></span>)
+		<span class="method-title">getSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90623">90623</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2240,10 +2303,10 @@
 			
 	</div>
 <a name="methodgetSystemExternalAddress" id="getSystemExternalAddress"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86370">86370</a></span>)
+		<span class="method-title">getSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90683">90683</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2263,10 +2326,10 @@
 			
 	</div>
 <a name="methodgetTransferSessionTimeoutSeconds" id="getTransferSessionTimeoutSeconds"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86376">86376</a></span>)
+		<span class="method-title">getTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90689">90689</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2286,10 +2349,10 @@
 			
 	</div>
 <a name="methodgetVcTruststoreContents" id="getVcTruststoreContents"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86394">86394</a></span>)
+		<span class="method-title">getVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90707">90707</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2309,10 +2372,10 @@
 			
 	</div>
 <a name="methodgetVcTruststorePassword" id="getVcTruststorePassword"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86388">86388</a></span>)
+		<span class="method-title">getVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90701">90701</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2332,10 +2395,10 @@
 			
 	</div>
 <a name="methodgetVcTruststoreType" id="getVcTruststoreType"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86400">86400</a></span>)
+		<span class="method-title">getVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90713">90713</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2355,10 +2418,10 @@
 			
 	</div>
 <a name="methodgetVerifyVcCertificates" id="getVerifyVcCertificates"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86382">86382</a></span>)
+		<span class="method-title">getVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90695">90695</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2378,10 +2441,10 @@
 			
 	</div>
 <a name="methodgetVerifyVsmCertificates" id="getVerifyVsmCertificates"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86412">86412</a></span>)
+		<span class="method-title">getVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90725">90725</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2401,10 +2464,10 @@
 			
 	</div>
 <a name="methodgetVmrcVersion" id="getVmrcVersion"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86406">86406</a></span>)
+		<span class="method-title">getVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90719">90719</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2424,10 +2487,10 @@
 			
 	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86418">86418</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90737">90737</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2452,10 +2515,10 @@
 			
 	</div>
 <a name="methodhasContent" id="hasContent"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86603">86603</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90927">90927</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2480,10 +2543,10 @@
 			
 	</div>
 <a name="methodsetAbsoluteSessionTimeoutMinutes" id="setAbsoluteSessionTimeoutMinutes"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86247">86247</a></span>)
+		<span class="method-title">setAbsoluteSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90560">90560</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2508,10 +2571,10 @@
 			
 	</div>
 <a name="methodsetActivityLogDisplayDays" id="setActivityLogDisplayDays"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86253">86253</a></span>)
+		<span class="method-title">setActivityLogDisplayDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90566">90566</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2536,10 +2599,10 @@
 			
 	</div>
 <a name="methodsetActivityLogKeepDays" id="setActivityLogKeepDays"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86259">86259</a></span>)
+		<span class="method-title">setActivityLogKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90572">90572</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2564,10 +2627,10 @@
 			
 	</div>
 <a name="methodsetAllowOverlappingExtNets" id="setAllowOverlappingExtNets"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86265">86265</a></span>)
+		<span class="method-title">setAllowOverlappingExtNets</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90578">90578</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2592,10 +2655,10 @@
 			
 	</div>
 <a name="methodsetChargebackEventsKeepDays" id="setChargebackEventsKeepDays"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86271">86271</a></span>)
+		<span class="method-title">setChargebackEventsKeepDays</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90584">90584</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2620,10 +2683,10 @@
 			
 	</div>
 <a name="methodsetChargebackTablesCleanupJobTimeInSeconds" id="setChargebackTablesCleanupJobTimeInSeconds"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86277">86277</a></span>)
+		<span class="method-title">setChargebackTablesCleanupJobTimeInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90590">90590</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2648,10 +2711,10 @@
 			
 	</div>
 <a name="methodsetConsoleProxyExternalAddress" id="setConsoleProxyExternalAddress"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86283">86283</a></span>)
+		<span class="method-title">setConsoleProxyExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90596">90596</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2675,11 +2738,39 @@
 		
 			
 	</div>
+<a name="methodsetElasticAllocationPool" id="setElasticAllocationPool"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setElasticAllocationPool</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90734">90734</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setElasticAllocationPool
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ElasticAllocationPool</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ElasticAllocationPool</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodsetHostCheckDelayInSeconds" id="setHostCheckDelayInSeconds"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86289">86289</a></span>)
+		<span class="method-title">setHostCheckDelayInSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90602">90602</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2707,7 +2798,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86295">86295</a></span>)
+		<span class="method-title">setHostCheckTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90608">90608</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2735,7 +2826,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86301">86301</a></span>)
+		<span class="method-title">setInstallationId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90614">90614</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2763,7 +2854,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86307">86307</a></span>)
+		<span class="method-title">setIpReservationTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90620">90620</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2791,7 +2882,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86319">86319</a></span>)
+		<span class="method-title">setLoginNameOnly</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90632">90632</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2819,7 +2910,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86325">86325</a></span>)
+		<span class="method-title">setPrePopDefaultName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90638">90638</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2847,7 +2938,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86331">86331</a></span>)
+		<span class="method-title">setQuarantineEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90644">90644</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2875,7 +2966,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86337">86337</a></span>)
+		<span class="method-title">setQuarantineResponseTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90650">90650</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2903,7 +2994,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86343">86343</a></span>)
+		<span class="method-title">setRestApiBaseUri</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90656">90656</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2931,7 +3022,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86349">86349</a></span>)
+		<span class="method-title">setSessionTimeoutMinutes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90662">90662</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2959,7 +3050,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86355">86355</a></span>)
+		<span class="method-title">setShowStackTraces</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90668">90668</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2987,7 +3078,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86367">86367</a></span>)
+		<span class="method-title">setSyncIntervalInHours</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90680">90680</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3015,7 +3106,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86361">86361</a></span>)
+		<span class="method-title">setSyncStartDate</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90674">90674</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3043,7 +3134,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86313">86313</a></span>)
+		<span class="method-title">setSyslogServerSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90626">90626</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3071,7 +3162,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86373">86373</a></span>)
+		<span class="method-title">setSystemExternalAddress</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90686">90686</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3099,7 +3190,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86379">86379</a></span>)
+		<span class="method-title">setTransferSessionTimeoutSeconds</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90692">90692</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3127,7 +3218,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86397">86397</a></span>)
+		<span class="method-title">setVcTruststoreContents</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90710">90710</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3155,7 +3246,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86391">86391</a></span>)
+		<span class="method-title">setVcTruststorePassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90704">90704</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3183,7 +3274,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86403">86403</a></span>)
+		<span class="method-title">setVcTruststoreType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90716">90716</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3211,7 +3302,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86385">86385</a></span>)
+		<span class="method-title">setVerifyVcCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90698">90698</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3239,7 +3330,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86415">86415</a></span>)
+		<span class="method-title">setVerifyVsmCertificates</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90728">90728</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3267,7 +3358,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86409">86409</a></span>)
+		<span class="method-title">setVmrcVersion</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90722">90722</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3295,7 +3386,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a86419">86419</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a90738">90738</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -3372,7 +3463,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:55:45 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:58:48 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

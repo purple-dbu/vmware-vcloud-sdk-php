@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2012. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,29 +16,33 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.1.0
+ * @SDK version 5.5.0
  */
 require_once dirname(__FILE__) . '/config.php';
 
-  /**
-   * Login to vCloud Director using the SAML Assertion XML from vSphere SSO/SAML IDP's.
-   */
+/**
+ * Login to vCloud Director using the SAML Assertion XML from vSphere SSO/SAML IDP's.
+ */
 
-    // Get parameters from command line
-    $shorts  = "";
-    $shorts .= "s:";
-    $shorts .= "o:";
+// Get parameters from command line
+$shorts  = "";
+$shorts .= "s:";
+$shorts .= "o:";
+$shorts .= "v:";
+$shorts .= "c:";
 
-    $longs  = array(
-        "server:",    //-s|--server [required] vCloud Director server IP/hostname
-        "org:",      //-o|--org [required] vCloud Director login organization name
-    );
+$longs  = array(
+    "server:",    //-s|--server    [required] vCloud Director server IP/hostname
+    "org:",       //-o|--org       [required] vCloud Director login organization name
+    "sdkver:",    //-v|--sdkver    [required]
+    "certpath:",  //-c|--certpath  [optional] local certificate path
+);
 
-    $opts = getopt($shorts, $longs);
+$opts = getopt($shorts, $longs);
 
-    // loop through command arguments
-    foreach (array_keys($opts) as $opt) switch ($opt)
-    {
+// loop through command arguments
+foreach (array_keys($opts) as $opt) switch ($opt)
+{
     case "s":
         $server = $opts['s'];
         break;
@@ -52,14 +56,78 @@ require_once dirname(__FILE__) . '/config.php';
     case "org":
         $org = $opts['org'];
         break;
-    }
 
-    // parameters validation
-    if (!isset($server) || !isset($org))
-    {
+    case "v":
+        $sdkversion = $opts['v'];
+        break;
+    case "sdkver":
+        $sdkversion = $opts['sdkver'];
+        break;
+
+    case "c":
+        $certPath = $opts['c'];
+        break;
+    case "certpath":
+        $certPath = $opts['certpath'];
+        break;
+}
+
+// parameters validation
+if (!isset($server) || !isset($org) || !isset($sdkversion))
+{
     echo "Error: missing required parameters\n";
     usage();
     exit(1);
+}
+
+$flag = true;
+if (isset($certPath))
+{
+    $cert = file_get_contents($certPath);
+    $data = openssl_x509_parse($cert);
+    $encodeddata1 = base64_encode(serialize($data));
+
+    // Split a server url by forward back slash
+    $url = explode('/', $server);
+    $url = end($url);
+
+    // Creates and returns a stream context with below options supplied in options preset
+    $context = stream_context_create();
+    stream_context_set_option($context, 'ssl', 'capture_peer_cert', true);
+    stream_context_set_option($context, 'ssl', 'verify_host', true);
+
+    $encodeddata2 = null;
+    if ($socket = stream_socket_client("ssl://$url:443/", $errno, $errstr, 30, STREAM_CLIENT_CONNECT, $context))
+    {
+        if ($options = stream_context_get_options($context))
+        {
+            if (isset($options['ssl']) && isset($options['ssl']['peer_certificate']))
+            {
+                $x509_resource = $options['ssl']['peer_certificate'];
+                $cert_arr = openssl_x509_parse($x509_resource);
+                $encodeddata2 = base64_encode(serialize($cert_arr));
+            }
+        }
+    }
+
+    // compare two certificate as string
+    if (strcmp($encodeddata1, $encodeddata2)==0)
+    {
+        echo "\n\nValidation of certificates is successful.\n\n";
+        $flag=true;
+    }
+    else
+    {
+        echo "\n\nCertification Failed.\n";
+        $flag=false;
+    }
+}
+
+if ($flag==true)
+{
+    if (!isset($certPath))
+    {
+        echo "\n\nIgnoring the Certificate Validation --Fake certificate - DO NOT DO THIS IN PRODUCTION.\n\n";
     }
 
   /**
@@ -97,30 +165,41 @@ require_once dirname(__FILE__) . '/config.php';
 
     // Login
     $service = VMware_VCloud_SDK_Service::getService();
-    $service->SSOLogin($server,$samlAssertionXML,$org,$httpConfig);
+    $res = $service->SSOLogin($server, $samlAssertionXML, $org, $httpConfig, $sdkversion);
     echo "Vcloud SSO Login Successfully.\n";
+    echo "SSO Login Response:\n";
+    print_r($res);
+}
+else
+{
+    echo "\n\nLogin Failed due to certification mismatch.";
+    return;
+}
 
-    // log out
-    $service->logout();
-    echo "logged out.\n";
+// log out
+$service->logout();
+echo "logged out.\n";
 
-    /**
-     * Print the help message of the sample.
-     */
-    function usage()
-    {
-        echo "Usage:\n\n";
-        echo "  [Description]\n";
-        echo "     This sample demonstrates logging into VMware vCloud Director.\n";
-        echo "\n";
-        echo "  [Usage]\n";
-        echo "     # php ssologin.php -s <server> -o <organizationname>\n";
-        echo "\n";
-        echo "     -s|--server <IP|hostname> [req] IP or hostname of the vCloud Director.\n";
-        echo "     -o|--org <organizationname>      [req] organization name.\n";
-        echo "                                      for the vCloud Director.\n";
-        echo "  [Examples]\n";
-        echo "     # php ssologin.php -s 127.0.0.1 -o Org\n";
-        echo "     # php ssologin.php  // using config.php to set login credentials\n\n";
-    }
+/**
+ * Print the help message of the sample.
+ */
+function usage()
+{
+    echo "Usage:\n\n";
+    echo "  [Description]\n";
+    echo "     This sample demonstrates logging into VMware vCloud Director.\n";
+    echo "\n";
+    echo "  [Usage]\n";
+    echo "     # php ssologin.php -s <server> -o <organizationname> -v <sdkversion>\n";
+    echo "\n";
+    echo "     -s|--server <IP|hostname>        [req] IP or hostname of the vCloud Director.\n";
+    echo "     -o|--org <organizationname>      [req] organization name.\n";
+    echo "                                      for the vCloud Director.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
+    echo "     -c|--certpath <certificatepath>  [opt] Local certificate's full path.\n";
+    echo "  [Examples]\n";
+    echo "     # php ssologin.php -s 127.0.0.1 -o Org -v 5.5\n";
+    echo "     # php ssologin.php -s 127.0.0.1 -o Org -v 5.5 -c certificatepath\n";
+    echo "     # php ssologin.php  // using config.php to set login credentials\n\n";
+}
 ?>

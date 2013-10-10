@@ -26,8 +26,8 @@
 <p class="short-description">The base type for all objects in the vCloud model.  Has an optional list of links and href and type attributes.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.1.0</li>
-				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
 			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a717">717</a></span>)
@@ -84,7 +84,7 @@
 								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_MetadataType.html">VMware_VCloud_API_MetadataType</a></td>
 					<td>
-											
+											User-defined metadata associated with with an object.
 										</td>
 				</tr>
 								<tr>
@@ -232,6 +232,12 @@
 										</td>
 				</tr>
 								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html">VMware_VCloud_API_OrgsType</a></td>
+					<td>
+											Represents a list of organizations.
+										</td>
+				</tr>
+								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html">VMware_VCloud_API_OrgGuestPersonalizationSettingsType</a></td>
 					<td>
 											Represents default guest personalization settings for an  organization. These values are applied during guest  customization of virtual machines in this organization  if their GuestCustomizationSection specifies UseOrgSettings.
@@ -358,9 +364,39 @@
 										</td>
 				</tr>
 								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html">VMware_VCloud_API_Extension_CatalogSettingsType</a></td>
+					<td>
+											Catalog settings for this cloud
+										</td>
+				</tr>
+								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType</a></td>
 					<td>
 											Parameters to POST with a blocking task action.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html">VMware_VCloud_API_Extension_UberAdminSettingsType</a></td>
+					<td>
+											Internal use only.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html">VMware_VCloud_API_Extension_SystemConfigurationSettingsType</a></td>
+					<td>
+											Represents enumeration of system configuration settings.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html">VMware_VCloud_API_Extension_SystemConfigurationSettingType</a></td>
+					<td>
+											Represents a single system configuration setting.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html">VMware_VCloud_API_Extension_ComponentManagerSettingsType</a></td>
+					<td>
+											Represents parameters to register vCloud Director  with Component Manager.
 										</td>
 				</tr>
 								<tr>
@@ -408,7 +444,7 @@
 								<tr>
 					<td style="padding-right: 2em"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LicensingReportType.html">VMware_VCloud_API_Extension_LicensingReportType</a></td>
 					<td>
-											Represents a read-only licensing metric report.
+											Represents a read-only licensing metric report. This type is deprecated since version 5.5 because  of scalability issues. The new typed queries 'licensingReportQueryList', 'licensingReportSampleQueryList',  'licensingManagedServerQueryList' and 'licensingVirtualMachineQueryList', when combined, replaces this.
 										</td>
 				</tr>
 								<tr>
@@ -735,6 +771,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$defaultNS">VMware_VCloud_API_GatewayType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$defaultNS">VMware_VCloud_API_Extension_ResourcePoolType::$defaultNS</a>
 							</li>
 					<li>
@@ -757,6 +802,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$defaultNS">VMware_VCloud_API_Extension_AdminServiceType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$defaultNS">VMware_VCloud_API_Extension_AdminServiceExtensionType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$defaultNS">VMware_VCloud_API_Extension_AdminApiDefinitionType::$defaultNS</a>
@@ -850,6 +898,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$defaultNS">VMware_VCloud_API_CatalogItemType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$defaultNS">VMware_VCloud_API_Extension_ExtensionObjectRefType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$defaultNS">VMware_VCloud_API_Extension_ApiFilterType::$defaultNS</a>
@@ -954,6 +1005,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$defaultNS">VMware_VCloud_API_OrgPasswordPolicySettingsType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$defaultNS">VMware_VCloud_API_OrgsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$defaultNS">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$defaultNS</a>
 							</li>
 					<li>
@@ -1020,10 +1074,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_LookupServiceParamsType::$defaultNS</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_CatalogSettingsType::$defaultNS</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$defaultNS">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_UberAdminSettingsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$defaultNS">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$defaultNS</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$defaultNS">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$defaultNS</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$defaultNS">VMware_VCloud_API_Extension_VMWExtensionType::$defaultNS</a>
@@ -1213,6 +1282,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$namespace">VMware_VCloud_API_GatewayType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$namespace">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$namespace">VMware_VCloud_API_Extension_ResourcePoolType::$namespace</a>
 							</li>
 					<li>
@@ -1235,6 +1313,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$namespace">VMware_VCloud_API_Extension_AdminServiceType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$namespace">VMware_VCloud_API_Extension_AdminServiceExtensionType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$namespace">VMware_VCloud_API_Extension_AdminApiDefinitionType::$namespace</a>
@@ -1328,6 +1409,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$namespace">VMware_VCloud_API_CatalogItemType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$namespace">VMware_VCloud_API_Extension_ExtensionObjectRefType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$namespace">VMware_VCloud_API_Extension_ApiFilterType::$namespace</a>
@@ -1432,6 +1516,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$namespace">VMware_VCloud_API_OrgPasswordPolicySettingsType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$namespace">VMware_VCloud_API_OrgsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$namespace">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$namespace</a>
 							</li>
 					<li>
@@ -1498,10 +1585,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$namespace">VMware_VCloud_API_Extension_LookupServiceParamsType::$namespace</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$namespace">VMware_VCloud_API_Extension_CatalogSettingsType::$namespace</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$namespace">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$namespace">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$namespace">VMware_VCloud_API_Extension_UberAdminSettingsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$namespace">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$namespace">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$namespace</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$namespace">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$namespace</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$namespace">VMware_VCloud_API_Extension_VMWExtensionType::$namespace</a>
@@ -1648,6 +1750,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$namespacedef">VMware_VCloud_API_GatewayType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$namespacedef">VMware_VCloud_API_Extension_ResourcePoolType::$namespacedef</a>
 							</li>
 					<li>
@@ -1670,6 +1781,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$namespacedef">VMware_VCloud_API_Extension_AdminServiceType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$namespacedef">VMware_VCloud_API_Extension_AdminServiceExtensionType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$namespacedef">VMware_VCloud_API_Extension_AdminApiDefinitionType::$namespacedef</a>
@@ -1763,6 +1877,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$namespacedef">VMware_VCloud_API_CatalogItemType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$namespacedef">VMware_VCloud_API_Extension_ExtensionObjectRefType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$namespacedef">VMware_VCloud_API_Extension_ApiFilterType::$namespacedef</a>
@@ -1867,6 +1984,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$namespacedef">VMware_VCloud_API_OrgPasswordPolicySettingsType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$namespacedef">VMware_VCloud_API_OrgsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$namespacedef">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$namespacedef</a>
 							</li>
 					<li>
@@ -1933,10 +2053,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_LookupServiceParamsType::$namespacedef</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_CatalogSettingsType::$namespacedef</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$namespacedef">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_UberAdminSettingsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$namespacedef">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$namespacedef</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$namespacedef">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$namespacedef</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$namespacedef">VMware_VCloud_API_Extension_VMWExtensionType::$namespacedef</a>
@@ -2083,6 +2218,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#var$tagName">VMware_VCloud_API_GatewayType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#var$tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#var$tagName">VMware_VCloud_API_Extension_ResourcePoolType::$tagName</a>
 							</li>
 					<li>
@@ -2105,6 +2249,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$tagName">VMware_VCloud_API_Extension_AdminServiceType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#var$tagName">VMware_VCloud_API_Extension_AdminServiceExtensionType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#var$tagName">VMware_VCloud_API_Extension_AdminApiDefinitionType::$tagName</a>
@@ -2198,6 +2345,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#var$tagName">VMware_VCloud_API_CatalogItemType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#var$tagName">VMware_VCloud_API_Extension_ExtensionObjectRefType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#var$tagName">VMware_VCloud_API_Extension_ApiFilterType::$tagName</a>
@@ -2302,6 +2452,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#var$tagName">VMware_VCloud_API_OrgPasswordPolicySettingsType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#var$tagName">VMware_VCloud_API_OrgsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#var$tagName">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::$tagName</a>
 							</li>
 					<li>
@@ -2368,10 +2521,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#var$tagName">VMware_VCloud_API_Extension_LookupServiceParamsType::$tagName</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#var$tagName">VMware_VCloud_API_Extension_CatalogSettingsType::$tagName</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#var$tagName">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#var$tagName">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#var$tagName">VMware_VCloud_API_Extension_UberAdminSettingsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#var$tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#var$tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingType::$tagName</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#var$tagName">VMware_VCloud_API_Extension_ComponentManagerSettingsType::$tagName</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#var$tagName">VMware_VCloud_API_Extension_VMWExtensionType::$tagName</a>
@@ -2581,6 +2749,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#method__construct">VMware_VCloud_API_GatewayType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#method__construct">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#method__construct">VMware_VCloud_API_Extension_ResourcePoolType::__construct()</a>
 							</li>
 					<li>
@@ -2603,6 +2780,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#method__construct">VMware_VCloud_API_Extension_AdminServiceType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#method__construct">VMware_VCloud_API_Extension_AdminServiceExtensionType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#method__construct">VMware_VCloud_API_Extension_AdminApiDefinitionType::__construct()</a>
@@ -2696,6 +2876,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#method__construct">VMware_VCloud_API_CatalogItemType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#method__construct">VMware_VCloud_API_Extension_ExtensionObjectRefType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#method__construct">VMware_VCloud_API_Extension_ApiFilterType::__construct()</a>
@@ -2800,6 +2983,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#method__construct">VMware_VCloud_API_OrgPasswordPolicySettingsType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#method__construct">VMware_VCloud_API_OrgsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#method__construct">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::__construct()</a>
 							</li>
 					<li>
@@ -2866,10 +3052,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#method__construct">VMware_VCloud_API_Extension_LookupServiceParamsType::__construct()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#method__construct">VMware_VCloud_API_Extension_CatalogSettingsType::__construct()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#method__construct">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#method__construct">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#method__construct">VMware_VCloud_API_Extension_UberAdminSettingsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#method__construct">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#method__construct">VMware_VCloud_API_Extension_SystemConfigurationSettingType::__construct()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#method__construct">VMware_VCloud_API_Extension_ComponentManagerSettingsType::__construct()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#method__construct">VMware_VCloud_API_Extension_VMWExtensionType::__construct()</a>
@@ -3054,6 +3255,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodbuild">VMware_VCloud_API_GatewayType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodbuild">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodbuild">VMware_VCloud_API_Extension_ResourcePoolType::build()</a>
 							</li>
 					<li>
@@ -3076,6 +3286,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuild">VMware_VCloud_API_Extension_AdminServiceType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodbuild">VMware_VCloud_API_Extension_AdminServiceExtensionType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodbuild">VMware_VCloud_API_Extension_AdminApiDefinitionType::build()</a>
@@ -3169,6 +3382,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodbuild">VMware_VCloud_API_CatalogItemType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodbuild">VMware_VCloud_API_Extension_ExtensionObjectRefType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodbuild">VMware_VCloud_API_Extension_ApiFilterType::build()</a>
@@ -3273,6 +3489,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodbuild">VMware_VCloud_API_OrgPasswordPolicySettingsType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodbuild">VMware_VCloud_API_OrgsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodbuild">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::build()</a>
 							</li>
 					<li>
@@ -3339,10 +3558,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodbuild">VMware_VCloud_API_Extension_LookupServiceParamsType::build()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodbuild">VMware_VCloud_API_Extension_CatalogSettingsType::build()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodbuild">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodbuild">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodbuild">VMware_VCloud_API_Extension_UberAdminSettingsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodbuild">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodbuild">VMware_VCloud_API_Extension_SystemConfigurationSettingType::build()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodbuild">VMware_VCloud_API_Extension_ComponentManagerSettingsType::build()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodbuild">VMware_VCloud_API_Extension_VMWExtensionType::build()</a>
@@ -3499,6 +3733,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodbuildAttributes">VMware_VCloud_API_GatewayType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ResourcePoolType::buildAttributes()</a>
 							</li>
 					<li>
@@ -3521,6 +3764,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminServiceType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminServiceExtensionType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminApiDefinitionType::buildAttributes()</a>
@@ -3614,6 +3860,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodbuildAttributes">VMware_VCloud_API_CatalogItemType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ExtensionObjectRefType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ApiFilterType::buildAttributes()</a>
@@ -3718,6 +3967,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodbuildAttributes">VMware_VCloud_API_OrgPasswordPolicySettingsType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodbuildAttributes">VMware_VCloud_API_OrgsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodbuildAttributes">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::buildAttributes()</a>
 							</li>
 					<li>
@@ -3784,10 +4036,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_LookupServiceParamsType::buildAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_CatalogSettingsType::buildAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_UberAdminSettingsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodbuildAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingType::buildAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodbuildAttributes">VMware_VCloud_API_Extension_ComponentManagerSettingsType::buildAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodbuildAttributes">VMware_VCloud_API_Extension_VMWExtensionType::buildAttributes()</a>
@@ -3947,6 +4214,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodbuildChildren">VMware_VCloud_API_GatewayType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodbuildChildren">VMware_VCloud_API_Extension_ResourcePoolType::buildChildren()</a>
 							</li>
 					<li>
@@ -3969,6 +4245,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminServiceType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminServiceExtensionType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminApiDefinitionType::buildChildren()</a>
@@ -4062,6 +4341,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodbuildChildren">VMware_VCloud_API_CatalogItemType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodbuildChildren">VMware_VCloud_API_Extension_ExtensionObjectRefType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodbuildChildren">VMware_VCloud_API_Extension_ApiFilterType::buildChildren()</a>
@@ -4166,6 +4448,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodbuildChildren">VMware_VCloud_API_OrgPasswordPolicySettingsType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodbuildChildren">VMware_VCloud_API_OrgsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodbuildChildren">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::buildChildren()</a>
 							</li>
 					<li>
@@ -4232,10 +4517,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_LookupServiceParamsType::buildChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_CatalogSettingsType::buildChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodbuildChildren">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_UberAdminSettingsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodbuildChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingType::buildChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodbuildChildren">VMware_VCloud_API_Extension_ComponentManagerSettingsType::buildChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodbuildChildren">VMware_VCloud_API_Extension_VMWExtensionType::buildChildren()</a>
@@ -4404,6 +4704,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodexport">VMware_VCloud_API_GatewayType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodexport">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodexport">VMware_VCloud_API_Extension_ResourcePoolType::export()</a>
 							</li>
 					<li>
@@ -4426,6 +4735,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexport">VMware_VCloud_API_Extension_AdminServiceType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodexport">VMware_VCloud_API_Extension_AdminServiceExtensionType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodexport">VMware_VCloud_API_Extension_AdminApiDefinitionType::export()</a>
@@ -4519,6 +4831,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodexport">VMware_VCloud_API_CatalogItemType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodexport">VMware_VCloud_API_Extension_ExtensionObjectRefType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodexport">VMware_VCloud_API_Extension_ApiFilterType::export()</a>
@@ -4623,6 +4938,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodexport">VMware_VCloud_API_OrgPasswordPolicySettingsType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodexport">VMware_VCloud_API_OrgsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodexport">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::export()</a>
 							</li>
 					<li>
@@ -4689,10 +5007,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodexport">VMware_VCloud_API_Extension_LookupServiceParamsType::export()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodexport">VMware_VCloud_API_Extension_CatalogSettingsType::export()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodexport">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodexport">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodexport">VMware_VCloud_API_Extension_UberAdminSettingsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodexport">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodexport">VMware_VCloud_API_Extension_SystemConfigurationSettingType::export()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodexport">VMware_VCloud_API_Extension_ComponentManagerSettingsType::export()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodexport">VMware_VCloud_API_Extension_VMWExtensionType::export()</a>
@@ -4858,6 +5191,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodexportAttributes">VMware_VCloud_API_GatewayType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodexportAttributes">VMware_VCloud_API_Extension_ResourcePoolType::exportAttributes()</a>
 							</li>
 					<li>
@@ -4880,6 +5222,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminServiceType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminServiceExtensionType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminApiDefinitionType::exportAttributes()</a>
@@ -4973,6 +5318,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodexportAttributes">VMware_VCloud_API_CatalogItemType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodexportAttributes">VMware_VCloud_API_Extension_ExtensionObjectRefType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodexportAttributes">VMware_VCloud_API_Extension_ApiFilterType::exportAttributes()</a>
@@ -5077,6 +5425,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodexportAttributes">VMware_VCloud_API_OrgPasswordPolicySettingsType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodexportAttributes">VMware_VCloud_API_OrgsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodexportAttributes">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::exportAttributes()</a>
 							</li>
 					<li>
@@ -5143,10 +5494,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_LookupServiceParamsType::exportAttributes()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_CatalogSettingsType::exportAttributes()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodexportAttributes">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_UberAdminSettingsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodexportAttributes">VMware_VCloud_API_Extension_SystemConfigurationSettingType::exportAttributes()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodexportAttributes">VMware_VCloud_API_Extension_ComponentManagerSettingsType::exportAttributes()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodexportAttributes">VMware_VCloud_API_Extension_VMWExtensionType::exportAttributes()</a>
@@ -5312,6 +5678,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodexportChildren">VMware_VCloud_API_GatewayType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodexportChildren">VMware_VCloud_API_Extension_ResourcePoolType::exportChildren()</a>
 							</li>
 					<li>
@@ -5334,6 +5709,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminServiceType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminServiceExtensionType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminApiDefinitionType::exportChildren()</a>
@@ -5427,6 +5805,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodexportChildren">VMware_VCloud_API_CatalogItemType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodexportChildren">VMware_VCloud_API_Extension_ExtensionObjectRefType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodexportChildren">VMware_VCloud_API_Extension_ApiFilterType::exportChildren()</a>
@@ -5531,6 +5912,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodexportChildren">VMware_VCloud_API_OrgPasswordPolicySettingsType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodexportChildren">VMware_VCloud_API_OrgsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodexportChildren">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::exportChildren()</a>
 							</li>
 					<li>
@@ -5597,10 +5981,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_LookupServiceParamsType::exportChildren()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_CatalogSettingsType::exportChildren()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodexportChildren">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_UberAdminSettingsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodexportChildren">VMware_VCloud_API_Extension_SystemConfigurationSettingType::exportChildren()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodexportChildren">VMware_VCloud_API_Extension_ComponentManagerSettingsType::exportChildren()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodexportChildren">VMware_VCloud_API_Extension_VMWExtensionType::exportChildren()</a>
@@ -5795,6 +6194,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodget_tagName">VMware_VCloud_API_GatewayType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodget_tagName">VMware_VCloud_API_Extension_ResourcePoolType::get_tagName()</a>
 							</li>
 					<li>
@@ -5817,6 +6225,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminServiceType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminServiceExtensionType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminApiDefinitionType::get_tagName()</a>
@@ -5910,6 +6321,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodget_tagName">VMware_VCloud_API_CatalogItemType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodget_tagName">VMware_VCloud_API_Extension_ExtensionObjectRefType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodget_tagName">VMware_VCloud_API_Extension_ApiFilterType::get_tagName()</a>
@@ -6014,6 +6428,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodget_tagName">VMware_VCloud_API_OrgPasswordPolicySettingsType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodget_tagName">VMware_VCloud_API_OrgsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodget_tagName">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::get_tagName()</a>
 							</li>
 					<li>
@@ -6080,10 +6497,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_LookupServiceParamsType::get_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_CatalogSettingsType::get_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodget_tagName">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_UberAdminSettingsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodget_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingType::get_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodget_tagName">VMware_VCloud_API_Extension_ComponentManagerSettingsType::get_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodget_tagName">VMware_VCloud_API_Extension_VMWExtensionType::get_tagName()</a>
@@ -6255,6 +6687,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodhasContent">VMware_VCloud_API_GatewayType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodhasContent">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodhasContent">VMware_VCloud_API_Extension_ResourcePoolType::hasContent()</a>
 							</li>
 					<li>
@@ -6277,6 +6718,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodhasContent">VMware_VCloud_API_Extension_AdminServiceType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodhasContent">VMware_VCloud_API_Extension_AdminServiceExtensionType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodhasContent">VMware_VCloud_API_Extension_AdminApiDefinitionType::hasContent()</a>
@@ -6370,6 +6814,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodhasContent">VMware_VCloud_API_CatalogItemType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodhasContent">VMware_VCloud_API_Extension_ExtensionObjectRefType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodhasContent">VMware_VCloud_API_Extension_ApiFilterType::hasContent()</a>
@@ -6474,6 +6921,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodhasContent">VMware_VCloud_API_OrgPasswordPolicySettingsType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodhasContent">VMware_VCloud_API_OrgsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodhasContent">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::hasContent()</a>
 							</li>
 					<li>
@@ -6540,10 +6990,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodhasContent">VMware_VCloud_API_Extension_LookupServiceParamsType::hasContent()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_CatalogSettingsType::hasContent()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodhasContent">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodhasContent">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_UberAdminSettingsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodhasContent">VMware_VCloud_API_Extension_SystemConfigurationSettingType::hasContent()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodhasContent">VMware_VCloud_API_Extension_ComponentManagerSettingsType::hasContent()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodhasContent">VMware_VCloud_API_Extension_VMWExtensionType::hasContent()</a>
@@ -6753,6 +7218,15 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_GatewayType.html#methodset_tagName">VMware_VCloud_API_GatewayType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_ServiceOfferingInstanceUpdateParamsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourcePoolType.html#methodset_tagName">VMware_VCloud_API_Extension_ResourcePoolType::set_tagName()</a>
 							</li>
 					<li>
@@ -6775,6 +7249,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminServiceType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceExtensionType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminServiceExtensionType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminApiDefinitionType::set_tagName()</a>
@@ -6868,6 +7345,9 @@
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_CatalogItemType.html#methodset_tagName">VMware_VCloud_API_CatalogItemType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ExtensionObjectRefType.html#methodset_tagName">VMware_VCloud_API_Extension_ExtensionObjectRefType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFilterType.html#methodset_tagName">VMware_VCloud_API_Extension_ApiFilterType::set_tagName()</a>
@@ -6972,6 +7452,9 @@
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgPasswordPolicySettingsType.html#methodset_tagName">VMware_VCloud_API_OrgPasswordPolicySettingsType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgsType.html#methodset_tagName">VMware_VCloud_API_OrgsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API/VMware_VCloud_API_OrgGuestPersonalizationSettingsType.html#methodset_tagName">VMware_VCloud_API_OrgGuestPersonalizationSettingsType::set_tagName()</a>
 							</li>
 					<li>
@@ -7038,10 +7521,25 @@
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_LookupServiceParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_LookupServiceParamsType::set_tagName()</a>
 							</li>
 					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_CatalogSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_CatalogSettingsType::set_tagName()</a>
+							</li>
+					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskOperationParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_BlockingTaskOperationParamsType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType.html#methodset_tagName">VMware_VCloud_API_Extension_BlockingTaskUpdateProgressParamsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_UberAdminSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_UberAdminSettingsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingsType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_SystemConfigurationSettingType.html#methodset_tagName">VMware_VCloud_API_Extension_SystemConfigurationSettingType::set_tagName()</a>
+							</li>
+					<li>
+				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ComponentManagerSettingsType.html#methodset_tagName">VMware_VCloud_API_Extension_ComponentManagerSettingsType::set_tagName()</a>
 							</li>
 					<li>
 				<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_VMWExtensionType.html#methodset_tagName">VMware_VCloud_API_Extension_VMWExtensionType::set_tagName()</a>
@@ -7148,7 +7646,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:56:30 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:59:24 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

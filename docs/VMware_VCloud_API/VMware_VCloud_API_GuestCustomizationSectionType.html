@@ -25,11 +25,11 @@
 <p class="short-description">Represents a guest customization settings.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.1.0</li>
-				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37438">37438</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37826">37826</a></span>)
 		</p>
 		
 				
@@ -54,11 +54,19 @@
 								</div>
 		<div class="info-box-body">
 			<div class="var-summary">
-																																																																				<div class="var-title">
+																																																																																				<div class="var-title">
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
 																																																																																																																																												<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdminAutoLogonCount" title="details" class="var-name">$AdminAutoLogonCount</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$AdminAutoLogonEnabled" title="details" class="var-name">$AdminAutoLogonEnabled</a>
+				</div>
+																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$AdminPassword" title="details" class="var-name">$AdminPassword</a>
 				</div>
@@ -162,11 +170,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																																																																																																																																																																																																																																																														
+																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_GuestCustomizationSectionType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">string</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_Msg_Type.html">VMware_VCloud_API_OVF_Msg_Type</a></span>&nbsp;<span class="var-name">$Info</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ChangeSid</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VirtualMachineId</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$JoinDomainEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseOrgSettings</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserPassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$MachineObjectOU</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordAuto</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdminPassword</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ResetPasswordRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$CustomizationScript</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ComputerName</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Any</span> = <span class="var-default">null</span>])
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_Msg_Type.html">VMware_VCloud_API_OVF_Msg_Type</a></span>&nbsp;<span class="var-name">$Info</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ChangeSid</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VirtualMachineId</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$JoinDomainEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseOrgSettings</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserPassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$MachineObjectOU</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordAuto</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdminPassword</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminAutoLogonEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AdminAutoLogonCount</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ResetPasswordRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$CustomizationScript</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ComputerName</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Any</span> = <span class="var-default">null</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -215,6 +223,18 @@
 											<span class="method-result">void</span>
 										<a href="#exportChildren" title="details" class="method-name">exportChildren</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAdminAutoLogonCount" title="details" class="method-name">getAdminAutoLogonCount</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getAdminAutoLogonEnabled" title="details" class="method-name">getAdminAutoLogonEnabled</a>
+										()
 									</div>
 														
 				<div class="method-definition">
@@ -341,6 +361,18 @@
 											<span class="method-result">void</span>
 										<a href="#hasContent" title="details" class="method-name">hasContent</a>
 										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAdminAutoLogonCount" title="details" class="method-name">setAdminAutoLogonCount</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdminAutoLogonCount</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setAdminAutoLogonEnabled" title="details" class="method-name">setAdminAutoLogonEnabled</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$AdminAutoLogonEnabled</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -480,13 +512,13 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37461">37461</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37851">37851</a></span>)
 		</span>
 	</div>
 
@@ -506,14 +538,56 @@
 
 </div>
 
-<a name="var$AdminPassword" id="$AdminPassword"><!-- --></A>
+<a name="var$AdminAutoLogonCount" id="$AdminAutoLogonCount"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$AdminAutoLogonCount</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37842">37842</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$AdminAutoLogonEnabled" id="$AdminAutoLogonEnabled"><!-- --></A>
 <div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
+			<span class="var-name">$AdminAutoLogonEnabled</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37841">37841</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$AdminPassword" id="$AdminPassword"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
 			<span class="var-name">$AdminPassword</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37452">37452</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37840">37840</a></span>)
 		</span>
 	</div>
 
@@ -528,13 +602,13 @@
 
 </div>
 <a name="var$AdminPasswordAuto" id="$AdminPasswordAuto"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AdminPasswordAuto</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37451">37451</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37839">37839</a></span>)
 		</span>
 	</div>
 
@@ -549,13 +623,13 @@
 
 </div>
 <a name="var$AdminPasswordEnabled" id="$AdminPasswordEnabled"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AdminPasswordEnabled</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37450">37450</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37838">37838</a></span>)
 		</span>
 	</div>
 
@@ -570,13 +644,13 @@
 
 </div>
 <a name="var$Any" id="$Any"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$Any</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37457">37457</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37847">37847</a></span>)
 		</span>
 	</div>
 
@@ -591,13 +665,13 @@
 
 </div>
 <a name="var$ChangeSid" id="$ChangeSid"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ChangeSid</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37442">37442</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37830">37830</a></span>)
 		</span>
 	</div>
 
@@ -612,13 +686,13 @@
 
 </div>
 <a name="var$ComputerName" id="$ComputerName"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ComputerName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37455">37455</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37845">37845</a></span>)
 		</span>
 	</div>
 
@@ -633,13 +707,13 @@
 
 </div>
 <a name="var$CustomizationScript" id="$CustomizationScript"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$CustomizationScript</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37454">37454</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37844">37844</a></span>)
 		</span>
 	</div>
 
@@ -654,13 +728,13 @@
 
 </div>
 <a name="var$DomainName" id="$DomainName"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$DomainName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37446">37446</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37834">37834</a></span>)
 		</span>
 	</div>
 
@@ -675,13 +749,13 @@
 
 </div>
 <a name="var$DomainUserName" id="$DomainUserName"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$DomainUserName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37447">37447</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37835">37835</a></span>)
 		</span>
 	</div>
 
@@ -696,13 +770,13 @@
 
 </div>
 <a name="var$DomainUserPassword" id="$DomainUserPassword"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$DomainUserPassword</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37448">37448</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37836">37836</a></span>)
 		</span>
 	</div>
 
@@ -717,13 +791,13 @@
 
 </div>
 <a name="var$Enabled" id="$Enabled"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$Enabled</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37441">37441</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37829">37829</a></span>)
 		</span>
 	</div>
 
@@ -738,13 +812,13 @@
 
 </div>
 <a name="var$href" id="$href"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$href</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37439">37439</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37827">37827</a></span>)
 		</span>
 	</div>
 
@@ -759,13 +833,13 @@
 
 </div>
 <a name="var$JoinDomainEnabled" id="$JoinDomainEnabled"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$JoinDomainEnabled</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37444">37444</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37832">37832</a></span>)
 		</span>
 	</div>
 
@@ -780,13 +854,13 @@
 
 </div>
 <a name="var$Link" id="$Link"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$Link</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37456">37456</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37846">37846</a></span>)
 		</span>
 	</div>
 
@@ -801,13 +875,13 @@
 
 </div>
 <a name="var$MachineObjectOU" id="$MachineObjectOU"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$MachineObjectOU</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37449">37449</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37837">37837</a></span>)
 		</span>
 	</div>
 
@@ -822,13 +896,13 @@
 
 </div>
 <a name="var$namespace" id="$namespace"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37458">37458</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37848">37848</a></span>)
 		</span>
 	</div>
 
@@ -848,13 +922,13 @@
 
 </div>
 <a name="var$namespacedef" id="$namespacedef"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37459">37459</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37849">37849</a></span>)
 		</span>
 	</div>
 
@@ -874,13 +948,13 @@
 
 </div>
 <a name="var$ResetPasswordRequired" id="$ResetPasswordRequired"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ResetPasswordRequired</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37453">37453</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37843">37843</a></span>)
 		</span>
 	</div>
 
@@ -895,13 +969,13 @@
 
 </div>
 <a name="var$tagName" id="$tagName"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37460">37460</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37850">37850</a></span>)
 		</span>
 	</div>
 
@@ -921,13 +995,13 @@
 
 </div>
 <a name="var$type" id="$type"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$type</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37440">37440</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37828">37828</a></span>)
 		</span>
 	</div>
 
@@ -942,13 +1016,13 @@
 
 </div>
 <a name="var$UseOrgSettings" id="$UseOrgSettings"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$UseOrgSettings</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37445">37445</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37833">37833</a></span>)
 		</span>
 	</div>
 
@@ -963,13 +1037,13 @@
 
 </div>
 <a name="var$VirtualMachineId" id="$VirtualMachineId"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VirtualMachineId</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37443">37443</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37831">37831</a></span>)
 		</span>
 	</div>
 
@@ -1010,10 +1084,10 @@
 		<div class="info-box-body">
 			<A NAME='method_detail'></A>
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37486">37486</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37878">37878</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1026,7 +1100,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">string</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_Msg_Type.html">VMware_VCloud_API_OVF_Msg_Type</a></span>&nbsp;<span class="var-name">$Info</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ChangeSid</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VirtualMachineId</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$JoinDomainEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseOrgSettings</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserPassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$MachineObjectOU</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordAuto</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdminPassword</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ResetPasswordRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$CustomizationScript</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ComputerName</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Any</span> = <span class="var-default">null</span>])
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_Msg_Type.html">VMware_VCloud_API_OVF_Msg_Type</a></span>&nbsp;<span class="var-name">$Info</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ChangeSid</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$VirtualMachineId</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$JoinDomainEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UseOrgSettings</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserName</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$DomainUserPassword</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$MachineObjectOU</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminPasswordAuto</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AdminPassword</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AdminAutoLogonEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$AdminAutoLogonCount</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$ResetPasswordRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$CustomizationScript</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ComputerName</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Any</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -1080,6 +1154,12 @@
 				<span class="var-name">$AdminPassword</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
 				<span class="var-type">boolean</span>
+				<span class="var-name">$AdminAutoLogonEnabled</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$AdminAutoLogonCount</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
 				<span class="var-name">$ResetPasswordRequired</span><span class="var-description">: - [optional]</span>			</li>
 					<li>
 				<span class="var-type">string</span>
@@ -1103,10 +1183,10 @@
 			
 	</div>
 <a name="methodaddAny" id="addAny"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">addAny</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37617">37617</a></span>)
+		<span class="method-title">addAny</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38023">38023</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1131,10 +1211,10 @@
 			
 	</div>
 <a name="methodaddLink" id="addLink"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">addLink</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37610">37610</a></span>)
+		<span class="method-title">addLink</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38016">38016</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1159,10 +1239,10 @@
 			
 	</div>
 <a name="methodbuild" id="build"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37801">37801</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38219">38219</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1195,10 +1275,10 @@
 			
 	</div>
 <a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37822">37822</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38240">38240</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1231,10 +1311,10 @@
 			
 	</div>
 <a name="methodbuildChildren" id="buildChildren"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37852">37852</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38270">38270</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1270,10 +1350,10 @@
 			
 	</div>
 <a name="methodexport" id="export"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37632">37632</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38038">38038</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1318,10 +1398,10 @@
 			
 	</div>
 <a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37662">37662</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38068">38068</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1363,10 +1443,10 @@
 			
 	</div>
 <a name="methodexportChildren" id="exportChildren"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37675">37675</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38081">38081</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1407,11 +1487,57 @@
 					</dl>
 			
 	</div>
-<a name="methodgetAdminPassword" id="getAdminPassword"><!-- --></a>
+<a name="methodgetAdminAutoLogonCount" id="getAdminAutoLogonCount"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminAutoLogonCount</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37986">37986</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdminAutoLogonCount
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdminAutoLogonEnabled" id="getAdminAutoLogonEnabled"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAdminPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37580">37580</a></span>)
+		<span class="method-title">getAdminAutoLogonEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37980">37980</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getAdminAutoLogonEnabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetAdminPassword" id="getAdminPassword"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAdminPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37974">37974</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1431,10 +1557,10 @@
 			
 	</div>
 <a name="methodgetAdminPasswordAuto" id="getAdminPasswordAuto"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAdminPasswordAuto</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37574">37574</a></span>)
+		<span class="method-title">getAdminPasswordAuto</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37968">37968</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1454,10 +1580,10 @@
 			
 	</div>
 <a name="methodgetAdminPasswordEnabled" id="getAdminPasswordEnabled"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAdminPasswordEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37568">37568</a></span>)
+		<span class="method-title">getAdminPasswordEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37962">37962</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1477,10 +1603,10 @@
 			
 	</div>
 <a name="methodgetAny" id="getAny"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAny</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37611">37611</a></span>)
+		<span class="method-title">getAny</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38017">38017</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1500,10 +1626,10 @@
 			
 	</div>
 <a name="methodgetChangeSid" id="getChangeSid"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getChangeSid</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37520">37520</a></span>)
+		<span class="method-title">getChangeSid</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37914">37914</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1523,10 +1649,10 @@
 			
 	</div>
 <a name="methodgetComputerName" id="getComputerName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getComputerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37598">37598</a></span>)
+		<span class="method-title">getComputerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38004">38004</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1546,10 +1672,10 @@
 			
 	</div>
 <a name="methodgetCustomizationScript" id="getCustomizationScript"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getCustomizationScript</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37592">37592</a></span>)
+		<span class="method-title">getCustomizationScript</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37998">37998</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1569,10 +1695,10 @@
 			
 	</div>
 <a name="methodgetDomainName" id="getDomainName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getDomainName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37544">37544</a></span>)
+		<span class="method-title">getDomainName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37938">37938</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1592,10 +1718,10 @@
 			
 	</div>
 <a name="methodgetDomainUserName" id="getDomainUserName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getDomainUserName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37550">37550</a></span>)
+		<span class="method-title">getDomainUserName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37944">37944</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1615,10 +1741,10 @@
 			
 	</div>
 <a name="methodgetDomainUserPassword" id="getDomainUserPassword"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getDomainUserPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37556">37556</a></span>)
+		<span class="method-title">getDomainUserPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37950">37950</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1638,10 +1764,10 @@
 			
 	</div>
 <a name="methodgetEnabled" id="getEnabled"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37514">37514</a></span>)
+		<span class="method-title">getEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37908">37908</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1661,10 +1787,10 @@
 			
 	</div>
 <a name="methodgetJoinDomainEnabled" id="getJoinDomainEnabled"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getJoinDomainEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37532">37532</a></span>)
+		<span class="method-title">getJoinDomainEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37926">37926</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1684,10 +1810,10 @@
 			
 	</div>
 <a name="methodgetLink" id="getLink"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getLink</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37604">37604</a></span>)
+		<span class="method-title">getLink</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38010">38010</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1707,10 +1833,10 @@
 			
 	</div>
 <a name="methodgetMachineObjectOU" id="getMachineObjectOU"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getMachineObjectOU</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37562">37562</a></span>)
+		<span class="method-title">getMachineObjectOU</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37956">37956</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1730,10 +1856,10 @@
 			
 	</div>
 <a name="methodgetResetPasswordRequired" id="getResetPasswordRequired"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getResetPasswordRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37586">37586</a></span>)
+		<span class="method-title">getResetPasswordRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37992">37992</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1753,10 +1879,10 @@
 			
 	</div>
 <a name="methodgetUseOrgSettings" id="getUseOrgSettings"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getUseOrgSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37538">37538</a></span>)
+		<span class="method-title">getUseOrgSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37932">37932</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1776,10 +1902,10 @@
 			
 	</div>
 <a name="methodgetVirtualMachineId" id="getVirtualMachineId"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVirtualMachineId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37526">37526</a></span>)
+		<span class="method-title">getVirtualMachineId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37920">37920</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1799,10 +1925,10 @@
 			
 	</div>
 <a name="methodget_href" id="get_href"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_href</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37618">37618</a></span>)
+		<span class="method-title">get_href</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38024">38024</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1822,10 +1948,10 @@
 			
 	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37630">37630</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38036">38036</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1850,10 +1976,10 @@
 			
 	</div>
 <a name="methodget_type" id="get_type"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_type</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37624">37624</a></span>)
+		<span class="method-title">get_type</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38030">38030</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1873,10 +1999,10 @@
 			
 	</div>
 <a name="methodhasContent" id="hasContent"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37775">37775</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38191">38191</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1900,11 +2026,67 @@
 					</dl>
 			
 	</div>
-<a name="methodsetAdminPassword" id="setAdminPassword"><!-- --></a>
+<a name="methodsetAdminAutoLogonCount" id="setAdminAutoLogonCount"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAdminAutoLogonCount</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37989">37989</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdminAutoLogonCount
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdminAutoLogonCount</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdminAutoLogonCount</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAdminAutoLogonEnabled" id="setAdminAutoLogonEnabled"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAdminPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37583">37583</a></span>)
+		<span class="method-title">setAdminAutoLogonEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37983">37983</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setAdminAutoLogonEnabled
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$AdminAutoLogonEnabled</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$AdminAutoLogonEnabled</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetAdminPassword" id="setAdminPassword"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setAdminPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37977">37977</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1929,10 +2111,10 @@
 			
 	</div>
 <a name="methodsetAdminPasswordAuto" id="setAdminPasswordAuto"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAdminPasswordAuto</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37577">37577</a></span>)
+		<span class="method-title">setAdminPasswordAuto</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37971">37971</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1957,10 +2139,10 @@
 			
 	</div>
 <a name="methodsetAdminPasswordEnabled" id="setAdminPasswordEnabled"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAdminPasswordEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37571">37571</a></span>)
+		<span class="method-title">setAdminPasswordEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37965">37965</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1985,10 +2167,10 @@
 			
 	</div>
 <a name="methodsetAny" id="setAny"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAny</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37614">37614</a></span>)
+		<span class="method-title">setAny</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38020">38020</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2013,10 +2195,10 @@
 			
 	</div>
 <a name="methodsetChangeSid" id="setChangeSid"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setChangeSid</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37523">37523</a></span>)
+		<span class="method-title">setChangeSid</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37917">37917</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2041,10 +2223,10 @@
 			
 	</div>
 <a name="methodsetComputerName" id="setComputerName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setComputerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37601">37601</a></span>)
+		<span class="method-title">setComputerName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38007">38007</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2069,10 +2251,10 @@
 			
 	</div>
 <a name="methodsetCustomizationScript" id="setCustomizationScript"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setCustomizationScript</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37595">37595</a></span>)
+		<span class="method-title">setCustomizationScript</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38001">38001</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2097,10 +2279,10 @@
 			
 	</div>
 <a name="methodsetDomainName" id="setDomainName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setDomainName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37547">37547</a></span>)
+		<span class="method-title">setDomainName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37941">37941</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2125,10 +2307,10 @@
 			
 	</div>
 <a name="methodsetDomainUserName" id="setDomainUserName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setDomainUserName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37553">37553</a></span>)
+		<span class="method-title">setDomainUserName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37947">37947</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2153,10 +2335,10 @@
 			
 	</div>
 <a name="methodsetDomainUserPassword" id="setDomainUserPassword"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setDomainUserPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37559">37559</a></span>)
+		<span class="method-title">setDomainUserPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37953">37953</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2181,10 +2363,10 @@
 			
 	</div>
 <a name="methodsetEnabled" id="setEnabled"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37517">37517</a></span>)
+		<span class="method-title">setEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37911">37911</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2209,10 +2391,10 @@
 			
 	</div>
 <a name="methodsetJoinDomainEnabled" id="setJoinDomainEnabled"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setJoinDomainEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37535">37535</a></span>)
+		<span class="method-title">setJoinDomainEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37929">37929</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2237,10 +2419,10 @@
 			
 	</div>
 <a name="methodsetLink" id="setLink"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setLink</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37607">37607</a></span>)
+		<span class="method-title">setLink</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38013">38013</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2265,10 +2447,10 @@
 			
 	</div>
 <a name="methodsetMachineObjectOU" id="setMachineObjectOU"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setMachineObjectOU</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37565">37565</a></span>)
+		<span class="method-title">setMachineObjectOU</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37959">37959</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2293,10 +2475,10 @@
 			
 	</div>
 <a name="methodsetResetPasswordRequired" id="setResetPasswordRequired"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setResetPasswordRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37589">37589</a></span>)
+		<span class="method-title">setResetPasswordRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37995">37995</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2321,10 +2503,10 @@
 			
 	</div>
 <a name="methodsetUseOrgSettings" id="setUseOrgSettings"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setUseOrgSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37541">37541</a></span>)
+		<span class="method-title">setUseOrgSettings</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37935">37935</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2349,10 +2531,10 @@
 			
 	</div>
 <a name="methodsetVirtualMachineId" id="setVirtualMachineId"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVirtualMachineId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37529">37529</a></span>)
+		<span class="method-title">setVirtualMachineId</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37923">37923</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2377,10 +2559,10 @@
 			
 	</div>
 <a name="methodset_href" id="set_href"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_href</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37621">37621</a></span>)
+		<span class="method-title">set_href</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38027">38027</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2405,10 +2587,10 @@
 			
 	</div>
 <a name="methodset_tagName" id="set_tagName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37631">37631</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38037">38037</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2438,10 +2620,10 @@
 			
 	</div>
 <a name="methodset_type" id="set_type"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_type</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a37627">37627</a></span>)
+		<span class="method-title">set_type</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a38033">38033</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2493,7 +2675,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:55:59 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:58:59 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

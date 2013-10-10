@@ -24,7 +24,7 @@
         		<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">A class provides convenient methods on a VMware vCloud vApp entity.</p>
 		<p class="notes">
-			Located in <a class="field" href="_VCloud.php.html">/VCloud.php</a> (line <span class="field"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1060">1060</a></span>)
+			Located in <a class="field" href="_VCloud.php.html">/VCloud.php</a> (line <span class="field"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1198">1198</a></span>)
 		</p>
 		
 				
@@ -52,7 +52,7 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																																																																																																																						
+																																																																																																																																																																																																																																																																																																																																																																																						
 				<div class="method-definition">
 											<span class="method-result">null</span>
 										<a href="#changeOwner" title="details" class="method-name">changeOwner</a>
@@ -66,9 +66,39 @@
 									</div>
 														
 				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#disableDownload" title="details" class="method-name">disableDownload</a>
+										()
+									</div>
+														
+				<div class="method-definition">
 											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
 										<a href="#disableNestedHypervisor" title="details" class="method-name">disableNestedHypervisor</a>
 										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#downloadLosslessOVFFile" title="details" class="method-name">downloadLosslessOVFFile</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$destDir</span> = <span class="var-default">'.'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#downloadOVFFile" title="details" class="method-name">downloadOVFFile</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$destDir</span> = <span class="var-default">'.'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#downloadVapp" title="details" class="method-name">downloadVapp</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$destDir</span> = <span class="var-default">'.'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+										<a href="#enableDownload" title="details" class="method-name">enableDownload</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$wait</span> = <span class="var-default">true</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -144,8 +174,14 @@
 									</div>
 														
 				<div class="method-definition">
-											<span class="method-result">String</span>
+											<span class="method-result"><a href="../../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_EnvelopeType.html">VMware_VCloud_API_OVF_EnvelopeType</a></span>
 										<a href="#getOVFDescriptor" title="details" class="method-name">getOVFDescriptor</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">String</span>
+										<a href="#getOVFDescriptorAsString" title="details" class="method-name">getOVFDescriptorAsString</a>
 										()
 									</div>
 														
@@ -174,6 +210,24 @@
 									</div>
 														
 				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getUploadedFileNames" title="details" class="method-name">getUploadedFileNames</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>&nbsp;<span class="var-name">$vApp</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getUploadFileNames" title="details" class="method-name">getUploadFileNames</a>
+											(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>&nbsp;<span class="var-name">$vApp</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string|null</span>
+										<a href="#getUploadOVFDescriptorUrl" title="details" class="method-name">getUploadOVFDescriptorUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$files</span>)
+									</div>
+														
+				<div class="method-definition">
 											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
 										<a href="#getVApp" title="details" class="method-name">getVApp</a>
 										()
@@ -194,6 +248,12 @@
 				<div class="method-definition">
 											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_LinkType.html">VMware_VCloud_API_LinkType</a>|null</span>
 										<a href="#getVdcRef" title="details" class="method-name">getVdcRef</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getVmUUIDs" title="details" class="method-name">getVmUUIDs</a>
 										()
 									</div>
 														
@@ -250,6 +310,18 @@
 										<a href="#revertToCurrentSnapshot" title="details" class="method-name">revertToCurrentSnapshot</a>
 										()
 									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#UploadFile" title="details" class="method-name">UploadFile</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ovfDescriptorPath</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#uploadOVFDescriptor" title="details" class="method-name">uploadOVFDescriptor</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
 											</div>
 		</div>
 	</div>		
@@ -298,7 +370,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">changeOwner</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1424">1424</a></span>)
+		<span class="method-title">changeOwner</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1562">1562</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -328,7 +400,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">createSnapshot</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1516">1516</a></span>)
+		<span class="method-title">createSnapshot</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1700">1700</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -354,11 +426,37 @@
 		
 			
 	</div>
-<a name="methoddisableNestedHypervisor" id="disableNestedHypervisor"><!-- --></a>
+<a name="methoddisableDownload" id="disableDownload"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">disableNestedHypervisor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1530">1530</a></span>)
+		<span class="method-title">disableDownload</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1762">1762</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disable a vApp for downloading.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			disableDownload
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddisableNestedHypervisor" id="disableNestedHypervisor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">disableNestedHypervisor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1714">1714</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -379,11 +477,140 @@
 		
 			
 	</div>
-<a name="methodenableNestedHypervisor" id="enableNestedHypervisor"><!-- --></a>
+<a name="methoddownloadLosslessOVFFile" id="downloadLosslessOVFFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">downloadLosslessOVFFile</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1925">1925</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Download lossless vApp OVF.</p>
+<p class="description"><p>Lossless download mode generates ovf without loosing any of its configurations.</p></p>
+	<ul class="tags">
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			downloadLosslessOVFFile
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$destDir</span> = <span class="var-default">'.'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$destDir</span><span class="var-description">: Directory where to save the downloaded file</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddownloadOVFFile" id="downloadOVFFile"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">enableNestedHypervisor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1542">1542</a></span>)
+		<span class="method-title">downloadOVFFile</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1837">1837</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Download OVF package.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			downloadOVFFile
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$destDir</span> = <span class="var-default">'.'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$destDir</span><span class="var-description">: Directory where to save the downloaded file</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddownloadVapp" id="downloadVapp"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">downloadVapp</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1873">1873</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Download the vApp as an ovf package. The ovf file and its vmdk  contents are downloaded to the specified location. Before downloading  make sure the vapp is enabled for download.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> enableDownload()</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			downloadVapp
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$destDir</span> = <span class="var-default">'.'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$destDir</span><span class="var-description">: Directory where to save the downloaded file</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenableDownload" id="enableDownload"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableDownload</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1776">1776</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enable a vApp for downloading.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_TaskType.html">VMware_VCloud_API_TaskType</a></span>
+		<span class="method-name">
+			enableDownload
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$wait</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$wait</span><span class="var-description">: To wait till finish, set to true</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenableNestedHypervisor" id="enableNestedHypervisor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">enableNestedHypervisor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1726">1726</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -405,10 +632,10 @@
 			
 	</div>
 <a name="methodenterMaintenanceMode" id="enterMaintenanceMode"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">enterMaintenanceMode</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1437">1437</a></span>)
+		<span class="method-title">enterMaintenanceMode</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1575">1575</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -430,10 +657,10 @@
 			
 	</div>
 <a name="methodexitMaintenanceMode" id="exitMaintenanceMode"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exitMaintenanceMode</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1449">1449</a></span>)
+		<span class="method-title">exitMaintenanceMode</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1587">1587</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -455,10 +682,10 @@
 			
 	</div>
 <a name="methodgetContainedVAppRefs" id="getContainedVAppRefs"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getContainedVAppRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1161">1161</a></span>)
+		<span class="method-title">getContainedVAppRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1299">1299</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -486,10 +713,10 @@
 			
 	</div>
 <a name="methodgetContainedVApps" id="getContainedVApps"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getContainedVApps</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1211">1211</a></span>)
+		<span class="method-title">getContainedVApps</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1349">1349</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -517,10 +744,10 @@
 			
 	</div>
 <a name="methodgetContainedVmRefs" id="getContainedVmRefs"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getContainedVmRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1185">1185</a></span>)
+		<span class="method-title">getContainedVmRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1323">1323</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -548,10 +775,10 @@
 			
 	</div>
 <a name="methodgetContainedVms" id="getContainedVms"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getContainedVms</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1240">1240</a></span>)
+		<span class="method-title">getContainedVms</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1378">1378</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -579,10 +806,10 @@
 			
 	</div>
 <a name="methodgetControlAccess" id="getControlAccess"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getControlAccess</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1358">1358</a></span>)
+		<span class="method-title">getControlAccess</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1496">1496</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -604,10 +831,10 @@
 			
 	</div>
 <a name="methodgetId" id="getId"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getId</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1090">1090</a></span>)
+		<span class="method-title">getId</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1228">1228</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -629,10 +856,10 @@
 			
 	</div>
 <a name="methodgetLeaseSettings" id="getLeaseSettings"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1294">1294</a></span>)
+		<span class="method-title">getLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1432">1432</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -654,10 +881,10 @@
 			
 	</div>
 <a name="methodgetNetworkConfigSettings" id="getNetworkConfigSettings"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getNetworkConfigSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1268">1268</a></span>)
+		<span class="method-title">getNetworkConfigSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1406">1406</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -679,10 +906,10 @@
 			
 	</div>
 <a name="methodgetNetworkSettings" id="getNetworkSettings"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getNetworkSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1346">1346</a></span>)
+		<span class="method-title">getNetworkSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1484">1484</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -704,10 +931,10 @@
 			
 	</div>
 <a name="methodgetOVFDescriptor" id="getOVFDescriptor"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOVFDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1489">1489</a></span>)
+		<span class="method-title">getOVFDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1627">1627</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -718,9 +945,35 @@
 			</ul>
 	
 	<div class="method-signature">
-		<span class="method-result">String</span>
+		<span class="method-result"><a href="../../VMware_VCloud_API_OVF/VMware_VCloud_API_OVF_EnvelopeType.html">VMware_VCloud_API_OVF_EnvelopeType</a></span>
 		<span class="method-name">
 			getOVFDescriptor
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOVFDescriptorAsString" id="getOVFDescriptorAsString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOVFDescriptorAsString</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1640">1640</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve the OVF descriptor of a vApp directly as string.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">String</span>
+		<span class="method-name">
+			getOVFDescriptorAsString
 		</span>
 				()
 			</div>
@@ -732,7 +985,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOwner</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1411">1411</a></span>)
+		<span class="method-title">getOwner</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1549">1549</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -757,7 +1010,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSnapshotSection</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1501">1501</a></span>)
+		<span class="method-title">getSnapshotSection</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1685">1685</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -782,7 +1035,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getStartupSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1320">1320</a></span>)
+		<span class="method-title">getStartupSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1458">1458</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -807,7 +1060,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getStatus</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1399">1399</a></span>)
+		<span class="method-title">getStatus</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1537">1537</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -836,11 +1089,109 @@
 					</dl>
 			
 	</div>
-<a name="methodgetVApp" id="getVApp"><!-- --></a>
+<a name="methodgetUploadedFileNames" id="getUploadedFileNames"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVApp</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1079">1079</a></span>)
+		<span class="method-title">getUploadedFileNames</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a2001">2001</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get file information after uploading vApp.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_FileType object array</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getUploadedFileNames
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>&nbsp;<span class="var-name">$vApp</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+				<span class="var-name">$vApp</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetUploadFileNames" id="getUploadFileNames"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUploadFileNames</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a2030">2030</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get file information before uploading vApp.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VMware_VCloud_API_FileType object array</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">throws:</span> VMware_VCloud_SDK_Exception</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getUploadFileNames
+		</span>
+					(<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>&nbsp;<span class="var-name">$vApp</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../VMware_VCloud_API/VMware_VCloud_API_VAppType.html">VMware_VCloud_API_VAppType</a></span>
+				<span class="var-name">$vApp</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetUploadOVFDescriptorUrl" id="getUploadOVFDescriptorUrl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUploadOVFDescriptorUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a2059">2059</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get upload URL of an OVF descriptor file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> OVF descriptor file URL or null</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|null</span>
+		<span class="method-name">
+			getUploadOVFDescriptorUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$files</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetVApp" id="getVApp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVApp</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1217">1217</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -862,10 +1213,10 @@
 			
 	</div>
 <a name="methodgetVAppRef" id="getVAppRef"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVAppRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1068">1068</a></span>)
+		<span class="method-title">getVAppRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1206">1206</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -887,10 +1238,10 @@
 			
 	</div>
 <a name="methodgetVdc" id="getVdc"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVdc</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1112">1112</a></span>)
+		<span class="method-title">getVdc</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1250">1250</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -912,10 +1263,10 @@
 			
 	</div>
 <a name="methodgetVdcRef" id="getVdcRef"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVdcRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1101">1101</a></span>)
+		<span class="method-title">getVdcRef</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1239">1239</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -936,11 +1287,38 @@
 		
 			
 	</div>
+<a name="methodgetVmUUIDs" id="getVmUUIDs"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVmUUIDs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1653">1653</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve VM BIOS UUID as described in the OVF Virtual System.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> VM BIOS UUIDs</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getVmUUIDs
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodmodify" id="modify"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">modify</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1126">1126</a></span>)
+		<span class="method-title">modify</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1264">1264</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -973,7 +1351,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">modifyControlAccess</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1371">1371</a></span>)
+		<span class="method-title">modifyControlAccess</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1509">1509</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1003,7 +1381,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">modifyLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1307">1307</a></span>)
+		<span class="method-title">modifyLeaseSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1445">1445</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1033,7 +1411,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">modifyNetworkConfigSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1281">1281</a></span>)
+		<span class="method-title">modifyNetworkConfigSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1419">1419</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1063,7 +1441,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">modifyStartupSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1333">1333</a></span>)
+		<span class="method-title">modifyStartupSettings</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1471">1471</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1093,7 +1471,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">recompose</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1146">1146</a></span>)
+		<span class="method-title">recompose</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1284">1284</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1123,7 +1501,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">removeAllSnapshots</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1554">1554</a></span>)
+		<span class="method-title">removeAllSnapshots</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1738">1738</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1148,7 +1526,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">resetVAppNetwork</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1461">1461</a></span>)
+		<span class="method-title">resetVAppNetwork</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1599">1599</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1173,7 +1551,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">revertToCurrentSnapshot</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1566">1566</a></span>)
+		<span class="method-title">revertToCurrentSnapshot</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a1750">1750</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1191,6 +1569,74 @@
 				()
 			</div>
 	
+		
+			
+	</div>
+<a name="methodUploadFile" id="UploadFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">UploadFile</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a2091">2091</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Upload the vApp related files. This can be vmdk or a manifest.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			UploadFile
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$files</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$ovfDescriptorPath</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ovfDescriptorPath</span><span class="var-description">: Path to the OVF descriptor</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$files</span><span class="var-description">: VMware_VCloud_API_FileType object array  $files</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduploadOVFDescriptor" id="uploadOVFDescriptor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">uploadOVFDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_VCloud.php.html#a2078">2078</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Upload OVF descriptor file.</p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			uploadOVFDescriptor
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: HTTP request URL</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: Path to the OVF descriptor</span>			</li>
+				</ul>
 		
 			
 	</div>
@@ -1237,7 +1683,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:56:52 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:59:47 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

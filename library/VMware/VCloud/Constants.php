@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2012. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.1.0
+ * @SDK version 5.5.0
  */
 
 /**
@@ -24,6 +24,9 @@
  */
 final class VMware_VCloud_SDK_Constants
 {
+    /**
+     * TYPE Constants
+     */
     const CAPTURE_VAPP_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.captureVAppParams+xml';
     const CATALOG_CONTENT_TYPE = 'application/vnd.vmware.vcloud.catalog+xml';
     const CATALOG_ITEM_CONTENT_TYPE = 'application/vnd.vmware.vcloud.catalogItem+xml';
@@ -112,6 +115,7 @@ final class VMware_VCloud_SDK_Constants
     const PROVIDER_VDC_CONTENT_TYPE = 'application/vnd.vmware.admin.providervdc+xml';
     const PROVIDER_VDC_STORAGE_PROFILE_CONTENT_TYPE = 'application/vnd.vmware.admin.pvdcStorageProfile+xml';
     const PUBLISH_CATALOG_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.publishCatalogParams+xml';
+    const PUBLISH_TO_EXTERNAL_ORGANIZATIONS_CONTENT_TYPE= 'application/vnd.vmware.admin.publishExternalCatalogParams+xml';
     const RIGHT_CONTENT_TYPE = 'application/vnd.vmware.admin.right+xml';
     const ROLE_CONTENT_TYPE = 'application/vnd.vmware.admin.role+xml';
     const UPDATE_VDC_STORAGE_PROFILES_CONTENT_TYPE = 'application/vnd.vmware.admin.updateVdcStorageProfiles+xml';
@@ -141,6 +145,7 @@ final class VMware_VCloud_SDK_Constants
     const IMPORT_VMASVAPPTEMPLATE_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.importVmAsVAppTemplateParams+xml';
     const IMPORT_VM_INTO_EXISTING_VAPP_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.importVmIntoExistingVAppParams+xml';
     const IMPORT_VM_INTO_EXISTING_VAPPTEMPLATE_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.importVmIntoExistingVAppTemplateParams+xml';
+    const INSTANTIATE_OVF_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.vcloud.instantiateOvfParams+xml';
     const LDAP_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.ldapSettings+xml';
     const LDAP_GROUP_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.ldapGroupSettings+xml';
     const LDAP_USER_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.ldapUserSettings+xml';
@@ -151,12 +156,15 @@ final class VMware_VCloud_SDK_Constants
     const PREPARE_HOST_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.prepareHostParams+xml';
     const PROVIDER_VDC_RESOURCE_POOL_CONTENT_TYPE = 'application/vnd.vmware.admin.vmwProviderVdcResourcePool+xml';
     const REGISTER_VIM_SERVER_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.registerVimServerParams+xml';
+    const REGISTER_VAPP_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.registerVAppParams+xml';
     const RESOURCE_POOL_SET_UPDATE_PARAMS_CONTENT_TYPE = 'application/vnd.vmware.admin.resourcePoolSetUpdateParams+xml';
     const STRANDED_ITEM_CONTENT_TYPE = 'application/vnd.vmware.admin.strandedItem+xml';
     const SYSTEM_ORGANIZATION_CONTENT_TYPE = 'application/vnd.vmware.admin.systemOrganization+xml';
     const SYSTEM_PASSWORD_POLICY_SETTINGS_CONTENT_TYPE = 'application/vnd.vmware.admin.systemPasswordPolicySettings+xml';
+    const SUBSCRIBE_TO_EXTERNAL_CATALOG_CONTENT_TYPE = 'application/vnd.vmware.admin.externalCatalogSubscriptionParams+xml';
     const KERBEROS_SETTINGS_CONTENT_TYPE='application/vnd.vmware.admin.kerberosSettings+xml';
     const LOOKUPSERVICE_SETTINGS_CONTENT_TYPE ='application/vnd.vmware.admin.lookupServiceParams+xml';
+    const CATALOG_SETTINGS_CONTENT_TYPE ='application/vnd.vmware.admin.catalogSettings+xml';
     const ACLRULE_CONTENT_TYPE= 'application/vnd.vmware.admin.aclRule+xml';
     const API_DEFINITIONS_CONTENT_TYPE='application/vnd.vmware.admin.apiDefinition+xml';
     const LINKS_CONTENT_TYPE='application/vnd.vmware.admin.serviceLink+xml';
@@ -178,10 +186,41 @@ final class VMware_VCloud_SDK_Constants
     const EDGEGATEWAY_SERVICECONFIGURATION_CONTENT_TYPE = 'application/vnd.vmware.admin.edgeGatewayServiceConfiguration+xml';
     const FILE_DESCRIPTOR_CONTENT_TYPE = 'application/vnd.vmware.admin.fileDescriptor+xml';
     const APIDEFINITION_CONTENT_TYPE = 'application/vnd.vmware.vcloud.apidefinition+xml';
+    const COPY_OR_MOVE_CATALOGITEM_CONTENT_TYPE= 'application/vnd.vmware.vcloud.copyOrMoveCatalogItemParams+xml';
     const USER_SERVICE_CONTENT_TYPE = 'application/vnd.vmware.vcloud.service+xml';
     const RELATION_TYPE_UP = 'up';
+    const OVF_TRANSFER_FORMAT = 'application/ovf+xml';
     const OVF_NAMESPACE = 'http://schemas.dmtf.org/ovf/envelope/1';
     const VCLOUD_AUTH_TOKEN = 'x-vcloud-authorization';
     const VCLOUD_ACCEPT_HEADER = 'application/*+xml';
+    const SYSTEM_ORG = 'System';
+    const SIGN_ATTRIBUTE = 'SIGN';
+    const TOKEN_ATTRIBUTE = 'token';
+    const ORG_ATTRIBUTE = 'org';
+    const SIGNATURE_ATTRIBUTE = 'signature';
+    const SIGNATURE_ALGORITHM_ATTRIBUTE = 'signature_alg';
+
+
+
+    /**
+     * URL Constants
+     */
+
+    // User Constants
+    const ACTION_INSTANTIATE_OVF_URL = '/action/instantiateOvf';
+    const ACTION_COPY_CATALOGITEM_URL = '/action/copy';
+    const ACTION_MOVE_CATALOGITEM_URL = '/action/move';
+    const ACTION_ENABLE_DOWNLOAD_URL = '/action/enableDownload';
+    const ACTION_CAPTURE_VAPP_URL = '/action/captureVApp';
+    const ACTION_SYNC_URL = '/action/sync';
+    const ACTION_ACQUIRE_MKSTICKET_URL = '/screen/action/acquireMksTicket';
+
+    // Admin Constants
+    const ACTION_PUBLISH_TO_EXTERNAL_ORGANIZATIONS_URL = '/action/publishToExternalOrganizations';
+    const ACTION_SUBSCRIBE_TO_EXTERNAL_CATALOG_URL = '/action/subscribeToExternalCatalog';
+    const ACTION_REGISTER_VAPP_URL = '/action/registerVApp';
+
+    // Admin Extension Constants
+    const CATALOG_SETTINGS_URL = '/settings/catalog';
 }
 ?>

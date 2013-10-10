@@ -25,11 +25,11 @@
 <p class="short-description">Represents vApp instantiation from OVF parameters</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.1.0</li>
-				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40063">40063</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41446">41446</a></span>)
 		</p>
 		
 				
@@ -62,17 +62,29 @@
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																				<div class="var-title">
+																																																																												<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$AllEULAsAccepted" title="details" class="var-name">$AllEULAsAccepted</a>
 				</div>
 																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$InstantiateOvfProperty" title="details" class="var-name">$InstantiateOvfProperty</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$InstantiateVmParams" title="details" class="var-name">$InstantiateVmParams</a>
+				</div>
+																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$namespace" title="details" class="var-name">$namespace</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$namespacedef" title="details" class="var-name">$namespacedef</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$NetworkMapping" title="details" class="var-name">$NetworkMapping</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -98,11 +110,29 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																														
+																																																																																																																																																																																																						
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_InstantiateOvfParamsType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$powerOn</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$deploy</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VAppParent</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiationParamsType.html">VMware_VCloud_API_InstantiationParamsType</a></span>&nbsp;<span class="var-name">$InstantiationParams</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllEULAsAccepted</span> = <span class="var-default">null</span>])
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$powerOn</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$deploy</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VAppParent</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiationParamsType.html">VMware_VCloud_API_InstantiationParamsType</a></span>&nbsp;<span class="var-name">$InstantiationParams</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllEULAsAccepted</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$NetworkMapping</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$InstantiateOvfProperty</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$InstantiateVmParams</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addInstantiateOvfProperty" title="details" class="method-name">addInstantiateOvfProperty</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addInstantiateVmParams" title="details" class="method-name">addInstantiateVmParams</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addNetworkMapping" title="details" class="method-name">addNetworkMapping</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -149,6 +179,24 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#getInstantiateOvfProperty" title="details" class="method-name">getInstantiateOvfProperty</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getInstantiateVmParams" title="details" class="method-name">getInstantiateVmParams</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getNetworkMapping" title="details" class="method-name">getNetworkMapping</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#get_tagName" title="details" class="method-name">get_tagName</a>
 										()
 									</div>
@@ -169,6 +217,24 @@
 											<span class="method-result">void</span>
 										<a href="#setAllEULAsAccepted" title="details" class="method-name">setAllEULAsAccepted</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$AllEULAsAccepted</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setInstantiateOvfProperty" title="details" class="method-name">setInstantiateOvfProperty</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$InstantiateOvfProperty</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setInstantiateVmParams" title="details" class="method-name">setInstantiateVmParams</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$InstantiateVmParams</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setNetworkMapping" title="details" class="method-name">setNetworkMapping</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$NetworkMapping</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -200,13 +266,13 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40069">40069</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41455">41455</a></span>)
 		</span>
 	</div>
 
@@ -227,13 +293,55 @@
 </div>
 
 <a name="var$AllEULAsAccepted" id="$AllEULAsAccepted"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AllEULAsAccepted</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40065">40065</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41448">41448</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$InstantiateOvfProperty" id="$InstantiateOvfProperty"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$InstantiateOvfProperty</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41450">41450</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$InstantiateVmParams" id="$InstantiateVmParams"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$InstantiateVmParams</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41451">41451</a></span>)
 		</span>
 	</div>
 
@@ -248,13 +356,13 @@
 
 </div>
 <a name="var$namespace" id="$namespace"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40066">40066</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41452">41452</a></span>)
 		</span>
 	</div>
 
@@ -274,13 +382,13 @@
 
 </div>
 <a name="var$namespacedef" id="$namespacedef"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40067">40067</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41453">41453</a></span>)
 		</span>
 	</div>
 
@@ -299,6 +407,27 @@
 		
 
 </div>
+<a name="var$NetworkMapping" id="$NetworkMapping"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$NetworkMapping</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41449">41449</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
 <a name="var$tagName" id="$tagName"><!-- --></A>
 <div class="evenrow">
 
@@ -306,7 +435,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40068">40068</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41454">41454</a></span>)
 		</span>
 	</div>
 
@@ -332,7 +461,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$transferFormat</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40064">40064</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41447">41447</a></span>)
 		</span>
 	</div>
 
@@ -397,7 +526,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40082">40082</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41471">41471</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -410,7 +539,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$powerOn</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$deploy</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VAppParent</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiationParamsType.html">VMware_VCloud_API_InstantiationParamsType</a></span>&nbsp;<span class="var-name">$InstantiationParams</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllEULAsAccepted</span> = <span class="var-default">null</span>])
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$powerOn</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$deploy</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VAppParent</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_InstantiationParamsType.html">VMware_VCloud_API_InstantiationParamsType</a></span>&nbsp;<span class="var-name">$InstantiationParams</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AllEULAsAccepted</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$NetworkMapping</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$InstantiateOvfProperty</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$InstantiateVmParams</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -441,6 +570,15 @@
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$AllEULAsAccepted</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$NetworkMapping</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_NetworkMappingType objects</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$InstantiateOvfProperty</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_InstantiateOvfPropertyType objects</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$InstantiateVmParams</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_InstantiateVmParamsType objects</span>			</li>
 				</ul>
 		
 			<hr class="separator" />
@@ -450,11 +588,95 @@
 					</dl>
 			
 	</div>
-<a name="methodbuild" id="build"><!-- --></a>
+<a name="methodaddInstantiateOvfProperty" id="addInstantiateOvfProperty"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40162">40162</a></span>)
+		<span class="method-title">addInstantiateOvfProperty</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41506">41506</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addInstantiateOvfProperty
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddInstantiateVmParams" id="addInstantiateVmParams"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addInstantiateVmParams</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41513">41513</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addInstantiateVmParams
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddNetworkMapping" id="addNetworkMapping"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addNetworkMapping</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41499">41499</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addNetworkMapping
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41599">41599</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -487,10 +709,10 @@
 			
 	</div>
 <a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40183">40183</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41620">41620</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -523,10 +745,10 @@
 			
 	</div>
 <a name="methodbuildChildren" id="buildChildren"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40202">40202</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41639">41639</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -562,10 +784,10 @@
 			
 	</div>
 <a name="methodexport" id="export"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40103">40103</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41522">41522</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -610,10 +832,10 @@
 			
 	</div>
 <a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40133">40133</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41552">41552</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -655,10 +877,10 @@
 			
 	</div>
 <a name="methodexportChildren" id="exportChildren"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40142">40142</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41561">41561</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -700,10 +922,10 @@
 			
 	</div>
 <a name="methodgetAllEULAsAccepted" id="getAllEULAsAccepted"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAllEULAsAccepted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40089">40089</a></span>)
+		<span class="method-title">getAllEULAsAccepted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41487">41487</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -722,11 +944,80 @@
 		
 			
 	</div>
+<a name="methodgetInstantiateOvfProperty" id="getInstantiateOvfProperty"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getInstantiateOvfProperty</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41500">41500</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getInstantiateOvfProperty
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetInstantiateVmParams" id="getInstantiateVmParams"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getInstantiateVmParams</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41507">41507</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getInstantiateVmParams
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNetworkMapping" id="getNetworkMapping"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getNetworkMapping</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41493">41493</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getNetworkMapping
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40101">40101</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41520">41520</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -754,7 +1045,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40095">40095</a></span>)
+		<span class="method-title">get_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41514">41514</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -777,7 +1068,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40152">40152</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41586">41586</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -805,7 +1096,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAllEULAsAccepted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40092">40092</a></span>)
+		<span class="method-title">setAllEULAsAccepted</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41490">41490</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -829,11 +1120,95 @@
 		
 			
 	</div>
-<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<a name="methodsetInstantiateOvfProperty" id="setInstantiateOvfProperty"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40102">40102</a></span>)
+		<span class="method-title">setInstantiateOvfProperty</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41503">41503</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setInstantiateOvfProperty
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$InstantiateOvfProperty</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$InstantiateOvfProperty</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetInstantiateVmParams" id="setInstantiateVmParams"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setInstantiateVmParams</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41510">41510</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setInstantiateVmParams
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$InstantiateVmParams</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$InstantiateVmParams</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetNetworkMapping" id="setNetworkMapping"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setNetworkMapping</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41496">41496</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setNetworkMapping
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$NetworkMapping</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$NetworkMapping</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41521">41521</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -863,10 +1238,10 @@
 			
 	</div>
 <a name="methodset_transferFormat" id="set_transferFormat"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a40098">40098</a></span>)
+		<span class="method-title">set_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a41517">41517</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -957,7 +1332,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:56:00 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:58:59 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

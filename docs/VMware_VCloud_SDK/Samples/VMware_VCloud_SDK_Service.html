@@ -56,7 +56,7 @@
 										<a href="#getService" title="details" class="method-name">getService</a>
 											([<span class="var-type"><a href="../../VMware_VCloud_SDK_Http/VMware_VCloud_SDK_Http_Client_Interface.html">VMware_VCloud_SDK_Http_Client_Interface</a></span>&nbsp;<span class="var-name">$client</span> = <span class="var-default">null</span>])
 									</div>
-																																																																																																																										
+																																																																																																																																		
 				<div class="method-definition">
 											<span class="method-result"><a href="../../VMware_VCloud_SDK/Samples/VMware_VCloud_SDK_Admin.html">VMware_VCloud_SDK_Admin</a></span>
 										<a href="#createSDKAdminObj" title="details" class="method-name">createSDKAdminObj</a>
@@ -154,9 +154,15 @@
 									</div>
 														
 				<div class="method-definition">
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SessionType.html">VMware_VCloud_API_SessionType</a></span>
+										<a href="#HOKSSOLogin" title="details" class="method-name">HOKSSOLogin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$signature</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$signature_alg</span>)
+									</div>
+														
+				<div class="method-definition">
 											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgListType.html">VMware_VCloud_API_OrgListType</a></span>
 										<a href="#login" title="details" class="method-name">login</a>
-											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$auth</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span> = <span class="var-default">'5.1'</span>])
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$auth</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -192,13 +198,13 @@
 				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#SetVcloudToken" title="details" class="method-name">SetVcloudToken</a>
-											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$vcloudtoken</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$vcloudtoken</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span>)
 									</div>
 														
 				<div class="method-definition">
-											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgListType.html">VMware_VCloud_API_OrgListType</a></span>
+											<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SessionType.html">VMware_VCloud_API_SessionType</a></span>
 										<a href="#SSOLogin" title="details" class="method-name">SSOLogin</a>
-											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span> = <span class="var-default">'5.1'</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -260,7 +266,7 @@
 		<div class="info-box-body">
 			<A NAME='method_detail'></A>
 <a name="methodgetService" id="getService"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
 		<span class="method-title">static getService</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a70">70</a></span>)
@@ -290,10 +296,10 @@
 			
 	</div>
 <a name="methodcreateSDKAdminObj" id="createSDKAdminObj"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">createSDKAdminObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a231">231</a></span>)
+		<span class="method-title">createSDKAdminObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a297">297</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -315,10 +321,10 @@
 			
 	</div>
 <a name="methodcreateSDKExtensionObj" id="createSDKExtensionObj"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">createSDKExtensionObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a242">242</a></span>)
+		<span class="method-title">createSDKExtensionObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a308">308</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -340,10 +346,10 @@
 			
 	</div>
 <a name="methodcreateSDKObj" id="createSDKObj"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">createSDKObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a220">220</a></span>)
+		<span class="method-title">createSDKObj</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a286">286</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -371,10 +377,10 @@
 			
 	</div>
 <a name="methoddeleteSession" id="deleteSession"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">deleteSession</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a379">379</a></span>)
+		<span class="method-title">deleteSession</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a445">445</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -398,10 +404,10 @@
 			
 	</div>
 <a name="methodgetAdmin" id="getAdmin"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAdmin</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a342">342</a></span>)
+		<span class="method-title">getAdmin</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a408">408</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -423,10 +429,10 @@
 			
 	</div>
 <a name="methodgetAdminExtension" id="getAdminExtension"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAdminExtension</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a354">354</a></span>)
+		<span class="method-title">getAdminExtension</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a420">420</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -448,10 +454,10 @@
 			
 	</div>
 <a name="methodgetAdminExtensionUrl" id="getAdminExtensionUrl"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAdminExtensionUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a206">206</a></span>)
+		<span class="method-title">getAdminExtensionUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a272">272</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -474,10 +480,10 @@
 			
 	</div>
 <a name="methodgetAdminUrl" id="getAdminUrl"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAdminUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a195">195</a></span>)
+		<span class="method-title">getAdminUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a261">261</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -500,10 +506,10 @@
 			
 	</div>
 <a name="methodgetBaseUrl" id="getBaseUrl"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getBaseUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a184">184</a></span>)
+		<span class="method-title">getBaseUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a250">250</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -526,10 +532,10 @@
 			
 	</div>
 <a name="methodgetFileDescriptor" id="getFileDescriptor"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getFileDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a278">278</a></span>)
+		<span class="method-title">getFileDescriptor</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a344">344</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -551,10 +557,10 @@
 			
 	</div>
 <a name="methodgetOrgRefs" id="getOrgRefs"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a306">306</a></span>)
+		<span class="method-title">getOrgRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a372">372</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -582,10 +588,10 @@
 			
 	</div>
 <a name="methodgetOrgs" id="getOrgs"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOrgs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a321">321</a></span>)
+		<span class="method-title">getOrgs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a387">387</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -613,10 +619,10 @@
 			
 	</div>
 <a name="methodgetQueryService" id="getQueryService"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getQueryService</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a404">404</a></span>)
+		<span class="method-title">getQueryService</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a470">470</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -638,10 +644,10 @@
 			
 	</div>
 <a name="methodgetSchemaFileName" id="getSchemaFileName"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSchemaFileName</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a290">290</a></span>)
+		<span class="method-title">getSchemaFileName</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a356">356</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -669,10 +675,10 @@
 			
 	</div>
 <a name="methodgetSession" id="getSession"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSession</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a365">365</a></span>)
+		<span class="method-title">getSession</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a431">431</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -694,10 +700,10 @@
 			
 	</div>
 <a name="methodgetUserServiceRefs" id="getUserServiceRefs"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getUserServiceRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a254">254</a></span>)
+		<span class="method-title">getUserServiceRefs</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a320">320</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -719,17 +725,68 @@
 		
 			
 	</div>
+<a name="methodHOKSSOLogin" id="HOKSSOLogin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">HOKSSOLogin</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a185">185</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Login to VMware vCloud Director using the SAML Assertion XML from vSphere SSO/SAML IDP's.</p>
+<p class="description"><p>This method can be used in performing: SSO login with HOK tokens and the signature attributes in Org/System scope. vCD also does the signature  verification of the provided HOK token.  Note: For Bearer tokens there is no signature verification done.</p></p>
+	<ul class="tags">
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.5.0</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SessionType.html">VMware_VCloud_API_SessionType</a></span>
+		<span class="method-name">
+			HOKSSOLogin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$signature</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$signature_alg</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: Server IP or host name and port as https://&lt;ip&gt;:&lt;port&gt;</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$samlAssertionXML</span><span class="var-description">: SSO HOK Token.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$org</span><span class="var-description">: The name of your vCloud Director organization.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$config</span><span class="var-description">: An HTTP configuration array</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apiVersion</span><span class="var-description">: An API Version</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$signature</span><span class="var-description">: Base64 encoded signaure of the token XML generated using client's private key</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$signature_alg</span><span class="var-description">: Standard signature algorithm name</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodlogin" id="login"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">login</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a102">102</a></span>)
+		<span class="method-title">login</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a103">103</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Login to VMware vCloud Director.</p>
 	<ul class="tags">
-				<li><span class="field">since:</span> Version 5.1.1</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 1.0.0</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -738,7 +795,7 @@
 		<span class="method-name">
 			login
 		</span>
-					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$auth</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span> = <span class="var-default">'5.1'</span>])
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$auth</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span>)
 			</div>
 	
 			<ul class="parameters">
@@ -762,7 +819,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">logout</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a393">393</a></span>)
+		<span class="method-title">logout</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a459">459</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -789,7 +846,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">queryRecordsByType</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a474">474</a></span>)
+		<span class="method-title">queryRecordsByType</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a540">540</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -822,7 +879,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">queryReferencesByName</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a427">427</a></span>)
+		<span class="method-title">queryReferencesByName</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a493">493</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -862,7 +919,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">queryReferencesByType</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a453">453</a></span>)
+		<span class="method-title">queryReferencesByType</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a519">519</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -925,14 +982,14 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">SetVcloudToken</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a163">163</a></span>)
+		<span class="method-title">SetVcloudToken</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a228">228</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Set vcloud token for login.</p>
 	<ul class="tags">
-				<li><span class="field">since:</span> SDK 5.1.0</li>
-				<li><span class="field">since:</span> API 5.1.0</li>
+				<li><span class="field">since:</span> SDK Version 5.1.0</li>
+				<li><span class="field">since:</span> API Version 5.1.0</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -941,7 +998,7 @@
 		<span class="method-name">
 			SetVcloudToken
 		</span>
-					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$vcloudtoken</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$vcloudtoken</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span>)
 			</div>
 	
 			<ul class="parameters">
@@ -954,6 +1011,9 @@
 					<li>
 				<span class="var-type">array</span>
 				<span class="var-name">$config</span><span class="var-description">: An HTTP configuration array</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apiVersion</span><span class="var-description">: An API Version</span>			</li>
 				</ul>
 		
 			
@@ -962,22 +1022,24 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">SSOLogin</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a129">129</a></span>)
+		<span class="method-title">SSOLogin</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a136">136</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Login to VMware vCloud Director using the SAML Assertion XML from vSphere SSO/SAML IDP's.</p>
+<p class="description"><p>This method can be used in performing: SSO login with Bearer/HOK tokens in both Org/System scope. No signature verification is done when using this method.</p></p>
 	<ul class="tags">
-				<li><span class="field">since:</span> Version 5.1.0</li>
+				<li><span class="field">since:</span> SDK Version 5.5.0</li>
+				<li><span class="field">since:</span> API Version 5.1.0</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
 	<div class="method-signature">
-		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_OrgListType.html">VMware_VCloud_API_OrgListType</a></span>
+		<span class="method-result"><a href="../../VMware_VCloud_API/VMware_VCloud_API_SessionType.html">VMware_VCloud_API_SessionType</a></span>
 		<span class="method-name">
 			SSOLogin
 		</span>
-					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>)
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$samlAssertionXML</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$org</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$config</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$apiVersion</span> = <span class="var-default">'5.1'</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -993,6 +1055,9 @@
 					<li>
 				<span class="var-type">array</span>
 				<span class="var-name">$config</span><span class="var-description">: An HTTP configuration array</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$apiVersion</span><span class="var-description">: An API Version</span>			</li>
 				</ul>
 		
 			
@@ -1001,7 +1066,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">supportedSystemsInfo</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a266">266</a></span>)
+		<span class="method-title">supportedSystemsInfo</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a332">332</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1026,7 +1091,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">wait</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a501">501</a></span>)
+		<span class="method-title">wait</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a567">567</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1070,7 +1135,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">waitForTask</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a525">525</a></span>)
+		<span class="method-title">waitForTask</span> (line <span class="line-number"><a href="../../__filesource/fsource_VMware_VCloud_SDK_Samples_Service.php.html#a591">591</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1128,7 +1193,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:56:46 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:59:40 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

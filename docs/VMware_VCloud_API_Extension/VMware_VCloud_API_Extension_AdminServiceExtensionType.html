@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class VMware_VCloud_API_Extension_AdminServiceExtensionType</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class VMware_VCloud_API_Extension_AdminServiceExtensionType</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Represents a service extension (Data Director or Cloud Foundry).</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Ecosystem Engineering</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118728">118728</a></span>)
+		</p>
+		
+				
+		<pre><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a>
+   |
+   --<a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html">VMware_VCloud_API_ResourceType</a>
+      |
+      --<a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html">VMware_VCloud_API_IdentifiableResourceType</a>
+         |
+         --<a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html">VMware_VCloud_API_EntityType</a>
+            |
+            --<a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html">VMware_VCloud_API_Extension_AdminServiceType</a>
+               |
+               --VMware_VCloud_API_Extension_AdminServiceExtensionType</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+												<div class="var-title">
+					static <span class="var-type">mixed</span>
+					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
+				</div>
+																																																																																				<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$ExtensionType" title="details" class="var-name">$ExtensionType</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespace" title="details" class="var-name">$namespace</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$namespacedef" title="details" class="var-name">$namespacedef</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Password" title="details" class="var-name">$Password</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$tagName" title="details" class="var-name">$tagName</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Url" title="details" class="var-name">$Url</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$Username" title="details" class="var-name">$Username</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">VMware_VCloud_API_Extension_AdminServiceExtensionType</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$operationKey</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_TasksInProgressType.html">VMware_VCloud_API_TasksInProgressType</a></span>&nbsp;<span class="var-name">$Tasks</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Namespace</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AuthorizationEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RoutingKey</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$Priority</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Exchange</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Vendor</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFiltersType.html">VMware_VCloud_API_Extension_ApiFiltersType</a></span>&nbsp;<span class="var-name">$ApiFilters</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceLinksType.html">VMware_VCloud_API_Extension_AdminServiceLinksType</a></span>&nbsp;<span class="var-name">$ServiceLinks</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionsType.html">VMware_VCloud_API_Extension_AdminApiDefinitionsType</a></span>&nbsp;<span class="var-name">$ApiDefinitions</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourceClassesType.html">VMware_VCloud_API_Extension_ResourceClassesType</a></span>&nbsp;<span class="var-name">$ResourceClasses</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Password</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ExtensionType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Url</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#build" title="details" class="method-name">build</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildAttributes" title="details" class="method-name">buildAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#buildChildren" title="details" class="method-name">buildChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#export" title="details" class="method-name">export</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportAttributes" title="details" class="method-name">exportAttributes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#exportChildren" title="details" class="method-name">exportChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getExtensionType" title="details" class="method-name">getExtensionType</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getPassword" title="details" class="method-name">getPassword</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getUrl" title="details" class="method-name">getUrl</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getUsername" title="details" class="method-name">getUsername</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_tagName" title="details" class="method-name">get_tagName</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#hasContent" title="details" class="method-name">hasContent</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setExtensionType" title="details" class="method-name">setExtensionType</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$ExtensionType</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setPassword" title="details" class="method-name">setPassword</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Password</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUrl" title="details" class="method-name">setUrl</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Url</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUsername" title="details" class="method-name">setUsername</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$Username</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_tagName" title="details" class="method-name">set_tagName</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$defaultNS</span>
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/extension/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118736">118736</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$defaultNS">VMware_VCloud_API_Extension_AdminServiceType::$defaultNS</a></dt>
+					</dl>
+		
+		
+
+</div>
+
+<a name="var$ExtensionType" id="$ExtensionType"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$ExtensionType</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118731">118731</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$namespace" id="$namespace"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespace</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118733">118733</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$namespace">VMware_VCloud_API_Extension_AdminServiceType::$namespace</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$namespacedef" id="$namespacedef"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$namespacedef</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118734">118734</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$namespacedef">VMware_VCloud_API_Extension_AdminServiceType::$namespacedef</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$Password" id="$Password"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Password</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118730">118730</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tagName" id="$tagName"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$tagName</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118735">118735</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$tagName">VMware_VCloud_API_Extension_AdminServiceType::$tagName</a></dt>
+					</dl>
+		
+		
+
+</div>
+<a name="var$Url" id="$Url"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Url</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118732">118732</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$Username" id="$Username"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$Username</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118729">118729</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html">VMware_VCloud_API_Extension_AdminServiceType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$ApiDefinitions">VMware_VCloud_API_Extension_AdminServiceType::$ApiDefinitions</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$ApiFilters">VMware_VCloud_API_Extension_AdminServiceType::$ApiFilters</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$AuthorizationEnabled">VMware_VCloud_API_Extension_AdminServiceType::$AuthorizationEnabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$Enabled">VMware_VCloud_API_Extension_AdminServiceType::$Enabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$Exchange">VMware_VCloud_API_Extension_AdminServiceType::$Exchange</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$Priority">VMware_VCloud_API_Extension_AdminServiceType::$Priority</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$ResourceClasses">VMware_VCloud_API_Extension_AdminServiceType::$ResourceClasses</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$RoutingKey">VMware_VCloud_API_Extension_AdminServiceType::$RoutingKey</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$ServiceLinks">VMware_VCloud_API_Extension_AdminServiceType::$ServiceLinks</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#var$Vendor">VMware_VCloud_API_Extension_AdminServiceType::$Vendor</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html">VMware_VCloud_API_EntityType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$Description">VMware_VCloud_API_EntityType::$Description</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$name">VMware_VCloud_API_EntityType::$name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#var$Tasks">VMware_VCloud_API_EntityType::$Tasks</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html">VMware_VCloud_API_IdentifiableResourceType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#var$id">VMware_VCloud_API_IdentifiableResourceType::$id</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#var$operationKey">VMware_VCloud_API_IdentifiableResourceType::$operationKey</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html">VMware_VCloud_API_ResourceType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#var$href">VMware_VCloud_API_ResourceType::$href</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#var$Link">VMware_VCloud_API_ResourceType::$Link</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#var$type">VMware_VCloud_API_ResourceType::$type</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#var$VCloudExtension">VMware_VCloud_API_VCloudExtensibleType::$VCloudExtension</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118764">118764</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">VMware_VCloud_API_Extension_AdminServiceExtensionType</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$href</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$Link</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$operationKey</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_TasksInProgressType.html">VMware_VCloud_API_TasksInProgressType</a></span>&nbsp;<span class="var-name">$Tasks</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Namespace</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$Enabled</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$AuthorizationEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$RoutingKey</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$Priority</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Exchange</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Vendor</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFiltersType.html">VMware_VCloud_API_Extension_ApiFiltersType</a></span>&nbsp;<span class="var-name">$ApiFilters</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceLinksType.html">VMware_VCloud_API_Extension_AdminServiceLinksType</a></span>&nbsp;<span class="var-name">$ServiceLinks</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionsType.html">VMware_VCloud_API_Extension_AdminApiDefinitionsType</a></span>&nbsp;<span class="var-name">$ApiDefinitions</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourceClassesType.html">VMware_VCloud_API_Extension_ResourceClassesType</a></span>&nbsp;<span class="var-name">$ResourceClasses</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Username</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Password</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ExtensionType</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Url</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$VCloudExtension</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_VCloudExtensionType objects</span>			</li>
+					<li>
+				<span class="var-type">anyURI</span>
+				<span class="var-name">$href</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$Link</span><span class="var-description">: - [optional] an array of VMware_VCloud_API_LinkType objects</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$operationKey</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - [required] an attribute,</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Description</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_TasksInProgressType.html">VMware_VCloud_API_TasksInProgressType</a></span>
+				<span class="var-name">$Tasks</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Namespace</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$Enabled</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$AuthorizationEnabled</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$RoutingKey</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$Priority</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Exchange</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Vendor</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ApiFiltersType.html">VMware_VCloud_API_Extension_ApiFiltersType</a></span>
+				<span class="var-name">$ApiFilters</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceLinksType.html">VMware_VCloud_API_Extension_AdminServiceLinksType</a></span>
+				<span class="var-name">$ServiceLinks</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminApiDefinitionsType.html">VMware_VCloud_API_Extension_AdminApiDefinitionsType</a></span>
+				<span class="var-name">$ApiDefinitions</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_ResourceClassesType.html">VMware_VCloud_API_Extension_ResourceClassesType</a></span>
+				<span class="var-name">$ResourceClasses</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Username</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Password</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ExtensionType</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$Url</span><span class="var-description">: - [optional]</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#method__construct">VMware_VCloud_API_Extension_AdminServiceType::__construct()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118872">118872</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			build
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuild">VMware_VCloud_API_Extension_AdminServiceType::build()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118893">118893</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$node</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespaces</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$node</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespaces</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminServiceType::buildAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodbuildChildren" id="buildChildren"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118901">118901</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$child</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$nodeName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$child</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeName</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminServiceType::buildChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexport" id="export"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118799">118799</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			export
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$out</span> = <span class="var-default">''</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespacedef</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespacedef</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexport">VMware_VCloud_API_Extension_AdminServiceType::export()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118829">118829</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportAttributes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminServiceType::exportAttributes()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodexportChildren" id="exportChildren"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118834">118834</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exportChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$out</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$namespace</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$rootNS</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$out</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$namespace</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$rootNS</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminServiceType::exportChildren()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodgetExtensionType" id="getExtensionType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getExtensionType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118785">118785</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getExtensionType
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPassword" id="getPassword"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118779">118779</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getPassword
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUrl" id="getUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118791">118791</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getUrl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUsername" id="getUsername"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUsername</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118773">118773</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getUsername
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_tagName" id="get_tagName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118797">118797</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_tagName
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminServiceType::get_tagName()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodhasContent" id="hasContent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118859">118859</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			hasContent
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodhasContent">VMware_VCloud_API_Extension_AdminServiceType::hasContent()</a></dt>
+					</dl>
+			
+	</div>
+<a name="methodsetExtensionType" id="setExtensionType"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setExtensionType</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118788">118788</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setExtensionType
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$ExtensionType</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$ExtensionType</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPassword" id="setPassword"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPassword</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118782">118782</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setPassword
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUrl" id="setUrl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUrl</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118794">118794</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUrl
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Url</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUsername" id="setUsername"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUsername</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118776">118776</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUsername
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$Username</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$Username</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a118798">118798</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_tagName
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tagName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tagName</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminServiceType::set_tagName()</a></dt>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html">VMware_VCloud_API_Extension_AdminServiceType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#method__construct">VMware_VCloud_API_Extension_AdminServiceType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuild">VMware_VCloud_API_Extension_AdminServiceType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildAttributes">VMware_VCloud_API_Extension_AdminServiceType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodbuildChildren">VMware_VCloud_API_Extension_AdminServiceType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexport">VMware_VCloud_API_Extension_AdminServiceType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportAttributes">VMware_VCloud_API_Extension_AdminServiceType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodexportChildren">VMware_VCloud_API_Extension_AdminServiceType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetApiDefinitions">VMware_VCloud_API_Extension_AdminServiceType::getApiDefinitions()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetApiFilters">VMware_VCloud_API_Extension_AdminServiceType::getApiFilters()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetAuthorizationEnabled">VMware_VCloud_API_Extension_AdminServiceType::getAuthorizationEnabled()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetEnabled">VMware_VCloud_API_Extension_AdminServiceType::getEnabled()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetExchange">VMware_VCloud_API_Extension_AdminServiceType::getExchange()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetNamespace">VMware_VCloud_API_Extension_AdminServiceType::getNamespace()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetPriority">VMware_VCloud_API_Extension_AdminServiceType::getPriority()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetResourceClasses">VMware_VCloud_API_Extension_AdminServiceType::getResourceClasses()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetRoutingKey">VMware_VCloud_API_Extension_AdminServiceType::getRoutingKey()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetServiceLinks">VMware_VCloud_API_Extension_AdminServiceType::getServiceLinks()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodgetVendor">VMware_VCloud_API_Extension_AdminServiceType::getVendor()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodget_tagName">VMware_VCloud_API_Extension_AdminServiceType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodhasContent">VMware_VCloud_API_Extension_AdminServiceType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetApiDefinitions">VMware_VCloud_API_Extension_AdminServiceType::setApiDefinitions()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetApiFilters">VMware_VCloud_API_Extension_AdminServiceType::setApiFilters()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetAuthorizationEnabled">VMware_VCloud_API_Extension_AdminServiceType::setAuthorizationEnabled()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetEnabled">VMware_VCloud_API_Extension_AdminServiceType::setEnabled()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetExchange">VMware_VCloud_API_Extension_AdminServiceType::setExchange()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetNamespace">VMware_VCloud_API_Extension_AdminServiceType::setNamespace()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetPriority">VMware_VCloud_API_Extension_AdminServiceType::setPriority()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetResourceClasses">VMware_VCloud_API_Extension_AdminServiceType::setResourceClasses()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetRoutingKey">VMware_VCloud_API_Extension_AdminServiceType::setRoutingKey()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetServiceLinks">VMware_VCloud_API_Extension_AdminServiceType::setServiceLinks()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodsetVendor">VMware_VCloud_API_Extension_AdminServiceType::setVendor()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API_Extension/VMware_VCloud_API_Extension_AdminServiceType.html#methodset_tagName">VMware_VCloud_API_Extension_AdminServiceType::set_tagName()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html">VMware_VCloud_API_EntityType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#method__construct">VMware_VCloud_API_EntityType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuild">VMware_VCloud_API_EntityType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuildAttributes">VMware_VCloud_API_EntityType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodbuildChildren">VMware_VCloud_API_EntityType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexport">VMware_VCloud_API_EntityType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexportAttributes">VMware_VCloud_API_EntityType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodexportChildren">VMware_VCloud_API_EntityType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodgetDescription">VMware_VCloud_API_EntityType::getDescription()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodgetTasks">VMware_VCloud_API_EntityType::getTasks()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodget_name">VMware_VCloud_API_EntityType::get_name()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodget_tagName">VMware_VCloud_API_EntityType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodhasContent">VMware_VCloud_API_EntityType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodsetDescription">VMware_VCloud_API_EntityType::setDescription()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodsetTasks">VMware_VCloud_API_EntityType::setTasks()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodset_name">VMware_VCloud_API_EntityType::set_name()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_EntityType.html#methodset_tagName">VMware_VCloud_API_EntityType::set_tagName()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html">VMware_VCloud_API_IdentifiableResourceType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#method__construct">VMware_VCloud_API_IdentifiableResourceType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodbuild">VMware_VCloud_API_IdentifiableResourceType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodbuildAttributes">VMware_VCloud_API_IdentifiableResourceType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodbuildChildren">VMware_VCloud_API_IdentifiableResourceType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodexport">VMware_VCloud_API_IdentifiableResourceType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodexportAttributes">VMware_VCloud_API_IdentifiableResourceType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodexportChildren">VMware_VCloud_API_IdentifiableResourceType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodget_id">VMware_VCloud_API_IdentifiableResourceType::get_id()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodget_operationKey">VMware_VCloud_API_IdentifiableResourceType::get_operationKey()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodget_tagName">VMware_VCloud_API_IdentifiableResourceType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodhasContent">VMware_VCloud_API_IdentifiableResourceType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodset_id">VMware_VCloud_API_IdentifiableResourceType::set_id()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodset_operationKey">VMware_VCloud_API_IdentifiableResourceType::set_operationKey()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_IdentifiableResourceType.html#methodset_tagName">VMware_VCloud_API_IdentifiableResourceType::set_tagName()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html">VMware_VCloud_API_ResourceType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#method__construct">VMware_VCloud_API_ResourceType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodaddLink">VMware_VCloud_API_ResourceType::addLink()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodbuild">VMware_VCloud_API_ResourceType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodbuildAttributes">VMware_VCloud_API_ResourceType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodbuildChildren">VMware_VCloud_API_ResourceType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodexport">VMware_VCloud_API_ResourceType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodexportAttributes">VMware_VCloud_API_ResourceType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodexportChildren">VMware_VCloud_API_ResourceType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodgetLink">VMware_VCloud_API_ResourceType::getLink()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodget_href">VMware_VCloud_API_ResourceType::get_href()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodget_tagName">VMware_VCloud_API_ResourceType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodget_type">VMware_VCloud_API_ResourceType::get_type()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodhasContent">VMware_VCloud_API_ResourceType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodsetLink">VMware_VCloud_API_ResourceType::setLink()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodset_href">VMware_VCloud_API_ResourceType::set_href()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodset_tagName">VMware_VCloud_API_ResourceType::set_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_ResourceType.html#methodset_type">VMware_VCloud_API_ResourceType::set_type()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html">VMware_VCloud_API_VCloudExtensibleType</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#method__construct">VMware_VCloud_API_VCloudExtensibleType::__construct()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodaddVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::addVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuild">VMware_VCloud_API_VCloudExtensibleType::build()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildAttributes">VMware_VCloud_API_VCloudExtensibleType::buildAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodbuildChildren">VMware_VCloud_API_VCloudExtensibleType::buildChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexport">VMware_VCloud_API_VCloudExtensibleType::export()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportAttributes">VMware_VCloud_API_VCloudExtensibleType::exportAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodexportChildren">VMware_VCloud_API_VCloudExtensibleType::exportChildren()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodgetVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::getVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodget_anyAttributes">VMware_VCloud_API_VCloudExtensibleType::get_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodget_tagName">VMware_VCloud_API_VCloudExtensibleType::get_tagName()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodhasContent">VMware_VCloud_API_VCloudExtensibleType::hasContent()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodsetVCloudExtension">VMware_VCloud_API_VCloudExtensibleType::setVCloudExtension()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodset_anyAttributes">VMware_VCloud_API_VCloudExtensibleType::set_anyAttributes()</a></span><br>
+													<span class="method-name"><a href="../VMware_VCloud_API/VMware_VCloud_API_VCloudExtensibleType.html#methodset_tagName">VMware_VCloud_API_VCloudExtensibleType::set_tagName()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 26 Aug 2013 10:58:45 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -25,11 +25,11 @@
 <p class="short-description">Parameters for an uploadVappTemplate request.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.1.0</li>
-				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43351">43351</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45954">45954</a></span>)
 		</p>
 		
 				
@@ -60,7 +60,7 @@
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																												<div class="var-title">
+																																																																																				<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$manifestRequired" title="details" class="var-name">$manifestRequired</a>
 				</div>
@@ -71,6 +71,10 @@
 																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$namespacedef" title="details" class="var-name">$namespacedef</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$sourceHref" title="details" class="var-name">$sourceHref</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -100,11 +104,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																														
+																																																																																																																																																														
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_UploadVAppTemplateParamsType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>])
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$sourceHref</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -157,6 +161,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#get_sourceHref" title="details" class="method-name">get_sourceHref</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#get_tagName" title="details" class="method-name">get_tagName</a>
 										()
 									</div>
@@ -183,6 +193,12 @@
 											<span class="method-result">void</span>
 										<a href="#set_manifestRequired" title="details" class="method-name">set_manifestRequired</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$manifestRequired</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_sourceHref" title="details" class="method-name">set_sourceHref</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sourceHref</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -220,7 +236,7 @@
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43358">43358</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45962">45962</a></span>)
 		</span>
 	</div>
 
@@ -247,7 +263,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$manifestRequired</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43352">43352</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45955">45955</a></span>)
 		</span>
 	</div>
 
@@ -268,7 +284,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43355">43355</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45959">45959</a></span>)
 		</span>
 	</div>
 
@@ -294,7 +310,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43356">43356</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45960">45960</a></span>)
 		</span>
 	</div>
 
@@ -313,14 +329,35 @@
 		
 
 </div>
-<a name="var$tagName" id="$tagName"><!-- --></A>
+<a name="var$sourceHref" id="$sourceHref"><!-- --></A>
 <div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
+			<span class="var-name">$sourceHref</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45957">45957</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tagName" id="$tagName"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43357">43357</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45961">45961</a></span>)
 		</span>
 	</div>
 
@@ -340,13 +377,13 @@
 
 </div>
 <a name="var$transferFormat" id="$transferFormat"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$transferFormat</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43353">43353</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45956">45956</a></span>)
 		</span>
 	</div>
 
@@ -361,13 +398,13 @@
 
 </div>
 <a name="var$VdcStorageProfile" id="$VdcStorageProfile"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VdcStorageProfile</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43354">43354</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45958">45958</a></span>)
 		</span>
 	</div>
 
@@ -414,10 +451,10 @@
 		<div class="info-box-body">
 			<A NAME='method_detail'></A>
 <a name="method__construct" id="__construct"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43368">43368</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45973">45973</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -430,7 +467,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>])
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$manifestRequired</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$transferFormat</span> = <span class="var-default">null</span>], [<span class="var-type">anyURI</span>&nbsp;<span class="var-name">$sourceHref</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -450,6 +487,9 @@
 				<span class="var-type">string</span>
 				<span class="var-name">$transferFormat</span><span class="var-description">: - [optional] an attribute,</span>			</li>
 					<li>
+				<span class="var-type">anyURI</span>
+				<span class="var-name">$sourceHref</span><span class="var-description">: - [optional] an attribute,</span>			</li>
+					<li>
 				<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>
 				<span class="var-name">$VdcStorageProfile</span><span class="var-description">: - [optional]</span>			</li>
 				</ul>
@@ -462,10 +502,10 @@
 			
 	</div>
 <a name="methodbuild" id="build"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43457">43457</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46073">46073</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -498,10 +538,10 @@
 			
 	</div>
 <a name="methodbuildAttributes" id="buildAttributes"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43478">43478</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46094">46094</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -534,10 +574,10 @@
 			
 	</div>
 <a name="methodbuildChildren" id="buildChildren"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43508">43508</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46135">46135</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -573,10 +613,10 @@
 			
 	</div>
 <a name="methodexport" id="export"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43396">43396</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46008">46008</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -621,10 +661,10 @@
 			
 	</div>
 <a name="methodexportAttributes" id="exportAttributes"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43426">43426</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46038">46038</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -666,10 +706,10 @@
 			
 	</div>
 <a name="methodexportChildren" id="exportChildren"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43439">43439</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46055">46055</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -711,10 +751,10 @@
 			
 	</div>
 <a name="methodgetVdcStorageProfile" id="getVdcStorageProfile"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43376">43376</a></span>)
+		<span class="method-title">getVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45982">45982</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -734,10 +774,10 @@
 			
 	</div>
 <a name="methodget_manifestRequired" id="get_manifestRequired"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_manifestRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43382">43382</a></span>)
+		<span class="method-title">get_manifestRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45988">45988</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -756,11 +796,34 @@
 		
 			
 	</div>
+<a name="methodget_sourceHref" id="get_sourceHref"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_sourceHref</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46000">46000</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_sourceHref
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43394">43394</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46006">46006</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -788,7 +851,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43388">43388</a></span>)
+		<span class="method-title">get_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45994">45994</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -811,7 +874,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43447">43447</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46063">46063</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -839,7 +902,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43379">43379</a></span>)
+		<span class="method-title">setVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45985">45985</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -867,7 +930,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_manifestRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43385">43385</a></span>)
+		<span class="method-title">set_manifestRequired</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45991">45991</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -891,11 +954,39 @@
 		
 			
 	</div>
-<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<a name="methodset_sourceHref" id="set_sourceHref"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43395">43395</a></span>)
+		<span class="method-title">set_sourceHref</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46003">46003</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_sourceHref
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sourceHref</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sourceHref</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_tagName" id="set_tagName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a46007">46007</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -925,10 +1016,10 @@
 			
 	</div>
 <a name="methodset_transferFormat" id="set_transferFormat"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a43391">43391</a></span>)
+		<span class="method-title">set_transferFormat</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a45997">45997</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -997,7 +1088,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:56:34 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:59:28 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

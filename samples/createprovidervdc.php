@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2012. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.1.0
+ * @SDK version 5.5.0
  */
 
 require_once dirname(__FILE__) . '/config.php';
@@ -29,27 +29,25 @@ $shorts  = "";
 $shorts .= "s:";
 $shorts .= "u:";
 $shorts .= "p:";
+$shorts .= "v:";
 
 $shorts .= "a:";
 $shorts .= "b:";
 $shorts .= "c:";
 $shorts .= "d:";
-$shorts .= "e::";
-$shorts .= "f::";
-$shorts .= "g::";
+$shorts .= "h:";
 $shorts .= "l";
 
 $longs  = array(
-    "server:",    //-s|--server [required]
-    "user:",      //-u|--user   [required]
-    "pswd:",      //-p|--pswd   [required]
-    "vim:",       //-a|--vim    [required]
-    "pvdc:",      //-b|--pvdc   [required]
-    "ds:",        //-c|--ds     [required]
-    "rp:",        //-d|--rp     [required]
-    "cpu::",      //-e|--cpu  comma seperated value in Units, Allocation, Total, Used order
-    "mem::",      //-f|--mem  comma seperated value in Units, Allocation, Total, Used order
-    "stor::",     //-g|--stor comma seperated value in Units, Allocation, Total, Used order
+    "server:",    //-s|--server    [required]
+    "user:",      //-u|--user      [required]
+    "pswd:",      //-p|--pswd      [required]
+    "sdkver:",    //-v|--sdkver    [required]
+    "vim:",       //-a|--vim       [required]
+    "pvdc:",      //-b|--pvdc      [required]
+    "sp:",        //-c|--sp        [required]
+    "rp:",        //-d|--rp        [required]
+    "certpath:",  //-h|--certpath  [optional] local certificate path
     "list",       //-l|--list
 );
 
@@ -60,11 +58,9 @@ $httpConfig = array('ssl_verify_peer'=>false, 'ssl_verify_host'=>false);
 
 $vimName = null;
 $pvdcName = null;
-$dsMoRef = null;
+$storageProfile = null;
 $rpMoRef = null;
-$cpuQut = array('MHz', 200, 1024, 0);  //in Units, Allocation, Total, Used order
-$memQut = array('MB', 100, 512, 0);    //in Units, Allocation, Total, Used order
-$storQut = array('MB', 1000, 10000, 0);//in Units, Allocation, Total, Used order
+$certPath = null;
 $list = null;
 
 // loop through command arguments
@@ -91,6 +87,13 @@ foreach (array_keys($opts) as $opt) switch ($opt)
         $pswd = $opts['pswd'];
         break;
 
+    case "v":
+        $sdkversion = $opts['v'];
+        break;
+    case "sdkver":
+        $sdkversion = $opts['sdkver'];
+        break;
+
     case "a":
         $vimName = $opts['a'];
         break;
@@ -106,10 +109,10 @@ foreach (array_keys($opts) as $opt) switch ($opt)
         break;
 
     case "c":
-        $dsMoRef = $opts['c'];
+        $storageProfile = $opts['c'];
         break;
-    case "ds":
-        $dsMoRef = $opts['ds'];
+    case "sp":
+        $storageProfile = $opts['sp'];
         break;
 
     case "d":
@@ -119,25 +122,11 @@ foreach (array_keys($opts) as $opt) switch ($opt)
         $rpMoRef = $opts['rp'];
         break;
 
-    case "e":
-        $cpuQut = explode(',', $opts['e']);
+    case "h":
+        $certPath = $opts['h'];
         break;
-    case "cpu":
-        $cpuQut = explode(',', $opts['cpu']);
-        break;
-
-    case "f":
-        $memQut = explode(',', $opts['f']);
-        break;
-    case "mem":
-        $memQut = explode(',', $opts['mem']);
-        break;
-
-    case "g":
-        $storQut = explode(',', $opts['g']);
-        break;
-    case "stor":
-        $storQut = explode(',', $opts['stor']);
+    case "certpath":
+        $certPath = $opts['certpath'];
         break;
 
     case "l":
@@ -149,8 +138,8 @@ foreach (array_keys($opts) as $opt) switch ($opt)
 }
 
 // parameters validation
-if ((!isset($server) || !isset($user) || !isset($pswd)) ||
-    (true !== $list && (!isset($vimName) || !isset($pvdcName) || !isset($dsMoRef) ||
+if ((!isset($server) || !isset($user) || !isset($pswd) || !isset($sdkversion)) ||
+    (true !== $list && (!isset($vimName) || !isset($pvdcName) || !isset($storageProfile) ||
     !isset($rpMoRef))))
 {
     echo "Error: missing required parameters\n";
@@ -158,103 +147,121 @@ if ((!isset($server) || !isset($user) || !isset($pswd)) ||
     exit(1);
 }
 
-// login
-$service = VMware_VCloud_SDK_Service::getService();
-$service->login($server, array('username'=>$user, 'password'=>$pswd), $httpConfig);
-
-// creates an SDK Extension object
-$sdkExt = $service->createSDKExtensionObj();
-
-if (true === $list)
+$flag = true;
+if (isset($certPath))
 {
-    $refs = $sdkExt->getVMWProviderVdcRefs();
-    if (0 == count($refs))
+    $cert = file_get_contents($certPath);
+    $data = openssl_x509_parse($cert);
+    $encodeddata1 = base64_encode(serialize($data));
+
+    // Split a server url by forward back slash
+    $url = explode('/', $server);
+    $url = end($url);
+
+    // Creates and returns a stream context with below options supplied in options preset
+    $context = stream_context_create();
+    stream_context_set_option($context, 'ssl', 'capture_peer_cert', true);
+    stream_context_set_option($context, 'ssl', 'verify_host', true);
+
+    $encodeddata2 = null;
+    if ($socket = stream_socket_client("ssl://$url:443/", $errno, $errstr, 30, STREAM_CLIENT_CONNECT, $context))
     {
+        if ($options = stream_context_get_options($context))
+        {
+            if (isset($options['ssl']) && isset($options['ssl']['peer_certificate']))
+            {
+                $x509_resource = $options['ssl']['peer_certificate'];
+                $cert_arr = openssl_x509_parse($x509_resource);
+                $encodeddata2 = base64_encode(serialize($cert_arr));
+            }
+        }
+    }
+
+    // compare two certificate as string
+    if (strcmp($encodeddata1, $encodeddata2)==0)
+    {
+        echo "\n\nValidation of certificates is successful.\n\n";
+        $flag=true;
+    }
+    else
+    {
+        echo "\n\nCertification Failed.\n";
+        $flag=false;
+    }
+}
+
+if ($flag==true)
+{
+    if (!isset($certPath))
+    {
+        echo "\n\nIgnoring the Certificate Validation --Fake certificate - DO NOT DO THIS IN PRODUCTION.\n\n";
+    }
+    // login
+    $service = VMware_VCloud_SDK_Service::getService();
+    $service->login($server, array('username'=>$user, 'password'=>$pswd), $httpConfig, $sdkversion);
+
+    // creates an SDK Extension object
+    $sdkExt = $service->createSDKExtensionObj();
+
+    if (true === $list)
+    {
+        $refs = $sdkExt->getVMWProviderVdcRefs();
+        if (0 == count($refs))
+        {
+            exit(0);
+        }
+        foreach ($refs as $ref)
+        {
+            echo "href=" . $ref->get_href() . " type=" . $ref->get_type() .
+                 " name=" . $ref->get_name() . "\n";
+        }
         exit(0);
     }
-    foreach ($refs as $ref)
+
+    // create references of the vim server
+    $vimRefs = $sdkExt->getVimServerRefs($vimName);
+    if (0 == count($vimRefs))
     {
-        echo "href=" . $ref->get_href() . " type=" . $ref->get_type() .
-             " name=" . $ref->get_name() . "\n";
+        exit("No vim server with $vimName is found\n");
     }
-    exit(0);
+    $vimRef = $vimRefs[0];
+    $vimRef1 = VMware_VCloud_SDK_Helper::createReferenceTypeObj($vimRef->get_href());
+    $vimRef2 = VMware_VCloud_SDK_Helper::createReferenceTypeObj($vimRef->get_href());
+
+    // set resource pool
+    $vimObj2 = new VMware_VCloud_API_Extension_VimObjectRefType();
+    $vimObj2->setVimServerRef($vimRef1);
+    $vimObj2->setMoRef($rpMoRef);
+    $vimObj2->setVimObjectType('RESOURCE_POOL');
+
+    $rpRefs = new VMware_VCloud_API_Extension_VimObjectRefsType();
+    $rpRefs->addVimObjectRef($vimObj2);
+
+    // create a provider vDC data object
+    $pvdc = new VMware_VCloud_API_Extension_VMWProviderVdcParamsType();
+    $pvdc->set_name($pvdcName);
+    $pvdc->setStorageProfile(array($storageProfile));
+    $pvdc->setResourcePoolRefs($rpRefs);
+    $pvdc->setIsEnabled(true);
+    $pvdc->setVimServer(array($vimRef2));
+    //echo $pvdc->export() . "\n";
+
+    // create a provider vDC in vCloud Director
+    try
+    {
+        echo "Creating Provider Vdc...\n";
+        $sdkExt->createProviderVdc($pvdc);
+        echo "Successfully Created Provider Vdc.\n";
+    }
+    catch(Exception $e)
+    {
+        echo $e->getMessage() . "\n";
+    }
 }
-
-// create references of the vim server
-$vimRefs = $sdkExt->getVimServerRefs($vimName);
-if (0 == count($vimRefs))
+else
 {
-    exit("No vim server with $vimName is found\n");
-}
-$vimRef = $vimRefs[0];
-$vimRef1 = VMware_VCloud_SDK_Helper::createReferenceTypeObj($vimRef->get_href());
-$vimRef2 = VMware_VCloud_SDK_Helper::createReferenceTypeObj($vimRef->get_href());
-
-// set cpu capacity
-$cpu = new VMware_VCloud_API_ProviderVdcCapacityType();
-$cpu->setUnits($cpuQut[0]);
-$cpu->setAllocation($cpuQut[1]);
-$cpu->setTotal($cpuQut[2]);
-$cpu->setUsed($cpuQut[3]);
-
-// set memory capacity
-$mem = new VMware_VCloud_API_ProviderVdcCapacityType();
-$mem->setUnits($memQut[0]);
-$mem->setAllocation($memQut[1]);
-$mem->setTotal($memQut[2]);
-$mem->setUsed($memQut[3]);
-
-// set compute capacity for the provider vDC
-$compCap = new VMware_VCloud_API_RootComputeCapacityType();
-$compCap->setCpu($cpu);
-$compCap->setMemory($mem);
-$compCap->setIsElastic(false);
-$compCap->setIsHA(false);
-
-// set storage capacity for the provider vDC
-$storCap = new VMware_VCloud_API_ProviderVdcCapacityType();
-$storCap->setUnits($storQut[0]);
-$storCap->setAllocation($storQut[1]);
-$storCap->setTotal($storQut[2]);
-$storCap->setUsed($storQut[3]);
-
-// set data store
-$vimObj = new VMware_VCloud_API_Extension_VimObjectRefType();
-$vimObj->setVimServerRef($vimRef1);
-$vimObj->setMoRef($dsMoRef);
-$vimObj->setVimObjectType('DATASTORE');
-
-$dsRefs = new VMware_VCloud_API_Extension_VimObjectRefsType();
-$dsRefs->addVimObjectRef($vimObj);
-
-// set resource pool
-$vimObj2 = new VMware_VCloud_API_Extension_VimObjectRefType();
-$vimObj2->setVimServerRef($vimRef1);
-$vimObj2->setMoRef($rpMoRef);
-$vimObj2->setVimObjectType('RESOURCE_POOL');
-
-$rpRefs = new VMware_VCloud_API_Extension_VimObjectRefsType();
-$rpRefs->addVimObjectRef($vimObj2);
-
-// create a provider vDC data object
-$pvdc = new VMware_VCloud_API_Extension_VMWProviderVdcType();
-$pvdc->set_name($pvdcName);
-$pvdc->setComputeCapacity($compCap);  // adding cpu and mem capacity
-$pvdc->setStorageCapacity($storCap);  // adding storage capacity
-$pvdc->setDataStoreRefs($dsRefs);
-$pvdc->setResourcePoolRefs($rpRefs);
-$pvdc->setIsEnabled(true);
-$pvdc->setVimServer(array($vimRef2));
-//echo $pvdc->export() . "\n";
-
-// create a provider vDC in vCloud Director
-try
-{
-    $sdkExt->createVMWProviderVdc($pvdc);
-}
-catch(Exception $e)
-{
-    echo $e->getMessage() . "\n";
+    echo "\n\nLogin Failed due to certification mismatch.";
+    return;
 }
 
 function usage()
@@ -264,27 +271,27 @@ function usage()
     echo "     This sample demonstrates creating a provider vDC.\n";
     echo "\n";
     echo "  [Usage]\n";
-    echo "     # php createprovidervdc.php -s <server> -u <username> -p <password> [Options]\n";
+    echo "     # php createprovidervdc.php -s <server> -u <username> -p <password> -v <sdkversion> [Options]\n";
     echo "\n";
-    echo "     -s|--server <IP|hostname> [req] IP or hostname of the vCloud Director.\n";
-    echo "     -u|--user <username>      [req] User name in the form user@organization\n";
-    echo "                                      for the vCloud Director.\n";
-    echo "     -p|--pswd <password>      [req] Password for user.\n";
+    echo "     -s|--server <IP|hostname>        [req] IP or hostname of the vCloud Director.\n";
+    echo "     -u|--user <username>             [req] User name in the form user@organization\n";
+    echo "                                             for the vCloud Director.\n";
+    echo "     -p|--pswd <password>             [req] Password for user.\n";
+    echo "     -v|--sdkver <sdkversion>         [req] SDK Version e.g. 1.5, 5.1 and 5.5.\n";
     echo "\n";
     echo "  [Options]\n";
-    echo "     -a|--vim <vimName>        [req] Name of a registered Vim server in the vCloud Director.\n";
-    echo "     -b|--pvdc <pvdcName>      [req] Name of the provider vDC to be created.\n";
-    echo "     -c|--ds <ds>              [req] MoRef of a datastore.\n";
-    echo "     -d|--rp <rp>              [req] MoRef of a resource pool.\n";
-    echo "     -e|--cpu <cpu>            [opt] CPU settings: comma seperated value in Units, Allocation, Total, Used order.\n";
-    echo "     -f|--mem <mem>            [opt] Memory settings: comma seperated value in Units, Allocation, Total, Used order.\n";
-    echo "     -g|--stor <stor>          [opt] Storage settings: comma seperated value in Units, Allocation, Total, Used order.\n";
-    echo "     -l|--list                 [opt] List all provider vDC.\n";
+    echo "     -a|--vim <vimName>               [req] Name of a registered Vim server in the vCloud Director.\n";
+    echo "     -b|--pvdc <pvdcName>             [req] Name of the provider vDC to be created.\n";
+    echo "     -c|--sp <sp>                     [req] Name of Storage Profile.\n";
+    echo "     -d|--rp <rp>                     [req] MoRef of a resource pool.\n";
+    echo "     -h|--certpath <certificatepath>  [opt] Local certificate's full path.\n";
+    echo "     -l|--list                        [opt] List all provider vDC.\n";
     echo "\n";
     echo "  [Examples]\n";
-    echo "     # php createprovidervdc.php -s 127.0.0.1 -u admin@Org -p password -a vim -b pvdc -c datastore-5 -d resgroup-84\n";
-    echo "     # php createprovidervdc.php -s 127.0.0.1 -u admin@Org -p password -a vim -b pvdc -c datastore-5 -d resgroup-84 -e=\"'MHz', 200, 1024, 0\"\n";
-    echo "     # php createprovidervdc.php -a vim -b pvdc -c datastore-5 -d resgroup-84 // using config.php to set login credentials\n";
+    echo "     # php createprovidervdc.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -a vim -b pvdc -c storageprofile -d resgroup-84\n";
+    echo "     # php createprovidervdc.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -a vim -b pvdc -c storageprofile -d resgroup-84 -h certificatepath\n";
+    echo "     # php createprovidervdc.php -s 127.0.0.1 -u admin@Org -p password -v 5.5 -a vim -b pvdc -c storageprofile -d resgroup-84\n";
+    echo "     # php createprovidervdc.php -a vim -b pvdc -c storageprofile -d resgroup-84 // using config.php to set login credentials\n";
     echo "     # php createprovidervdc.php -l// list all provider vDC\n\n";
 }
 ?>

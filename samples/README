@@ -4,7 +4,7 @@
  *
  * README for samples.
  *
- * Copyright VMware, Inc. 2010-2012.  All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2013.  All Rights Reserved.
  *
  */
 
@@ -12,15 +12,15 @@
 API\SDK  Matrix
 =================
 
-                   A            P            I
+                 A      P      I
 
-                  1.0          1.5          5.1
+                1.5    5.1    5.5
 
-    S   1.0       YES          YES          NO
+      S   1.5   Yes    Yes    Yes
 
-    D   1.5       NO           YES          YES
+      D   5.1   Yes    Yes    Yes
 
-    K   5.1       NO           YES          YES
+      K   5.5   Yes    Yes    Yes
 
 
 Summary
@@ -98,7 +98,7 @@ Samples
       -- Create, Get, Update and Delete Provider Vdc.
 
 3. Other samples
-3.1  hellovcloud.php
+3.1  vapplifecycle.php
       -- A sample in a work flow. It does logging in, browsing an
          organization, finding a vApp template, getting vDC, instantiating
          the vApp template, deploying and powering on the vApp, getting
@@ -122,3 +122,31 @@ Samples
       -- A sample demonstrates how to use the callout feature. Including
          configuring AMQP broker in vCloud Director, processing notification
          from a queue.
+
+3.7  correlation.php
+      -- A sample illustrates the correlation of the objects in vCloud to objects
+         in vCenter.
+
+3.8  edgegateway.php
+      -- A Sample illustrates Creating, Getting, Updating and Deleting an edgeGateway.
+
+3.9  inventory.php
+      -- A sample lists the tenant and the provider resources.
+
+4.0  sessionmanagement.php
+      -- A sample illustrates the session management capabilities using the
+         VcloudClient
+         1. Creating multiple instances of VcloudClient. Every VcloudClient instance
+            has a seperate token.
+
+         2. Logging out a VcloudClient instance does not affect other VcloudClient
+            instance
+
+         3. Reusing the token across VcloudClient instances.
+
+         4. Extending the current session before it times out. Default session timeout
+            is 30 mins.
+
+         5. Shared tokens get void, if one the VcloudClient instance using it logs
+            out.
+

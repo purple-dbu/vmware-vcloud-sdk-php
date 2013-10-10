@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2012. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.1.0
+ * @SDK version 5.5.0
  */
 
 /**
@@ -579,6 +579,12 @@ class VMware_VCloud_SDK_AdminOrg extends VMware_VCloud_SDK_Abstract
     /**
      * Get references for all vDCs or named vDC in this organization.
      *
+     * For System/Cloud Administrators, this method returns Admin Vdc references
+     * which can be used in
+     * {@link AdminVdc#getAdminVdcRef()}
+     * For Organization/Tenant Administrators/Users this method returns Vdc
+     * references which can be used in
+     * {@link Vdc#getVdcRef()}
      * @param string $name   Name of the vDC. If null, returns all
      * @return array VMware_VCloud_API_ReferenceType object array
      * @since Version 1.0.0
@@ -592,6 +598,12 @@ class VMware_VCloud_SDK_AdminOrg extends VMware_VCloud_SDK_Abstract
     /**
      * Get vDCs.
      *
+     * For System/Cloud Administrators, this method returns Admin Vdc references
+     * which can be used in
+     * {@link AdminVdc#getAdminVdcRef()}
+     * For Organization/Tenant Administrators/Users this method returns Vdc
+     * references which can be used in
+     * {@link Vdc#getVdcRef()}
      * @param string $name   Name of the vDC to get. If null, returns all
      * @return array VMware_VCloud_API_AdminVdcType object array
      * @since Version 1.0.0
@@ -1456,6 +1468,22 @@ class VMware_VCloud_SDK_AdminVdc extends VMware_VCloud_SDK_Abstract
                 EDGE_GATEWAYS_CONTENT_TYPE;
         return $this->svc->post($url, 201, $type, $params);
     }
+
+    /**
+     * Create a vApp based on a set of .vmx files and resource mappings
+     *
+     * @param VMware_VCloud_API_RegisterVAppParamsType $params
+     * @return VMware_VCloud_API_TaskType
+     * @since API Version 5.5.0
+     * @since SDK Version 5.5.0
+     */
+    public function registerVApp($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_REGISTER_VAPP_URL;
+        $type = VMware_VCloud_SDK_Constants::
+                REGISTER_VAPP_PARAMS_CONTENT_TYPE;
+        return $this->svc->post($url, 202, $type, $params);
+    }
 }
 // end of class VMware_VCloud_SDK_AdminVdc
 
@@ -1519,7 +1547,7 @@ class VMware_VCloud_SDK_EdgeGateway extends VMware_VCloud_SDK_Abstract
     public function modify($params)
     {
         $type = VMware_VCloud_SDK_Constants::EDGE_GATEWAYS_CONTENT_TYPE;
-        return $this->svc->put($this->url, 200, $type, $params);
+        return $this->svc->put($this->url, 202, $type, $params);
     }
 
     /**
@@ -1592,7 +1620,7 @@ class VMware_VCloud_SDK_EdgeGateway extends VMware_VCloud_SDK_Abstract
      */
     public function delete()
     {
-        $this->svc->delete($this->url, 204);
+        $this->svc->delete($this->url, 202);
         $this->destroy();
     }
 }
@@ -2369,6 +2397,33 @@ class VMware_VCloud_SDK_AdminCatalog extends VMware_VCloud_SDK_Abstract
     {
         $ref = $this->getCatalogRef();
         return isset($ref)? $this->svc->createSDKObj($ref) : null;
+    }
+
+    /**
+     * Publish a catalog to external orgs.
+     *
+     * @param VMware_VCloud_API_PublishExternalCatalogParamsType $params
+     * @since API Version 5.5.0
+     * @since SDK Version 5.5.0
+     */
+    public function publishToExternalOrganizations($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_PUBLISH_TO_EXTERNAL_ORGANIZATIONS_URL;
+        $type = VMware_VCloud_SDK_Constants::PUBLISH_TO_EXTERNAL_ORGANIZATIONS_CONTENT_TYPE;
+        $this->svc->post($url, 204, $type, $params);
+    }
+
+    /**
+     * Subscribe to an external catalog.
+     * @param VMware_VCloud_API_ExternalCatalogSubscriptionParamsType $params
+     * @since API Version 5.5.0
+     * @since SDK Version 5.5.0
+     */
+    public function subscribeToExternalCatalog($params)
+    {
+        $url = $this->url . VMware_VCloud_SDK_Constants::ACTION_SUBSCRIBE_TO_EXTERNAL_CATALOG_URL;
+        $type = VMware_VCloud_SDK_Constants::SUBSCRIBE_TO_EXTERNAL_CATALOG_CONTENT_TYPE;
+        $this->svc->post($url, 204, $type, $params);
     }
 }
 // end of class VMware_VCloud_SDK_AdminCatalog

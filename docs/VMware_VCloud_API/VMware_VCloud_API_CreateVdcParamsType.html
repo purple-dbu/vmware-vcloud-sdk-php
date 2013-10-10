@@ -25,11 +25,11 @@
 <p class="short-description">Parameters for creating an organization vDC.</p>
 	<ul class="tags">
 				<li><span class="field">author:</span> Ecosystem Engineering</li>
-				<li><span class="field">version:</span> 5.1.0</li>
-				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2012.  All Rights Reserved.</li>
+				<li><span class="field">version:</span> 5.5.0</li>
+				<li><span class="field">copyright:</span> Copyright VMware, Inc. 2010-2013.  All Rights Reserved.</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72775">72775</a></span>)
+			Located in <a class="field" href="_API.php.html">/API.php</a> (line <span class="field"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76191">76191</a></span>)
 		</p>
 		
 				
@@ -60,7 +60,7 @@
 					static <span class="var-type">mixed</span>
 					<a href="#$defaultNS" title="details" class="var-name">$defaultNS</a>
 				</div>
-																																																																																																																																												<div class="var-title">
+																																																																																																																																																				<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$AllocationModel" title="details" class="var-name">$AllocationModel</a>
 				</div>
@@ -95,6 +95,10 @@
 																<div class="var-title">
 					<span class="var-type">mixed</span>
 					<a href="#$NicQuota" title="details" class="var-name">$NicQuota</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$OverCommitAllowed" title="details" class="var-name">$OverCommitAllowed</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
@@ -144,11 +148,11 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																																																																																																																																																																																																																																																																																						
+																																																																																																																																																																																																																																																																																																																																																						
 				<div class="method-definition">
 											<span class="method-result">VMware_VCloud_API_CreateVdcParamsType</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AllocationModel</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ComputeCapacityType.html">VMware_VCloud_API_ComputeCapacityType</a></span>&nbsp;<span class="var-name">$ComputeCapacity</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NicQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NetworkQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VmQuota</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedMemory</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedCpu</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VCpuInMhz</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsThinProvision</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$NetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$ProviderVdcReference</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UsesFastProvisioning</span> = <span class="var-default">null</span>])
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AllocationModel</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ComputeCapacityType.html">VMware_VCloud_API_ComputeCapacityType</a></span>&nbsp;<span class="var-name">$ComputeCapacity</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NicQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NetworkQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VmQuota</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedMemory</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedCpu</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VCpuInMhz</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsThinProvision</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$NetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$ProviderVdcReference</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UsesFastProvisioning</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$OverCommitAllowed</span> = <span class="var-default">True</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -232,6 +236,12 @@
 				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#getNicQuota" title="details" class="method-name">getNicQuota</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getOverCommitAllowed" title="details" class="method-name">getOverCommitAllowed</a>
 										()
 									</div>
 														
@@ -333,6 +343,12 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
+										<a href="#setOverCommitAllowed" title="details" class="method-name">setOverCommitAllowed</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$OverCommitAllowed</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
 										<a href="#setProviderVdcReference" title="details" class="method-name">setProviderVdcReference</a>
 											(<span class="var-type"></span>&nbsp;<span class="var-name">$ProviderVdcReference</span>)
 									</div>
@@ -396,13 +412,13 @@
 					</div>
 		<div class="info-box-body">
 			<a name="var$defaultNS" id="$defaultNS"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			static <span class="var-type">mixed</span>
 			<span class="var-name">$defaultNS</span>
-			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72793">72793</a></span>)
+			 = <span class="var-default"> 'http://www.vmware.com/vcloud/v1.5'</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76210">76210</a></span>)
 		</span>
 	</div>
 
@@ -423,13 +439,13 @@
 </div>
 
 <a name="var$AllocationModel" id="$AllocationModel"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$AllocationModel</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72776">72776</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76192">76192</a></span>)
 		</span>
 	</div>
 
@@ -444,13 +460,13 @@
 
 </div>
 <a name="var$ComputeCapacity" id="$ComputeCapacity"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ComputeCapacity</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72777">72777</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76193">76193</a></span>)
 		</span>
 	</div>
 
@@ -465,13 +481,13 @@
 
 </div>
 <a name="var$IsEnabled" id="$IsEnabled"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$IsEnabled</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72781">72781</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76197">76197</a></span>)
 		</span>
 	</div>
 
@@ -486,13 +502,13 @@
 
 </div>
 <a name="var$IsThinProvision" id="$IsThinProvision"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$IsThinProvision</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72786">72786</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76202">76202</a></span>)
 		</span>
 	</div>
 
@@ -507,13 +523,13 @@
 
 </div>
 <a name="var$namespace" id="$namespace"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespace</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72790">72790</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76207">76207</a></span>)
 		</span>
 	</div>
 
@@ -533,13 +549,13 @@
 
 </div>
 <a name="var$namespacedef" id="$namespacedef"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$namespacedef</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72791">72791</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76208">76208</a></span>)
 		</span>
 	</div>
 
@@ -559,13 +575,13 @@
 
 </div>
 <a name="var$NetworkPoolReference" id="$NetworkPoolReference"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$NetworkPoolReference</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72787">72787</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76203">76203</a></span>)
 		</span>
 	</div>
 
@@ -580,13 +596,13 @@
 
 </div>
 <a name="var$NetworkQuota" id="$NetworkQuota"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$NetworkQuota</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72779">72779</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76195">76195</a></span>)
 		</span>
 	</div>
 
@@ -601,13 +617,34 @@
 
 </div>
 <a name="var$NicQuota" id="$NicQuota"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$NicQuota</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72778">72778</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76194">76194</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$OverCommitAllowed" id="$OverCommitAllowed"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$OverCommitAllowed</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76206">76206</a></span>)
 		</span>
 	</div>
 
@@ -628,7 +665,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ProviderVdcReference</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72788">72788</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76204">76204</a></span>)
 		</span>
 	</div>
 
@@ -649,7 +686,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ResourceGuaranteedCpu</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72784">72784</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76200">76200</a></span>)
 		</span>
 	</div>
 
@@ -670,7 +707,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$ResourceGuaranteedMemory</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72783">72783</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76199">76199</a></span>)
 		</span>
 	</div>
 
@@ -691,7 +728,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$tagName</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72792">72792</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76209">76209</a></span>)
 		</span>
 	</div>
 
@@ -717,7 +754,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$UsesFastProvisioning</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72789">72789</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76205">76205</a></span>)
 		</span>
 	</div>
 
@@ -738,7 +775,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VCpuInMhz</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72785">72785</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76201">76201</a></span>)
 		</span>
 	</div>
 
@@ -759,7 +796,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VdcStorageProfile</span>
-			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72782">72782</a></span>)
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76198">76198</a></span>)
 		</span>
 	</div>
 
@@ -780,7 +817,7 @@
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$VmQuota</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72780">72780</a></span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76196">76196</a></span>)
 		</span>
 	</div>
 
@@ -830,7 +867,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72814">72814</a></span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76232">76232</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -843,7 +880,7 @@
 		<span class="method-name">
 			__construct
 		</span>
-					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AllocationModel</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ComputeCapacityType.html">VMware_VCloud_API_ComputeCapacityType</a></span>&nbsp;<span class="var-name">$ComputeCapacity</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NicQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NetworkQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VmQuota</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedMemory</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedCpu</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VCpuInMhz</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsThinProvision</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$NetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$ProviderVdcReference</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UsesFastProvisioning</span> = <span class="var-default">null</span>])
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$VCloudExtension</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$Description</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$AllocationModel</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ComputeCapacityType.html">VMware_VCloud_API_ComputeCapacityType</a></span>&nbsp;<span class="var-name">$ComputeCapacity</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NicQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$NetworkQuota</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VmQuota</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsEnabled</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$VdcStorageProfile</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedMemory</span> = <span class="var-default">null</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$ResourceGuaranteedCpu</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$VCpuInMhz</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$IsThinProvision</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$NetworkPoolReference</span> = <span class="var-default">null</span>], [<span class="var-type"><a href="../VMware_VCloud_API/VMware_VCloud_API_ReferenceType.html">VMware_VCloud_API_ReferenceType</a></span>&nbsp;<span class="var-name">$ProviderVdcReference</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$UsesFastProvisioning</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$OverCommitAllowed</span> = <span class="var-default">True</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -864,10 +901,10 @@
 				<span class="var-name">$ComputeCapacity</span><span class="var-description">: - [required]</span>			</li>
 					<li>
 				<span class="var-type">int</span>
-				<span class="var-name">$NicQuota</span><span class="var-description">: - [optional]</span>			</li>
+				<span class="var-name">$NicQuota</span><span class="var-description">: - [required]</span>			</li>
 					<li>
 				<span class="var-type">int</span>
-				<span class="var-name">$NetworkQuota</span><span class="var-description">: - [optional]</span>			</li>
+				<span class="var-name">$NetworkQuota</span><span class="var-description">: - [required]</span>			</li>
 					<li>
 				<span class="var-type">int</span>
 				<span class="var-name">$VmQuota</span><span class="var-description">: - [optional]</span>			</li>
@@ -898,6 +935,9 @@
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$UsesFastProvisioning</span><span class="var-description">: - [optional]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$OverCommitAllowed</span><span class="var-description">: - [optional] default 'true'</span>			</li>
 				</ul>
 		
 			<hr class="separator" />
@@ -911,7 +951,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">addVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72877">72877</a></span>)
+		<span class="method-title">addVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76296">76296</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -939,7 +979,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a73049">73049</a></span>)
+		<span class="method-title">build</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76480">76480</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -975,7 +1015,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a73070">73070</a></span>)
+		<span class="method-title">buildAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76501">76501</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1011,7 +1051,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a73078">73078</a></span>)
+		<span class="method-title">buildChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76509">76509</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1050,7 +1090,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72922">72922</a></span>)
+		<span class="method-title">export</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76347">76347</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1098,7 +1138,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72952">72952</a></span>)
+		<span class="method-title">exportAttributes</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76377">76377</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1143,7 +1183,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72957">72957</a></span>)
+		<span class="method-title">exportChildren</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76382">76382</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1188,7 +1228,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getAllocationModel</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72835">72835</a></span>)
+		<span class="method-title">getAllocationModel</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76254">76254</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1211,7 +1251,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getComputeCapacity</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72841">72841</a></span>)
+		<span class="method-title">getComputeCapacity</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76260">76260</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1234,7 +1274,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getIsEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72865">72865</a></span>)
+		<span class="method-title">getIsEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76284">76284</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1257,7 +1297,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getIsThinProvision</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72896">72896</a></span>)
+		<span class="method-title">getIsThinProvision</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76315">76315</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1280,7 +1320,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getNetworkPoolReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72902">72902</a></span>)
+		<span class="method-title">getNetworkPoolReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76321">76321</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1303,7 +1343,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getNetworkQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72853">72853</a></span>)
+		<span class="method-title">getNetworkQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76272">76272</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1326,7 +1366,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getNicQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72847">72847</a></span>)
+		<span class="method-title">getNicQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76266">76266</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1345,11 +1385,34 @@
 		
 			
 	</div>
-<a name="methodgetProviderVdcReference" id="getProviderVdcReference"><!-- --></a>
+<a name="methodgetOverCommitAllowed" id="getOverCommitAllowed"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getProviderVdcReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72908">72908</a></span>)
+		<span class="method-title">getOverCommitAllowed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76339">76339</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getOverCommitAllowed
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetProviderVdcReference" id="getProviderVdcReference"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getProviderVdcReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76327">76327</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1369,10 +1432,10 @@
 			
 	</div>
 <a name="methodgetResourceGuaranteedCpu" id="getResourceGuaranteedCpu"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getResourceGuaranteedCpu</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72884">72884</a></span>)
+		<span class="method-title">getResourceGuaranteedCpu</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76303">76303</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1392,10 +1455,10 @@
 			
 	</div>
 <a name="methodgetResourceGuaranteedMemory" id="getResourceGuaranteedMemory"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getResourceGuaranteedMemory</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72878">72878</a></span>)
+		<span class="method-title">getResourceGuaranteedMemory</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76297">76297</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1415,10 +1478,10 @@
 			
 	</div>
 <a name="methodgetUsesFastProvisioning" id="getUsesFastProvisioning"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getUsesFastProvisioning</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72914">72914</a></span>)
+		<span class="method-title">getUsesFastProvisioning</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76333">76333</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1438,10 +1501,10 @@
 			
 	</div>
 <a name="methodgetVCpuInMhz" id="getVCpuInMhz"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVCpuInMhz</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72890">72890</a></span>)
+		<span class="method-title">getVCpuInMhz</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76309">76309</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1461,10 +1524,10 @@
 			
 	</div>
 <a name="methodgetVdcStorageProfile" id="getVdcStorageProfile"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72871">72871</a></span>)
+		<span class="method-title">getVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76290">76290</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1484,10 +1547,10 @@
 			
 	</div>
 <a name="methodgetVmQuota" id="getVmQuota"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getVmQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72859">72859</a></span>)
+		<span class="method-title">getVmQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76278">76278</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1507,10 +1570,10 @@
 			
 	</div>
 <a name="methodget_tagName" id="get_tagName"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72920">72920</a></span>)
+		<span class="method-title">get_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76345">76345</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1535,10 +1598,10 @@
 			
 	</div>
 <a name="methodhasContent" id="hasContent"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a73026">73026</a></span>)
+		<span class="method-title">hasContent</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76456">76456</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1563,10 +1626,10 @@
 			
 	</div>
 <a name="methodsetAllocationModel" id="setAllocationModel"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setAllocationModel</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72838">72838</a></span>)
+		<span class="method-title">setAllocationModel</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76257">76257</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1591,10 +1654,10 @@
 			
 	</div>
 <a name="methodsetComputeCapacity" id="setComputeCapacity"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setComputeCapacity</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72844">72844</a></span>)
+		<span class="method-title">setComputeCapacity</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76263">76263</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1619,10 +1682,10 @@
 			
 	</div>
 <a name="methodsetIsEnabled" id="setIsEnabled"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setIsEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72868">72868</a></span>)
+		<span class="method-title">setIsEnabled</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76287">76287</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1647,10 +1710,10 @@
 			
 	</div>
 <a name="methodsetIsThinProvision" id="setIsThinProvision"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setIsThinProvision</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72899">72899</a></span>)
+		<span class="method-title">setIsThinProvision</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76318">76318</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1675,10 +1738,10 @@
 			
 	</div>
 <a name="methodsetNetworkPoolReference" id="setNetworkPoolReference"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setNetworkPoolReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72905">72905</a></span>)
+		<span class="method-title">setNetworkPoolReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76324">76324</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1703,10 +1766,10 @@
 			
 	</div>
 <a name="methodsetNetworkQuota" id="setNetworkQuota"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setNetworkQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72856">72856</a></span>)
+		<span class="method-title">setNetworkQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76275">76275</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1731,10 +1794,10 @@
 			
 	</div>
 <a name="methodsetNicQuota" id="setNicQuota"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setNicQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72850">72850</a></span>)
+		<span class="method-title">setNicQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76269">76269</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1758,11 +1821,39 @@
 		
 			
 	</div>
+<a name="methodsetOverCommitAllowed" id="setOverCommitAllowed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setOverCommitAllowed</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76342">76342</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setOverCommitAllowed
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$OverCommitAllowed</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$OverCommitAllowed</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodsetProviderVdcReference" id="setProviderVdcReference"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setProviderVdcReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72911">72911</a></span>)
+		<span class="method-title">setProviderVdcReference</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76330">76330</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1790,7 +1881,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setResourceGuaranteedCpu</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72887">72887</a></span>)
+		<span class="method-title">setResourceGuaranteedCpu</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76306">76306</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1818,7 +1909,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setResourceGuaranteedMemory</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72881">72881</a></span>)
+		<span class="method-title">setResourceGuaranteedMemory</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76300">76300</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1846,7 +1937,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setUsesFastProvisioning</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72917">72917</a></span>)
+		<span class="method-title">setUsesFastProvisioning</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76336">76336</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1874,7 +1965,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVCpuInMhz</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72893">72893</a></span>)
+		<span class="method-title">setVCpuInMhz</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76312">76312</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1902,7 +1993,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72874">72874</a></span>)
+		<span class="method-title">setVdcStorageProfile</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76293">76293</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1930,7 +2021,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setVmQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72862">72862</a></span>)
+		<span class="method-title">setVmQuota</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76281">76281</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1958,7 +2049,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a72921">72921</a></span>)
+		<span class="method-title">set_tagName</span> (line <span class="line-number"><a href="../__filesource/fsource_VMware_VCloud_API__API.php.html#a76346">76346</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2032,7 +2123,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Thu, 28 Mar 2013 10:55:38 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 26 Aug 2013 10:58:43 -0700 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
 	</p>
 	</div></body>
 </html>

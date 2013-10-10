@@ -4,7 +4,7 @@
  *
  * PHP version 5
  * *******************************************************
- * Copyright VMware, Inc. 2010-2012. All Rights Reserved.
+ * Copyright VMware, Inc. 2010-2013. All Rights Reserved.
  * *******************************************************
  *
  * @category    VMware
@@ -16,7 +16,7 @@
  *              express or implied. the author specifically # disclaims any implied
  *              warranties or conditions of merchantability, satisfactory # quality,
  *              non-infringement and fitness for a particular purpose.
- * @SDK version 5.1.0
+ * @SDK version 5.5.0
  */
 
 /**
@@ -141,7 +141,7 @@ abstract class VMware_VCloud_SDK_Service_Abstract
         if (200 != $code)
         {
             throw new VMware_VCloud_SDK_Exception (
-                        "GET $url failed, return code: $code, error: $body\n");
+                        "$body");
         }
         return (true === $reObj)? 
              VMware_VCloud_SDK_Helper::getObjByXml($body, $return) : $body;
